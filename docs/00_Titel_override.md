@@ -1,6 +1,6 @@
 ---
-title: Graphentechnologien in den Digitalen Geisteswissenschaften
-subtitle: Ein Studienbuch
+title: Graphentechnologien in den Digitalen Geschichtswissenschaften
+subtitle: Ein Studienbegleitbuch
 author:
 - Andreas Kuczera
 lang: de
