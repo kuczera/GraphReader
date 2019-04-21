@@ -15,13 +15,17 @@ contents: true
 
 In den seit den 70er Jahren etablierten, relationalen Datenbanken werden die Daten in Tabellen abgespeichert, die untereinander über Schlüssel oder Schlüsseltabellen verknüpft sind.
 In Graphdatenbanken werden die Daten dagegen in Knoten und Kanten gespeichert.
-![Beispielgraph](Bilder/Beispielgraph.png)
+![Beispielgraph](Bilder/Historia-Friderici3.png)
 
 ~~~cypher
-MATCH (n1:Entity)--(n2:Entity)
-WHERE n1.id = 'Q150966'
-AND n2.id = 'Q20850661'
-RETURN * LIMIT 100
+MATCH (n) DETACH DELETE n;
+CREATE (p1:Person {name:'Kaiser Friedrich III.'})
+CREATE (p2:Person {name:'Enea Silvio Piccolomini'})
+CREATE (b1:Buch {titel:'Historia Friderici III'})
+CREATE (p1)-[:KENNT]->(p2)
+CREATE (p1)<-[:KENNT]-(p2)
+CREATE (b1)<-[:GENANNT_IN]-(p1)
+CREATE (b1)-[:GESCHRIEBEN_VON]->(p2);
 ~~~
 
 
