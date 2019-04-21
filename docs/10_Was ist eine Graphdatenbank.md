@@ -15,7 +15,7 @@ contents: true
 
 In den seit den 70er Jahren etablierten, relationalen Datenbanken werden die Daten in Tabellen abgespeichert, die untereinander über Schlüssel oder Schlüsseltabellen verknüpft sind.
 In Graphdatenbanken werden die Daten dagegen in Knoten und Kanten gespeichert.
-![Beispielgraph](Bilder/Historia-Friderici3.png)
+![Beispielgraph](Bilder/Historia-Friderici3.svg)
 
 ~~~cypher
 MATCH (n) DETACH DELETE n;
