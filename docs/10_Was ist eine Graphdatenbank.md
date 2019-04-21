@@ -17,6 +17,13 @@ In den seit den 70er Jahren etablierten, relationalen Datenbanken werden die Dat
 In Graphdatenbanken werden die Daten dagegen in Knoten und Kanten gespeichert.
 ![Beispielgraph](Bilder/Beispielgraph.png)
 
+~~~cypher
+MATCH (n1:Entity)--(n2:Entity)
+WHERE n1.id = 'Q150966'
+AND n2.id = 'Q20850661'
+RETURN * LIMIT 100
+~~~
+
 Der  zeigt oben einen <b>Knoten (engl. Nodes)</b>	vom Typ Person mit der Eigenschaft Name. Diese hat den Wert "Karl der Große". Links unten ist ein weiter <b>Knoten</b> vom Typ Person mit dem Namen "Einhard". Rechts unten ist ein <b>Knoten</b> vom Typ Buch und dem Titel "Vita Karoli Magni" abgebildet. Die <b>Kanten</b> (engl. Edges) geben an, dass Karl der Große Einhart kannte, Einhard ca. 828-830 das Buch "Vita Karoli Magni" schrieb und Karl der Große in dem Buch vorkommt.
 
 Knoten und Kanten können also noch zusätzliche Eigenschaften besitzen, in denen weitere Informationen gespeichert sind. Diese Eigenschaften sind spezifisch für die jeweiligen Knotentypen. So sieht man in der Abbildung, dass die beiden Knoten vom Typ Person jeweils noch die Eigenschaft Namen haben, deren Wert dann die Namen der Person angibt, während der Knoten vom Typ Buch die Eigenschaft Titel trägt, in dem der Titel des Buches abgespeichert wird.
