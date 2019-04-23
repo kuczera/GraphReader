@@ -1,8 +1,8 @@
-== Regesten zu Friedrich III
-:author: Stefan Armbruster
-:twitter: darthvader42
-:tags: Digital Humanities, Spatial, APOC
-:neo4j-version: 3.1
+== GraphGists zum GraphReader
+:author: Andreas Kuczera
+:twitter: andreaskuczera
+:tags: Graph Technologies, Digital Humanities, Medieval History
+:neo4j-version: 3.5
 
 === Einführung
 
@@ -23,8 +23,6 @@ browser.remote_content_hostname_whitelist=*
 
 Außerdem muss die APOC Bibliothek und Neo4j Spatial (https://drive.google.com/file/d/0B0AxyUhPvHgyZXRfUS1oVXhWNFk/view?usp=sharing[neo4j-spatial-0.24-neo4j-3.1.0-server-plugin.jar]) in den `/plugins` Ordner kopiert werden.
 
-NOTE: Da wir im letzten Schritt eine Texttransformation mit regulären Ausdrücken vornehmen müssen wir die - Stand 2017-01-19 - noch nicht veröffentlichte Version 3.1.0.4-SNAPSHOT verwenden. Download: https://drive.google.com/file/d/0B0AxyUhPvHgyUU9yWTRUTTNDVTQ/view?usp=sharing[apoc-3.1.0.4-SNAPSHOT.jar]
-
 === Datenbank bereinigen
 
 Sollten bereits Daten in der lokalen Neo4j Instanz vorhanenden sein, bitte vorher alles löschen:
@@ -38,7 +36,8 @@ MATCH (n) DETACH DELETE n
 
 Vor dem Import erstellen wir einige Indexe, die bei Lookups verwendet werden. Das macht den Import erheblich schneller.
 
-IMPORTANT: jede Zeile separat ausführen oder `cypher-shell` benutzen.
+WICHTIG: In den Einstellungen des neo4j-Browsers die Option 'Enable multiple Statement' auswählen.
+image::https://raw.githubusercontent.com/kuczera/Graphreader/Bilder/enableMultipleStatement.png[Enable multiple Statements]
 
 [source,cypher]
 ----
