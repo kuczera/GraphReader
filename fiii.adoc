@@ -1,0 +1,265 @@
+== Regesten zu Friedrich III
+:author: Stefan Armbruster
+:twitter: darthvader42
+:tags: Digital Humanities, Spatial, APOC
+:neo4j-version: 3.1
+
+=== Einführung
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg/490px-Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg[]
+
+In Form von CSV Dateien liegen Regesten zu Friedrich III vor und wurden auf Google Drive hochgeladen. Die CSV Dateien sind jeweils zwischen 5 und 12 MB groß und haben zwischen 8000 und 12000 Zeilen.
+
+== vorbereitende Schritte
+
+=== Konfiguration Neo4j
+
+Um den Browser zu erlauben Guides von beliebigen Quellen zu laden, muss in `conf/neo4j.conf` folgende Zeile hinzugefügt werden:
+
+[source,conf]
+----
+browser.remote_content_hostname_whitelist=*
+----
+
+Außerdem muss die APOC Bibliothek und Neo4j Spatial (https://drive.google.com/file/d/0B0AxyUhPvHgyZXRfUS1oVXhWNFk/view?usp=sharing[neo4j-spatial-0.24-neo4j-3.1.0-server-plugin.jar]) in den `/plugins` Ordner kopiert werden.
+
+NOTE: Da wir im letzten Schritt eine Texttransformation mit regulären Ausdrücken vornehmen müssen wir die - Stand 2017-01-19 - noch nicht veröffentlichte Version 3.1.0.4-SNAPSHOT verwenden. Download: https://drive.google.com/file/d/0B0AxyUhPvHgyUU9yWTRUTTNDVTQ/view?usp=sharing[apoc-3.1.0.4-SNAPSHOT.jar]
+
+=== Datenbank bereinigen
+
+Sollten bereits Daten in der lokalen Neo4j Instanz vorhanenden sein, bitte vorher alles löschen:
+
+[source,cypher]
+----
+MATCH (n) DETACH DELETE n
+----
+
+=== Indexe erstellen
+
+Vor dem Import erstellen wir einige Indexe, die bei Lookups verwendet werden. Das macht den Import erheblich schneller.
+
+IMPORTANT: jede Zeile separat ausführen oder `cypher-shell` benutzen.
+
+[source,cypher]
+----
+CREATE INDEX ON :Regest(ident);
+CREATE INDEX ON :Regest(regid);
+CREATE INDEX ON :Datum(startdate);
+CREATE INDEX ON :Ort(ort);
+CREATE INDEX ON :Lemma(lemma);
+----
+
+== Graphdatenmodell
+
+image::https://raw.githubusercontent.com/sarmbruster/akdwmainz_fiii_guide/master/img/graphmodel.png[Graphdatenmodell]
+
+== Import Regesten
+
+Nachdem die Datenbank nun vorbereitet ist werden wir nun die CSV Daten importieren.
+Die Struktur der CSV Datei für die Regesten kann man untersuchen:
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc/export?format=csv&id=1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc&gid=1917262438" AS line
+RETURN line LIMIT 5
+----
+
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc/export?format=csv&id=1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc&gid=1917262438" AS line
+CREATE (r:Regest {regid:line.persistent_identifier, Text:line.summary, Überlieferung:line.archival_history,ident:line.identifier})
+MERGE (d:Datum {startdate:line.start_date, enddate:line.end_date})
+MERGE (o:Ort {ort:line.name, latitude:toFloat(line.latitude), longitude:toFloat(line.longitude)})
+CREATE (r)-[:HAT_DATUM]->(d)
+CREATE (r)-[:HAT_ORT]->(o);
+----
+
+== Import Lemmata/Herrscherhandeln)
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1yVrW_rGWoEZ7jtJTtdVUzD9WhCq5ZTUI1HLV_UGAM3U/export?format=csv&id=1yVrW_rGWoEZ7jtJTtdVUzD9WhCq5ZTUI1HLV_UGAM3U&gid=305253904"
+AS line FIELDTERMINATOR ','
+MATCH (r:Regest{ident:line.regid})
+MERGE (l:Lemma{lemma:line.lemma})
+MERGE (r)-[:HERRSCHERHANDELN]->(l);
+----
+
+== Geo Abfragen und Neo4j Spatial
+
+=== mit Cypher Bordmitteln
+
+Cypher hat mit `point()` und `distance()` zwei (noch undokumentierte) Funktionen, die ohne das Spatial plugin bereits hilfreich sind. Wir wollen z.B. wissen wie weit Dinkelsbühl und Augsburg entfernt sind:
+
+[source,cypher]
+----
+MATCH (o1:Ort{ort:'Dinkelsbühl'}), (o2:Ort{ort:'Augsburg'})
+RETURN o1.ort, o2.ort, distance(point(o1),point(o2)) AS distance
+----
+
+=== mit Neo4j Spatial
+
+https://github.com/neo4j-contrib/spatial[Neo4j Spatial] ist eine Erweiterung von Neo4j, die mit R-Bäumen eine Vielzahl von Geo-Abfragen erlaubt. z.B. Knoten in bestimmter Entfernung, Polygonschnitte und vieles mehr.
+
+Zuerst muss ein Layer angelegt werden:
+
+[source,cypher]
+----
+CALL spatial.addPointLayer("geom")
+----
+
+Alle `Ort` Knoten müssen explizit zum Layer hinzugefügt werden:
+
+[source,cypher]
+----
+MATCH (o:Ort)
+CALL spatial.addNode("geom",o) YIELD node
+RETURN node
+----
+
+
+Umkreissuche um bekannte Koordinaten:
+
+[source,cypher]
+----
+CALL spatial.withinDistance('geom',{longitude:10.35,latitude:49.06},100) YIELD node, distance
+RETURN node.ort, node.longitude, node.latitude, distance
+----
+
+[source,cypher]
+----
+MATCH(o:Ort{ort:'Dinkelsbühl'})
+CALL spatial.withinDistance('geom',o,100) YIELD node, distance
+RETURN node.ort, node.longitude, node.latitude, distance
+----
+
+
+== Itinerar
+
+Vorab verbinden wir die `Datum` Knoten untereinander zu einer verketteten Liste entlang der Zeitachse:
+
+[source,cypher]
+----
+MATCH (d:Datum)
+WITH apoc.coll.sortNodes(collect(d), "startdate") AS dates
+UNWIND apoc.coll.pairsMin(dates) AS pair
+WITH pair[0] AS start, pair[1] AS end
+CREATE (start)-[:NAECHSTES_DATUM]->(end)
+----
+
+Mit dem "Zeitpfeil" kann man nun den Itinerar abfragen:
+
+[source,cypher]
+----
+MATCH dates=(s:Datum)-[:NAECHSTES_DATUM*]->(e:Datum)
+WHERE not ( (s)<-[:NAECHSTES_DATUM]-() ) and not ( (e)-[:NAECHSTES_DATUM]->() )
+UNWIND nodes(dates) AS d
+MATCH (d)<-[:HAT_DATUM]-()-[:HAT_ORT]->(o:Ort)
+WITH collect( [d,o]) AS route
+UNWIND range(0, size(route)-2) AS x
+WITH route[x][0].enddate as left, route[x][1].ort AS from, route[x+1][0].startdate AS arrived, route[x+1][1].ort AS to, distance(point(route[x][1]), point(route[x+1][1]))/1000.0 AS distance
+WHERE distance > 0
+RETURN from, left, to, arrived, distance
+----
+
+== Itinerar in Google Maps
+
+https://www.google.de/maps[Google Maps] kann unter "My Maps" eigene Dateien im kml Format hochgeladen werden. Mit einem kurzen Programm - hier in Groovy geschrieben - holt man sich aus dem Graphen die Informationen und erzeugt einen kml-Datei
+
+[source,groovy]
+----
+#!/usr/bin/env groovy
+@Grab('org.neo4j.driver:neo4j-java-driver:1.1.0')
+
+import org.neo4j.driver.v1.Driver
+import org.neo4j.driver.v1.GraphDatabase
+import org.neo4j.driver.v1.Session
+import org.neo4j.driver.v1.StatementResult
+import org.neo4j.driver.v1.Record
+import groovy.xml.*
+
+def xml = new StreamingMarkupBuilder(encoding: "utf-8").bind {
+  mkp.xmlDeclaration(version: "1.0", encoding: "utf-8")
+
+  Driver driver = GraphDatabase.driver("bolt://localhost")
+  Session session = null
+  try {
+    session = driver.session()
+    StatementResult rs = session.run( """match dates=(s:Datum)-[:NAECHSTES_DATUM*]->(e:Datum)
+  where not ( (s)<-[:NAECHSTES_DATUM]-() )  and not ( (e)-[:NAECHSTES_DATUM]->() )
+  unwind nodes(dates) as d
+  match (d)<-[:HAT_DATUM]-()-[:HAT_ORT]->(o:Ort)
+  return d.startdate as startdate, d.enddate as enddate, o.ort as ort, o.latitude as lat, o.longitude as lon""")
+
+    Document {
+
+      def previousOrt = null
+      def travelCoordinates=""
+        rs.each { record ->
+          def ort = record.get("ort").asString()
+          if (previousOrt != ort ) {
+            previousOrt = ort
+            def coordString = "${record.get('lon').asDouble()},${record.get('lat').asDouble()},0"
+            def startdate = record.get("startdate").asString()
+            def enddate = record.get("enddate").asString()
+            Placemark {
+              name ort
+              description "von $startdate bis $enddate"
+              Point {
+                coordinates coordString
+              }
+              TimeSpan {
+                begin startdate
+                end enddate
+              }
+            }
+            travelCoordinates += coordString + ","
+          }
+        }
+        Placemark {
+          name "Itinerar"
+          LineString {
+            coordinates travelCoordinates[0..-2] //strip last comma
+          }
+        }
+    }
+  } finally {
+    session?.close()
+  }
+
+}
+
+println XmlUtil.serialize(xml)
+----
+
+== Import von eindeutigen Erschließungspunkten
+
+Im Feld `archival_history` befinden sich Texte, die URL Referenzen enthalten. Diese wollen wir extrahieren und als Knoten speichern. So kann nachvollzogen werden welche dieser URLs von welchen Regesten referenziert wird:
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc/export?format=csv&id=1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc&gid=1917262438" AS line
+RETURN line.archival_history LIMIT 5
+----
+
+Um die URL des Links und dessen Text zu exrahieren, müssen wir mit regular expressions arbeiten. Dies wird in APOC unterstützt:
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc/export?format=csv&id=1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc&gid=1917262438" AS line
+RETURN apoc.text.regexGroups(line.archival_history, "<link (\\S+)>(\\S+)</link>") LIMIT 10
+----
+
+Damit kann nun importiert werden:
+
+[source,cypher]
+----
+LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc/export?format=csv&id=1qw4VGhi5RTg7b8KhGXpXR8tdhYsjEIdYkKucl-YlNJc&gid=1917262438" AS line
+WITH line
+WHERE line.archival_history CONTAINS "link"
+MATCH (reg:Regest {regid:line.persistent_identifier})
+UNWIND apoc.text.regexGroups(line.archival_history, "<link (\\S+)>(\\S+)</link>") as link
+MERGE (ref:Referenz {url:link[1]}) ON CREATE SET ref.title=link[2]
+MERGE (reg)-[:REFERENZIERT]->(ref)
+----
