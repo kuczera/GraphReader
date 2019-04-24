@@ -1,4 +1,3 @@
 # Graphentechnologien in den digitalen Geisteswissenschaften
-Modellierung – Import – Exploration
-
-https://kuczera.github.io/Graphentechnologien/ 
+Reader zum DH-Modul Graphentechnologien in den digitalen Geschichtswissenschaften
+https://kuczera.github.io/GraphReader/
