@@ -1,0 +1,9 @@
+git clone https://github.com/sarmbruster/akdwmainz_fiii_guide.git
+cd akdwmain_fiii_guide
+git submodule init
+git submodule update
+cd guides
+./run.sh ../fiii.adoc   # achtung, paket ruby-tilt muss installiert sein -> erzeugt fiii.html
+./http-server.py  # startet http auf 8001
+:play http://localhost:8001/html/fiii.html
+
