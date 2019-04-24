@@ -9,6 +9,6 @@ Befehl für das Beispiel GraphGist:
 
 `:play http://134.176.70.48:8001/html/fiii.htm`
 
-Um den Browser zu erlauben Guides von beliebigen Quellen zu laden, muss in conf/neo4j.conf folgende Zeile hinzugefügt werden:
+Um dem Browser zu erlauben Guides von beliebigen Quellen zu laden, muss in conf/neo4j.conf folgende Zeile hinzugefügt werden (ist bei der Testdatenbank bereits eingerichtet):
 
 `browser.remote_content_hostname_whitelist=*`
