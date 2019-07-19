@@ -4,13 +4,12 @@
 :tags: Graph Technologies, Digital Humanities, Medieval History
 :neo4j-version: 3.5
 
-=== Einführung
+=== Erste Schritte in der Graphdatenbank am Beispiel Kaiser Friedrich III.
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg/490px-Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg[]
 
-
-== B1 Graphdatenbank manuell anlegen
-=== B1.1 Knoten 
+= B1 Graphdatenbank manuell anlegen
+== B1.1 Knoten 
 === Erstellen und Finden
 Mit dem Befehl "CREATE" erstellt man einen Knoten, dargestellt durch zwei Klammern: () 
 Innerhalb der Klammern weist man dem Knoten eine Variable zu, z.B. "n" für "node": (n) 
@@ -150,9 +149,9 @@ RETURN *;
 
 == B1.2 Kanten
 === Erstellen und Finden
-Eine Kante (Verbindung,Beziehung) zwischen zwei Knoten wird in Cypher mit einem Pfeil dargestellt: -->  
+Eine Kante (Verbindung,Beziehung) zwischen zwei Knoten wird in Cypher mit einem Pfeil dargestellt: +++-->+++  
 Die Kante hat immer eine Richtung. 
-Desweiteren muss auch der Kantentyp angegeben werden. -[:KIND_VON]->
+Desweiteren muss auch der Kantentyp angegeben werden. +++-[:KIND_VON]->+++
 
 Kanten werden, genau wie Knoten, mit den Befehlen CREATE oder MERGE erstellt und mit MATCH in der Datenbank gesucht. 
 
@@ -164,7 +163,7 @@ Eine Kante zwischen zwei Knoten sieht in Cypher folgendermaßen aus:
 
 Um eine Kante zu erstellen, müssen wir die entsprechenden Knoten mit MERGE oder CREATE erstellen bzw. mit MERGE oder MATCH aus der Datenbank aufrufen. MERGE ist bei kleinen Datenmengen immer der sicherste Weg. 
 
-== 
+== Beispiel 1
 [source,cypher]
 ----
 MERGE (f:Person {name:'Friedrich'}) 
@@ -183,7 +182,7 @@ Erstelle eine Kante vom Typ "Kind von" von f zu c.
 Erstelle eine Kante vom Typ "Kind von" von f zu e. 
 Zeige mir alles, das gerade gefunden bzw. erstellt wurde.
 
-==
+== Beispiel 2
 [source,cypher]
 ----
 MERGE (c:Person {name:'Cimburgis'}) 
@@ -231,11 +230,11 @@ CREATE (m)-[:KIND_VON]->(e)
 RETURN *;
 ----
 
-==B 1.3 Wiederholung
+== B 1.3 Wiederholung
 [horizontal]
 .Sie haben nun gelernt:
 Knoten :: (variable:typ {property}) 
-Kanten :: -[:typ]-> 
+Kanten :: +++-[:typ]->+++
 MATCH :: finde
 CREATE :: erstelle
 MERGE :: finde, wenn nicht vorhanden erstelle
