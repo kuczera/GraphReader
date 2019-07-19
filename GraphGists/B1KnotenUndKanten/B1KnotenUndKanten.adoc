@@ -23,7 +23,7 @@ Das Semikolon schließt den Befehl.
 ----
 CREATE (n) RETURN n;
 ----
-bedeutet: "Erstelle einen Knoten, hier n genannt, und zeige mir n."
+*bedeutet*: "Erstelle einen Knoten, hier n genannt, und zeige mir n."
 
 Der Befehl "MERGE" überprüft zuerst, ob ein entsprechender Knoten schon vorhanden ist; Falls nicht, wird er neu erstellt. 
 
@@ -32,7 +32,7 @@ Der Befehl "MERGE" überprüft zuerst, ob ein entsprechender Knoten schon vorhan
 MERGE (n) RETURN n; 
 ----
 
-bedeutet: "Überprüfe, ob es Knoten gibt - wenn nicht, erstelle einen. Nenne den Knoten n. Zeige mir n."
+*bedeutet*: "Überprüfe, ob es Knoten gibt - wenn nicht, erstelle einen. Nenne den Knoten n. Zeige mir n."
 
 == Löschen und Abtrennen
 Um einen Knoten zu löschen verwenden wir den Befehl DELETE. Zunächst müssen wir alle Knoten in der Datenbank finden, die wir löschen möchten. Dies tun wir mit dem Befehl MATCH. 
@@ -41,7 +41,7 @@ Um einen Knoten zu löschen verwenden wir den Befehl DELETE. Zunächst müssen w
 ----
 MATCH (n) DELETE n 
 ----
-bedeutet: "Finde Knoten, im folgenden n genannt, und lösche n." 
+*bedeutet*: "Finde Knoten, im folgenden n genannt, und lösche n." 
 
 Dies funktioniert nur, weil unser Knoten noch keine Verbindungen (Kanten) zu anderen Knoten hat. Um einen in der Datenbank vernetzten Knoten löschen zu können, müssen erst mit dem Befehl DETACH seine Kanten entfernt werden. 
 
@@ -49,7 +49,7 @@ Dies funktioniert nur, weil unser Knoten noch keine Verbindungen (Kanten) zu and
 ----
 MATCH (n) DETACH DELETE n 
 ----
-bedeutet: "Finde Knoten, im folgenden n genannt, lösche die zugehörigen Kanten und lösche n." 
+*bedeutet*: "Finde Knoten, im folgenden n genannt, lösche die zugehörigen Kanten und lösche n." 
 
 Mit dem Befehl "MATCH (n) DETACH DELETE n" löscht man übrigens seine gesamte Datenbank, da mit dem Befehl jeder Knoten gefunden, abgetrennt und gelöscht wird. 
 
@@ -58,7 +58,7 @@ Wie aber bezieht man sich auf einen bestimmten Knoten in einem Netzwerk?
 == Typen und Eigenschaften
 Bislang können wir unsere Knoten noch nicht voneinander unterscheiden. 
 Um sie zu differenzieren, können wir sie erstens Knotentypen zuordnen (z.B. Person, Brief, Ort…) und mit individuellen Eigenschaften (properties) versehen (z.B. Name, Geburtsdatum, Material, Längen- und Breitengrad…)
-Die Knotentypen und Properties sind nicht vorgegeben und können nach Bedarf erstellt werden. (Vgl. R3 - Datenmodellierung). 
+Die Knotentypen und Properties sind nicht vorgegeben und können nach Bedarf erstellt werden. (Vgl.: Datenmodellierung). 
 
 Wir erweitern unseren oben gelernten Erstellungsbefehl nun um einen Knotentyp:
 
@@ -66,7 +66,7 @@ Wir erweitern unseren oben gelernten Erstellungsbefehl nun um einen Knotentyp:
 ----
 CREATE (n:Person) RETURN n;
 ----
-bedeutet: "Erstelle einen Knoten vom Typ Person, hier genannt n, und zeige mir n." 
+*bedeutet*: "Erstelle einen Knoten vom Typ Person, hier genannt n, und zeige mir n." 
 
 == Properties hinzufügen bzw. bei Erstellung mit anlegen
 In Properties kann man weitere Angaben abspeichern. Für Knoten, die Personen darstellen, wäre es sinnvoll, Eigenschaften wie "Name", "Geburtsdatum" und "Sterbedatum" anzulegen. 
@@ -77,7 +77,7 @@ Es gibt zwei Möglichkeiten, Properties hinzuzufügen: Beim Erstellen der Knoten
 ----
 CREATE (f:Person {name:'Friedrich'}) RETURN f; 
 ----
-bedeutet: "Erstelle einen Knoten vom Typ Person mit der Eigenschaft name Friedrich, hier genannt f, und zeige mir f." 
+*bedeutet*: "Erstelle einen Knoten vom Typ Person mit der Eigenschaft name Friedrich, hier genannt f, und zeige mir f." 
 
 Wenn wir Friedrich nun eine weitere Eigenschaft geben wollen, fügen wir sie mit SET hinzu. Wichtig ist, dass wir den Befehl nicht wie oben mit dem Semikolon schließen, solange wir uns noch mittels der Variable f auf den Knoten beziehen wollen. 
 
@@ -87,7 +87,7 @@ MATCH (f:Person {name:'Friedrich'})
 SET f.Geburtsdatum = '1415-09-21'
 RETURN f; 
 ----
-bedeutet: "Finde einen Knoten vom Typ Person, bei dem die property 'name' den Wert 'Friedrich' enthält, der Knoten wird im folgenden 'f' genannt. Lege für 'f' die property 'Geburtsdatum' mit dem Wert '1415-09-21' an. zeige mir f."
+*bedeutet*: "Finde einen Knoten vom Typ Person, bei dem die property 'name' den Wert 'Friedrich' enthält, der Knoten wird im folgenden 'f' genannt. Lege für 'f' die property 'Geburtsdatum' mit dem Wert '1415-09-21' an. Zeige mir f."
 
 == Properties zur Suche nutzen
 Wenn wir Friedrich in unserer Graphdatenbank wiederfinden wollen, suchen wir ihn anhand einer Eigenschaft (in diesem Fall dem Namen): 
@@ -96,7 +96,7 @@ Wenn wir Friedrich in unserer Graphdatenbank wiederfinden wollen, suchen wir ihn
 ----
 MATCH (f:Person {name:'Friedrich'}) RETURN f; 
 ----
-bedeutet: "Erstelle einen Knoten vom Typ Person, mit der Eigenschaft "name" Friedrich, hier genannt f, und zeige mir f." 
+*bedeutet*: "Erstelle einen Knoten vom Typ Person, mit der Eigenschaft "name" Friedrich, hier genannt f, und zeige mir f." 
 
 Genauso würde es auch mit dem Geburtsdatum funktionieren.  
 
@@ -149,21 +149,17 @@ RETURN *;
 
 == B1.2 Kanten
 === Erstellen und Finden
-Eine Kante (Verbindung,Beziehung) zwischen zwei Knoten wird in Cypher mit einem Pfeil dargestellt: +++-->+++  
+Eine Kante (Verbindung, Beziehung) zwischen zwei Knoten wird in Cypher mit einem Pfeil dargestellt: +++-->+++  
 Die Kante hat immer eine Richtung. 
 Desweiteren muss auch der Kantentyp angegeben werden. +++-[:KIND_VON]->+++
 
 Kanten werden, genau wie Knoten, mit den Befehlen CREATE oder MERGE erstellt und mit MATCH in der Datenbank gesucht. 
 
-Eine Kante zwischen zwei Knoten sieht in Cypher folgendermaßen aus:
-[source,cypher]
-----
-(f)-[:KIND_VON]->(e) 
-----
+Eine Kante zwischen zwei Knoten sieht in Cypher folgendermaßen aus: +++(f)-[:KIND_VON]->(e)+++
 
 Um eine Kante zu erstellen, müssen wir die entsprechenden Knoten mit MERGE oder CREATE erstellen bzw. mit MERGE oder MATCH aus der Datenbank aufrufen. MERGE ist bei kleinen Datenmengen immer der sicherste Weg. 
 
-== Beispiel 1
+== Beispiel 1: Kind und Eltern
 [source,cypher]
 ----
 MERGE (f:Person {name:'Friedrich'}) 
@@ -174,7 +170,7 @@ CREATE (f)-[:KIND_VON]->(c)
 CREATE (f)-[:KIND_VON]->(e) 
 RETURN *;
 ----
-bedeutet: 
+*bedeutet*: 
 Finde oder erstelle einen Knoten vom Typ Person mit der property name "Friedrich", im Folgenden f genannt. 
 Finde oder erstelle einen Knoten vom Typ Person mit der property name "Cimburgis", im Folgenden c genannt
 Finde oder erstelle einen Knoten vom Typ Person mit der property name "Ernst", im Folgenden e genannt. 
@@ -182,7 +178,7 @@ Erstelle eine Kante vom Typ "Kind von" von f zu c.
 Erstelle eine Kante vom Typ "Kind von" von f zu e. 
 Zeige mir alles, das gerade gefunden bzw. erstellt wurde.
 
-== Beispiel 2
+== Beispiel 2: Ehepaar
 [source,cypher]
 ----
 MERGE (c:Person {name:'Cimburgis'}) 
@@ -191,14 +187,14 @@ CREATE (e)-[:VERHEIRATET_MIT]->(c)
 CREATE (c)-[:VERHEIRATET_MIT]->(e) 
 RETURN *;
 ----
-bedeutet:
-Finde oder erstelle einen Knoten vom Typ "person", hier c genannt, bei der die property name "Cimburgis" ist. 
-Finde oder erstelle einen Knoten vom Typ "person", hier e genannt, bei der die property name "Ernst" ist. 
-Erstelle eine Kante vom Typ "verheiratet mit" von e zu c. 
-Erstelle eine Kante vom Typ "verheiratet mit" von c zu e. 
+*bedeutet*:
+Finde oder erstelle einen Knoten vom Typ "person", hier c genannt, bei der die property name "Cimburgis" ist. + 
+Finde oder erstelle einen Knoten vom Typ "person", hier e genannt, bei der die property name "Ernst" ist. +
+Erstelle eine Kante vom Typ "verheiratet mit" von e zu c. +
+Erstelle eine Kante vom Typ "verheiratet mit" von c zu e. +
 Zeige mir alles, das gerade gefunden bzw. erstellt wurde. 
 
-❢ Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
+CAUTION: Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
 
 == Übung
 .Erstellen Sie nun mithilfe der Befehle MERGE, MATCH und CREATE folgende Kanten und, falls noch nicht vorhanden, die dafür benötigten Knoten: 
@@ -231,18 +227,21 @@ RETURN *;
 ----
 
 == B 1.3 Wiederholung
-[horizontal]
+
 .Sie haben nun gelernt:
-|Begriff|Erklärung|
-|------|---------------|
-|Knoten|(variable:typ {property})|
-Kanten :: +++-[:typ]->+++
-MATCH :: finde
-CREATE :: erstelle
-MERGE :: finde, wenn nicht vorhanden erstelle
-SET :: füge property hinzu
-RETURN :: zeige an
-DETACH :: trenne ab
-DELETE :: lösche 
-* :: alles diesem Befehl Erstellte oder Gefundene 
-; :: Ende des Befehls
+[options="header"]
+|=======================
+|Begriff|Erklärung
+|(variable:typ {property})|Knoten
+|+++-[:typ]->+++ |Kante
+|MATCH | finde
+|CREATE | erstelle
+|MERGE | finde, wenn nicht vorhanden erstelle
+|SET | füge property hinzu
+|RETURN | zeige an
+|DETACH | trenne ab
+|DELETE | lösche
+|* | alles diesem Befehl Erstellte oder Gefundene
+|; | Ende des Befehls
+|=======================
+
