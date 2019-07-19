@@ -9,14 +9,6 @@
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg/490px-Hans_Burgkmair_d._%C3%84._%28zugeschr.%29_-_Bildnis_Kaiser_Friedrich_III.jpg[]
 
 
-== Neue Seite
-=== Zwischenüberschrift
-[source,cypher]
-----
-MATCH (n) DETACH DELETE n
-----
-
-
 == B1 Graphdatenbank manuell anlegen
 === B1.1 Knoten 
 === Erstellen und Finden
@@ -113,16 +105,16 @@ Genauso würde es auch mit dem Geburtsdatum funktionieren.
 === 1. Löschen Sie zunächst alle bereits vorhandenen Knoten und Kanten.
 
 === 2. Erstellen Sie nun die folgenden Knoten: 
-Einen Knoten vom Typ Person mit der Eigenschaft Name "Friedrich"
-Einen Knoten vom Typ Person mit der Eigenschaft Name "Ernst" 
-Einen Knoten vom Typ Person mit der Eigenschaft Name "Cimburgis" 
-Lassen Sie sich das Ergebnis anzeigen.
+* Einen Knoten vom Typ Person mit der Eigenschaft Name "Friedrich"
+* Einen Knoten vom Typ Person mit der Eigenschaft Name "Ernst" 
+* Einen Knoten vom Typ Person mit der Eigenschaft Name "Cimburgis" 
+* Lassen Sie sich das Ergebnis anzeigen.
 
 === 3. Fügen sie die folgenden Geburtsdaten hinzu: 
-Friedrich: 1415-09-21 
-Ernst: 1377
-Cimburgis: 1394 oder 1397
-Lassen Sie sich das Ergebnis anzeigen.
+* Friedrich: 1415-09-21 
+* Ernst: 1377
+* Cimburgis: 1394 oder 1397
+* Lassen Sie sich das Ergebnis anzeigen.
 
 == Lösungen
 
@@ -210,13 +202,13 @@ Zeige mir alles, das gerade gefunden bzw. erstellt wurde.
 ❢ Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
 
 == Übung
-Erstellen Sie nun mithilfe der Befehle MERGE, MATCH und CREATE folgende Kanten und, falls noch nicht vorhanden, die dafür benötigten Knoten: 
-Eleonore ist mit Friedrich verheiratet 
-Friedrich ist mit Eleonore verheiratet 
-Kunigunde ist ein Kind von Friedrich 
-Kunigunde ist ein Kind von Eleonore 
-Maximilian ist ein Kind von Friedrich 
-Maximilian ist ein Kind von Kunigunde 
+.Erstellen Sie nun mithilfe der Befehle MERGE, MATCH und CREATE folgende Kanten und, falls noch nicht vorhanden, die dafür benötigten Knoten: 
+* Eleonore ist mit Friedrich verheiratet 
+* Friedrich ist mit Eleonore verheiratet 
+* Kunigunde ist ein Kind von Friedrich 
+* Kunigunde ist ein Kind von Eleonore 
+* Maximilian ist ein Kind von Friedrich 
+* Maximilian ist ein Kind von Kunigunde 
 
 == Lösung
 
@@ -240,15 +232,16 @@ RETURN *;
 ----
 
 ==B 1.3 Wiederholung
-==Sie haben nun gelernt: 
-
-Knoten     (variable:typ {property}) 
-Kanten     -[:typ]-> 
-
-MATCH     finde
-CREATE     erstelle
-MERGE     finde, wenn nicht vorhanden erstelle
-SET         füge property hinzu
-RETURN    zeige an
-DETACH     trenne ab
-DELETE     lösche 
+[horizontal]
+.Sie haben nun gelernt:
+Knoten :: (variable:typ {property}) 
+Kanten :: -[:typ]-> 
+MATCH :: finde
+CREATE :: erstelle
+MERGE :: finde, wenn nicht vorhanden erstelle
+SET :: füge property hinzu
+RETURN :: zeige an
+DETACH :: trenne ab
+DELETE :: lösche 
+* :: alles diesem Befehl Erstellte oder Gefundene 
+; :: Ende des Befehls
