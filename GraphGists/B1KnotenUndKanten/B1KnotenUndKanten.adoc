@@ -171,12 +171,12 @@ CREATE (f)-[:KIND_VON]->(e)
 RETURN *;
 ----
 *bedeutet*: 
-Finde oder erstelle einen Knoten vom Typ Person mit der property name "Friedrich", im Folgenden f genannt. 
-Finde oder erstelle einen Knoten vom Typ Person mit der property name "Cimburgis", im Folgenden c genannt
-Finde oder erstelle einen Knoten vom Typ Person mit der property name "Ernst", im Folgenden e genannt. 
-Erstelle eine Kante vom Typ "Kind von" von f zu c. 
-Erstelle eine Kante vom Typ "Kind von" von f zu e. 
-Zeige mir alles, das gerade gefunden bzw. erstellt wurde.
+"Finde oder erstelle einen Knoten vom Typ Person mit der property name "Friedrich", im Folgenden f genannt. + 
+Finde oder erstelle einen Knoten vom Typ Person mit der property name "Cimburgis", im Folgenden c genannt +
+Finde oder erstelle einen Knoten vom Typ Person mit der property name "Ernst", im Folgenden e genannt. +
+Erstelle eine Kante vom Typ "Kind von" von f zu c. +
+Erstelle eine Kante vom Typ "Kind von" von f zu e. +
+Zeige mir alles, das gerade gefunden bzw. erstellt wurde."
 
 == Beispiel 2: Ehepaar
 [source,cypher]
@@ -188,11 +188,11 @@ CREATE (c)-[:VERHEIRATET_MIT]->(e)
 RETURN *;
 ----
 *bedeutet*:
-Finde oder erstelle einen Knoten vom Typ "person", hier c genannt, bei der die property name "Cimburgis" ist. + 
+"Finde oder erstelle einen Knoten vom Typ "person", hier c genannt, bei der die property name "Cimburgis" ist. + 
 Finde oder erstelle einen Knoten vom Typ "person", hier e genannt, bei der die property name "Ernst" ist. +
 Erstelle eine Kante vom Typ "verheiratet mit" von e zu c. +
 Erstelle eine Kante vom Typ "verheiratet mit" von c zu e. +
-Zeige mir alles, das gerade gefunden bzw. erstellt wurde. 
+Zeige mir alles, das gerade gefunden bzw. erstellt wurde." 
 
 CAUTION: Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
 
