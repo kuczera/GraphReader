@@ -233,7 +233,9 @@ RETURN *;
 == B 1.3 Wiederholung
 [horizontal]
 .Sie haben nun gelernt:
-Knoten :: (variable:typ {property}) 
+|Begriff|Erklärung|
+|------|---------------|
+|Knoten|(variable:typ {property})|
 Kanten :: +++-[:typ]->+++
 MATCH :: finde
 CREATE :: erstelle
