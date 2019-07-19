@@ -39,7 +39,6 @@ image::https://raw.githubusercontent.com/kuczera/Graphreader/Bilder/enableMultip
 
 [source,cypher]
 ----
-:begin
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`dateOfBirth`:"1418-12-21", `name`:"Albert VI, Archduke of Austria", `personGnd`:"119532441", `personSex`:"m", `wikidataId`:"Q145606", `wikidataUrl`:"http://www.wikidata.org/entity/Q145606", `yearOfBirth`:"1418", `UNIQUE IMPORT ID`:542});
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`dateOfBirth`:"1402-02-10", `name`:"Eleanor of Aragon", `personGnd`:"136924344", `personSex`:"w", `wikidataId`:"Q241245", `wikidataUrl`:"http://www.wikidata.org/entity/Q241245", `yearOfBirth`:"1402", `UNIQUE IMPORT ID`:874});
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`dateOfBirth`:"1500-06-13", `name`:"Ernest of Bavaria", `personGnd`:"119004615", `personSex`:"m", `wikidataId`:"Q541271", `wikidataUrl`:"http://www.wikidata.org/entity/Q541271", `yearOfBirth`:"1500", `UNIQUE IMPORT ID`:1369});
@@ -71,17 +70,13 @@ CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`wikidataId`:"Q922141", `wikida
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`wikidataId`:"Q2376894", `wikidataUrl`:"http://www.wikidata.org/entity/Q2376894", `UNIQUE IMPORT ID`:68092});
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`wikidataId`:"Q13407861", `wikidataUrl`:"http://www.wikidata.org/entity/Q13407861", `UNIQUE IMPORT ID`:68093});
 CREATE (:`wikidataPerson`:`UNIQUE IMPORT LABEL` {`wikidataId`:"Q56720527", `wikidataUrl`:"http://www.wikidata.org/entity/Q56720527", `UNIQUE IMPORT ID`:74602});
-:commit
-:begin
 CREATE INDEX ON :`wikidataPerson`(`dateOfBirth`);
 CREATE INDEX ON :`wikidataPerson`(`wikidataUrl`);
 CREATE INDEX ON :`wikidataPerson`(`yearOfBirth`);
 CREATE CONSTRAINT ON (node:`UNIQUE IMPORT LABEL`) ASSERT (node.`UNIQUE IMPORT ID`) IS UNIQUE;
-:commit
 CALL db.awaitIndex(':`wikidataPerson`(`yearOfBirth`)');
 CALL db.awaitIndex(':`wikidataPerson`(`wikidataUrl`)');
 CALL db.awaitIndex(':`wikidataPerson`(`dateOfBirth`)');
-:begin
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:24366}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:874}) CREATE (n1)-[r:`IS_CHILD_OF`]->(n2);
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:30252}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:6822}) CREATE (n1)-[r:`IS_CHILD_OF`]->(n2);
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:24214}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:18621}) CREATE (n1)-[r:`IS_CHILD_OF`]->(n2);
@@ -125,13 +120,8 @@ MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:34066}), (n2:`UNIQUE IMPORT L
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:74602}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:30252}) CREATE (n1)-[r:`SPOUSE_OF`]->(n2);
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:30252}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:34066}) CREATE (n1)-[r:`SPOUSE_OF`]->(n2);
 MATCH (n1:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:30252}), (n2:`UNIQUE IMPORT LABEL`{`UNIQUE IMPORT ID`:74602}) CREATE (n1)-[r:`SPOUSE_OF`]->(n2);
-:commit
-:begin
 MATCH (n:`UNIQUE IMPORT LABEL`)  WITH n LIMIT 20000 REMOVE n:`UNIQUE IMPORT LABEL` REMOVE n.`UNIQUE IMPORT ID`;
-:commit
-:begin
 DROP CONSTRAINT ON (node:`UNIQUE IMPORT LABEL`) ASSERT (node.`UNIQUE IMPORT ID`) IS UNIQUE;
-:commit
 ----
 
 == Graphdatenmodell
