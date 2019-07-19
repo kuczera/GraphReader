@@ -32,7 +32,7 @@ Sollten bereits Daten in der lokalen Neo4j Instanz vorhanenden sein, bitte vorhe
 MATCH (n) DETACH DELETE n
 ----
 
-=== Daten importieren
+== Daten importieren
 
 WICHTIG: In den Einstellungen des neo4j-Browsers die Option 'Enable multiple Statement' auswählen.
 image::https://raw.githubusercontent.com/kuczera/Graphreader/Bilder/enableMultipleStatement.png[Enable multiple Statements]
