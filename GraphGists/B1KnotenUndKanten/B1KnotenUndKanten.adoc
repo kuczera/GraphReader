@@ -194,7 +194,7 @@ Erstelle eine Kante vom Typ "verheiratet mit" von e zu c. +
 Erstelle eine Kante vom Typ "verheiratet mit" von c zu e. +
 Zeige mir alles, das gerade gefunden bzw. erstellt wurde." 
 
-CAUTION: Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
+*!* Übrigens: Da Kanten in Cypher immer eine Richtung haben, eine Ehe aber auf Gegenseitigkeit basiert, erstellen wir "VERHEIRATET_MIT"-Kanten doppelt, also in jede Richtung einmal. 
 
 == Übung
 .Erstellen Sie nun mithilfe der Befehle MERGE, MATCH und CREATE folgende Kanten und, falls noch nicht vorhanden, die dafür benötigten Knoten: 
