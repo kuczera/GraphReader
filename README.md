@@ -1,6 +1,8 @@
 # GraphReader
 Reader für das DH-Modul Graphentechnologien in den digitalen Geisteswissenschaften an der Fernuni Hagen
 
+Die Github-Pages-Version findet sich unter https://kuczera.github.io/GraphReader/
+
 Datenbank zum testen der GraphGists:
 
 `http://134.176.70.65:11000/browser/`
