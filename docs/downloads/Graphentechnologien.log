@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  16 AUG 2019 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.16)  16 AUG 2019 13:48
 entering extended mode
 **./Graphentechnologien.tex
 (Graphentechnologien.tex
@@ -606,36 +606,25 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 Package hyperref Info: Option `breaklinks' set `true' on input line 42.
 
-(C:\Users\wagner\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyvrb\fancyvrb.sty
-Package: fancyvrb 2019/01/15
-
-Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
-\FV@CodeLineNo=\count115
-\FV@InFile=\read1
-\FV@TabBox=\box31
-\c@FancyVerbLine=\count116
-\FV@StepNumber=\count117
-\FV@OutFile=\write3
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTleft=\skip63
 \LTright=\skip64
 \LTpre=\skip65
 \LTpost=\skip66
-\LTchunksize=\count118
+\LTchunksize=\count115
 \LTcapwidth=\dimen117
-\LT@head=\box32
-\LT@firsthead=\box33
-\LT@foot=\box34
-\LT@lastfoot=\box35
-\LT@cols=\count119
-\LT@rows=\count120
-\c@LT@tables=\count121
-\c@LT@chunks=\count122
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count116
+\LT@rows=\count117
+\c@LT@tables=\count118
+\c@LT@chunks=\count119
 \LT@p@ftn=\toks24
 )
-Class scrreprt Info: longtable captions redefined on input line 84.
+Class scrreprt Info: longtable captions redefined on input line 46.
 
 (C:\Users\wagner\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -649,17 +638,17 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen125
 \cmidrulekern=\dimen126
 \defaultaddspace=\dimen127
-\@cmidla=\count123
-\@cmidlb=\count124
+\@cmidla=\count120
+\@cmidlb=\count121
 \@aboverulesep=\dimen128
 \@belowrulesep=\dimen129
-\@thisruleclass=\count125
-\@lastruleclass=\count126
+\@thisruleclass=\count122
+\@lastruleclass=\count123
 \@thisrulewidth=\dimen130
 )
 (C:\Users\wagner\AppData\Roaming\MiKTeX\2.9\tex/latex/mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box36
+\fn@notes=\box35
 \fn@width=\dimen131
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
@@ -688,15 +677,15 @@ Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count127
-\calc@Bcount=\count128
+\calc@Acount=\count124
+\calc@Bcount=\count125
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count129
+\calc@Ccount=\count126
 \calc@Cskip=\skip69
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\hhline.sty"
@@ -705,7 +694,7 @@ Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip70
-\multirow@cntb=\count130
+\multirow@cntb=\count127
 \multirow@dima=\skip71
 \bigstrutjot=\dimen136
 )
@@ -715,12 +704,12 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen137
-\ar@mcellbox=\box37
+\ar@mcellbox=\box36
 \extrarowheight=\dimen138
 \NC@list=\toks25
 \extratabsurround=\skip72
 \backup@length=\skip73
-\ar@cellbox=\box38
+\ar@cellbox=\box37
 )
 \everycr=\toks26
 \minrowclearance=\skip74
@@ -750,11 +739,11 @@ aphy)
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/07/19 3.33 Babel common definitions
-\babel@savecnt=\count131
+\babel@savecnt=\count128
 \U@D=\dimen139
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count132
+\bbl@dirlevel=\count129
 )))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/babel-german\ngerman.ldf"
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
@@ -767,34 +756,34 @@ aphy)
 (Graphentechnologien.aux)
 \openout1 = `Graphentechnologien.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 184.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 184.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 146.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
-LaTeX Font Info:    ... okay on input line 184.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 184.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 184.
+LaTeX Info: Redefining \microtypecontext on input line 146.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -811,16 +800,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (C:\Users\wagner\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
+\scratchcounter=\count130
 \scratchdimen=\dimen140
-\scratchbox=\box39
-\nofMPsegments=\count134
-\nofMParguments=\count135
+\scratchbox=\box38
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count136
+\MPscratchCnt=\count133
 \MPscratchDim=\dimen141
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks28
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -835,8 +824,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 184.
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 146.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -844,15 +833,15 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count139
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 184.
-LaTeX Info: Redefining \pageref on input line 184.
-LaTeX Info: Redefining \nameref on input line 184.
+LaTeX Info: Redefining \ref on input line 146.
+LaTeX Info: Redefining \pageref on input line 146.
+LaTeX Info: Redefining \nameref on input line 146.
 
 (Graphentechnologien.out) (Graphentechnologien.out)
-\@outlinefile=\write4
-\openout4 = `Graphentechnologien.out'.
+\@outlinefile=\write3
+\openout3 = `Graphentechnologien.out'.
 
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
@@ -860,7 +849,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message with `\usepackage{bookmark}'
-(scrreprt)           before \begin{document} on input line 184.
+(scrreprt)           before \begin{document} on input line 146.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\bookmark.sty"
 Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
@@ -870,9 +859,9 @@ File: bkm-pdftex.def 2019/06/04 v1.27 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 164.
-\BKM@id=\count140
+\BKM@id=\count137
 ))
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 186.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 148.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
@@ -882,37 +871,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 186.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 148.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 186.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 148.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 186
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 148
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 186
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 148
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 186.
+(Font)              <14.4> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 186.
+(Font)              <10> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 186.
-LaTeX Font Info:    Try loading font information for U+msa on input line 186.
+(Font)              <7> on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -920,7 +909,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\wagner\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 186.
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -930,15 +919,15 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 Class scrreprt Warning: non empty \lowertitleback ignored by \maketitle
-(scrreprt)              in `twoside=false' mode on input line 186.
+(scrreprt)              in `twoside=false' mode on input line 148.
 
 [1
 
 
 
 {C:/Users/wagner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 19
-0.
+Package tocbasic Info: character protrusion at toc deactivated on input line 15
+2.
 
 (Graphentechnologien.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -952,1027 +941,473 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 26.
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [2
 
-] [3]
-Overfull \hbox (1.09496pt too wide) detected at line 91
- []\T1/lmss/bx/n/10.95 101
- []
+])
+\tf@toc=\write4
+\openout4 = `Graphentechnologien.toc'.
 
-
-Overfull \hbox (1.09496pt too wide) detected at line 97
- []\T1/lmss/bx/n/10.95 107
- []
-
-
-Overfull \hbox (1.09496pt too wide) detected at line 116
- []\T1/lmss/bx/n/10.95 114
- []
-
-
-Overfull \hbox (1.09496pt too wide) detected at line 117
- []\T1/lmss/bx/n/10.95 115
- []
-
-[4])
-\tf@toc=\write5
-\openout5 = `Graphentechnologien.toc'.
-
- [5]
+ [3]
 chapter 1.
-[6
+[4
 
-] [7]
+] [5]
 chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 236.
+(Font)              <9> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 236.
-<Bilder/Beispielgraph.png, id=717, 269.63193pt x 190.63913pt>
+(Font)              <5> on input line 199.
+
+LaTeX Warning: Reference `fig:2-1' on page 6 undefined on input line 201.
+
+<Bilder/Beispielgraph.png, id=142, 269.63193pt x 190.63913pt>
 File: Bilder/Beispielgraph.png Graphic file (type png)
 <use Bilder/Beispielgraph.png>
-Package pdftex.def Info: Bilder/Beispielgraph.png  used on input line 242.
+Package pdftex.def Info: Bilder/Beispielgraph.png  used on input line 205.
 (pdftex.def)             Requested size: 269.63538pt x 190.64156pt.
-[8
+[6
 
  <./Bilder/Beispielgraph.png>]
-<Bilder/Eulersche-Bruecken.png, id=731, 1345.025pt x 316.18124pt>
+<Bilder/Eulersche-Bruecken.png, id=157, 1345.025pt x 316.18124pt>
 File: Bilder/Eulersche-Bruecken.png Graphic file (type png)
 <use Bilder/Eulersche-Bruecken.png>
-Package pdftex.def Info: Bilder/Eulersche-Bruecken.png  used on input line 259.
+Package pdftex.def Info: Bilder/Eulersche-Bruecken.png  used on input line 223.
 
 (pdftex.def)             Requested size: 418.24641pt x 98.3191pt.
- [9 <./Bilder/Eulersche-Bruecken.png>]
-<Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png, id=740, 1496.59125pt x 968
+ [7 <./Bilder/Eulersche-Bruecken.png>]
+<Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png, id=167, 1496.59125pt x 968
 .61874pt>
 File: Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png Graphic file (type png
 )
 <use Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png>
 Package pdftex.def Info: Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png  us
-ed on input line 275.
+ed on input line 239.
 (pdftex.def)             Requested size: 418.24344pt x 270.69409pt.
-<Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png, id=741, 1317.92375pt 
+<Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png, id=168, 1317.92375pt 
 x 738.76pt>
 File: Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png Graphic file (typ
 e png)
 <use Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png>
 Package pdftex.def Info: Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.pn
-g  used on input line 288.
+g  used on input line 252.
 (pdftex.def)             Requested size: 418.2451pt x 234.4466pt.
- [10 <./Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png>]
-<Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png, id=751, 1342.01375pt x 635.3
+ [8 <./Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png>]
+<Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png, id=178, 1342.01375pt x 635.3
 7375pt>
 File: Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png Graphic file (type png)
 <use Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png>
 Package pdftex.def Info: Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png  used
- on input line 301.
+ on input line 265.
 (pdftex.def)             Requested size: 418.25201pt x 198.02058pt.
-<Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png, id=752, 1347.032
+<Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png, id=179, 1347.032
 5pt x 532.99126pt>
 File: Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png Graphic file
  (type png)
 <use Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png>
 Package pdftex.def Info: Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFr
-ee.png  used on input line 307.
+ee.png  used on input line 271.
 (pdftex.def)             Requested size: 418.25404pt x 165.49396pt.
 
-Underfull \hbox (badness 1418) in paragraph at lines 307--308
+Underfull \hbox (badness 1418) in paragraph at lines 271--272
 \T1/lmr/m/n/10.95 (+20) dem sich kei-ne hie-ra-ri-chi-schen oder struk-tu-rel-l
 en In-for-ma-tio-nen ab-le-sen las-sen.
  []
 
-[11 <./Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png>] [12 <./Bilder/
-Graph-Algorithms/17-2-2-TypesOfGraphs.png> <./Bilder/Graph-Algorithms/17-2-3-Ra
-ndomSmallWorldScaleFree.png>]
-<Bilder/disconnectedGraph.png, id=766, 1003.5894pt x 1038.5199pt>
+[9 <./Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png>] [10 <./Bilder/G
+raph-Algorithms/17-2-2-TypesOfGraphs.png> <./Bilder/Graph-Algorithms/17-2-3-Ran
+domSmallWorldScaleFree.png>]
+<Bilder/disconnectedGraph.png, id=193, 1003.5894pt x 1038.5199pt>
 File: Bilder/disconnectedGraph.png Graphic file (type png)
 <use Bilder/disconnectedGraph.png>
-Package pdftex.def Info: Bilder/disconnectedGraph.png  used on input line 378.
+Package pdftex.def Info: Bilder/disconnectedGraph.png  used on input line 342.
 (pdftex.def)             Requested size: 418.25821pt x 432.81592pt.
-<Bilder/connectedGraph.png, id=767, 734.58333pt x 710.81668pt>
+<Bilder/connectedGraph.png, id=194, 734.58333pt x 710.81668pt>
 File: Bilder/connectedGraph.png Graphic file (type png)
 <use Bilder/connectedGraph.png>
-Package pdftex.def Info: Bilder/connectedGraph.png  used on input line 388.
+Package pdftex.def Info: Bilder/connectedGraph.png  used on input line 352.
 (pdftex.def)             Requested size: 418.2573pt x 404.72502pt.
-<Bilder/unWeightedGraph.png, id=768, 188.19302pt x 263.1307pt>
+<Bilder/unWeightedGraph.png, id=195, 188.19302pt x 263.1307pt>
 File: Bilder/unWeightedGraph.png Graphic file (type png)
 <use Bilder/unWeightedGraph.png>
-Package pdftex.def Info: Bilder/unWeightedGraph.png  used on input line 401.
+Package pdftex.def Info: Bilder/unWeightedGraph.png  used on input line 365.
 (pdftex.def)             Requested size: 188.19542pt x 263.13406pt.
- [13] [14 <./Bilder/disconnectedGraph.png>]
-[15 <./Bilder/connectedGraph.png>]
-<Bilder/weightedGraph.png, id=788, 188.19302pt x 263.1307pt>
+ [11] [12 <./Bilder/disconnectedGraph.png>]
+[13 <./Bilder/connectedGraph.png>]
+<Bilder/weightedGraph.png, id=215, 188.19302pt x 263.1307pt>
 File: Bilder/weightedGraph.png Graphic file (type png)
 <use Bilder/weightedGraph.png>
-Package pdftex.def Info: Bilder/weightedGraph.png  used on input line 409.
+Package pdftex.def Info: Bilder/weightedGraph.png  used on input line 373.
 (pdftex.def)             Requested size: 188.19542pt x 263.13406pt.
-<Bilder/Graph-Algorithms/21-2-7-UnDirected.png, id=789, 1331.97626pt x 745.7862
+<Bilder/Graph-Algorithms/21-2-7-UnDirected.png, id=216, 1331.97626pt x 745.7862
 5pt>
 File: Bilder/Graph-Algorithms/21-2-7-UnDirected.png Graphic file (type png)
 <use Bilder/Graph-Algorithms/21-2-7-UnDirected.png>
 Package pdftex.def Info: Bilder/Graph-Algorithms/21-2-7-UnDirected.png  used on
- input line 422.
+ input line 386.
 (pdftex.def)             Requested size: 418.25366pt x 234.18422pt.
- [16 <./Bilder/unWeightedGraph.png>] [17 <./Bilder/weightedGraph.png> <./Bilder
+ [14 <./Bilder/unWeightedGraph.png>] [15 <./Bilder/weightedGraph.png> <./Bilder
 /Graph-Algorithms/21-2-7-UnDirected.png>]
-<Bilder/NomenEtGensBeispiel1.png, id=804, 365.7153pt x 190.6182pt>
+<Bilder/NomenEtGensBeispiel1.png, id=231, 365.7153pt x 190.6182pt>
 File: Bilder/NomenEtGensBeispiel1.png Graphic file (type png)
 <use Bilder/NomenEtGensBeispiel1.png>
-Package pdftex.def Info: Bilder/NomenEtGensBeispiel1.png  used on input line 43
-2.
+Package pdftex.def Info: Bilder/NomenEtGensBeispiel1.png  used on input line 39
+6.
 (pdftex.def)             Requested size: 365.72556pt x 190.62354pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \T1/lmr/m/n/10.95 (+20) week -[] in -[] neo4j -[] getting -[] started -[] with 
 -[] neo4j -[] desktop -[] and -[] browser -[] graphileon -[] personal -[]
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 441--442
+Underfull \hbox (badness 1275) in paragraph at lines 405--406
 \T1/lmr/m/n/10.95 (+20) edition -[] intuitive -[] detections -[] research -[] w
 ith -[] neo4j / ?ref = twitter # features -[] 1$[][] fin-den sich
  []
 
-[18 <./Bilder/NomenEtGensBeispiel1.png>] [19]
+[16 <./Bilder/NomenEtGensBeispiel1.png>] [17]
 chapter 3.
-<Bilder/Beispielurkunde.jpg, id=829, 542.025pt x 352.31625pt>
+<Bilder/Beispielurkunde.jpg, id=255, 542.025pt x 352.31625pt>
 File: Bilder/Beispielurkunde.jpg Graphic file (type jpg)
 <use Bilder/Beispielurkunde.jpg>
-Package pdftex.def Info: Bilder/Beispielurkunde.jpg  used on input line 458.
+Package pdftex.def Info: Bilder/Beispielurkunde.jpg  used on input line 422.
 (pdftex.def)             Requested size: 418.2703pt x 271.87569pt.
-[20
+[18
 
  <./Bilder/Beispielurkunde.jpg>]
-<Bilder/RI2Graph/ReggH4-Nr-1487.png, id=836, 705.63625pt x 568.1225pt>
+<Bilder/RI2Graph/ReggH4-Nr-1487.png, id=262, 705.63625pt x 568.1225pt>
 File: Bilder/RI2Graph/ReggH4-Nr-1487.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Nr-1487.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Nr-1487.png  used on input line
- 468.
+ 432.
 (pdftex.def)             Requested size: 418.25986pt x 336.74976pt.
- [21 <./Bilder/RI2Graph/ReggH4-Nr-1487.png>]
-<Bilder/2012-Nutzungsformen_der_RI.png, id=844, 763.85374pt x 705.63625pt>
+ [19 <./Bilder/RI2Graph/ReggH4-Nr-1487.png>]
+<Bilder/2012-Nutzungsformen_der_RI.png, id=271, 763.85374pt x 705.63625pt>
 File: Bilder/2012-Nutzungsformen_der_RI.png Graphic file (type png)
 <use Bilder/2012-Nutzungsformen_der_RI.png>
 Package pdftex.def Info: Bilder/2012-Nutzungsformen_der_RI.png  used on input l
-ine 486.
+ine 450.
 (pdftex.def)             Requested size: 418.25598pt x 386.37839pt.
-[22] [23 <./Bilder/2012-Nutzungsformen_der_RI.png>]
-<Bilder/Register-und-Regest-19-189.png, id=859, 1438.37375pt x 868.24374pt>
+[20] [21 <./Bilder/2012-Nutzungsformen_der_RI.png>]
+<Bilder/Register-und-Regest-19-189.png, id=286, 1438.37375pt x 868.24374pt>
 File: Bilder/Register-und-Regest-19-189.png Graphic file (type png)
 <use Bilder/Register-und-Regest-19-189.png>
 Package pdftex.def Info: Bilder/Register-und-Regest-19-189.png  used on input l
-ine 503.
+ine 467.
 (pdftex.def)             Requested size: 418.25899pt x 252.47314pt.
-<Bilder/Gephi-Register.png, id=861, 460.72125pt x 473.77pt>
+<Bilder/Gephi-Register.png, id=288, 460.72125pt x 473.77pt>
 File: Bilder/Gephi-Register.png Graphic file (type png)
 <use Bilder/Gephi-Register.png>
-Package pdftex.def Info: Bilder/Gephi-Register.png  used on input line 511.
+Package pdftex.def Info: Bilder/Gephi-Register.png  used on input line 475.
 (pdftex.def)             Requested size: 418.2517pt x 430.09761pt.
-<Bilder/Chmelvisualisierung-v2.png, id=863, 596.9502pt x 844.8363pt>
+<Bilder/Chmelvisualisierung-v2.png, id=290, 596.9502pt x 844.8363pt>
 File: Bilder/Chmelvisualisierung-v2.png Graphic file (type png)
 <use Bilder/Chmelvisualisierung-v2.png>
 Package pdftex.def Info: Bilder/Chmelvisualisierung-v2.png  used on input line 
-519.
+483.
 (pdftex.def)             Requested size: 418.26308pt x 591.9486pt.
 
 
-LaTeX Warning: Float too large for page by 34.34833pt on input line 521.
+LaTeX Warning: Float too large for page by 34.34833pt on input line 485.
 
-[24 <./Bilder/Register-und-Regest-19-189.png>] [25 <./Bilder/Gephi-Register.png
+[22 <./Bilder/Register-und-Regest-19-189.png>] [23 <./Bilder/Gephi-Register.png
 >]
-<Bilder/1zu1-Beziehungen-Register-Regest.png, id=880, 700.6175pt x 582.175pt>
+<Bilder/1zu1-Beziehungen-Register-Regest.png, id=306, 700.6175pt x 582.175pt>
 File: Bilder/1zu1-Beziehungen-Register-Regest.png Graphic file (type png)
 <use Bilder/1zu1-Beziehungen-Register-Regest.png>
 Package pdftex.def Info: Bilder/1zu1-Beziehungen-Register-Regest.png  used on i
-nput line 529.
+nput line 493.
 (pdftex.def)             Requested size: 418.2677pt x 347.5577pt.
-<Bilder/1zu1-Beziehungen-nur-Regest.png, id=881, 361.35pt x 357.335pt>
+<Bilder/1zu1-Beziehungen-nur-Regest.png, id=307, 361.35pt x 357.335pt>
 File: Bilder/1zu1-Beziehungen-nur-Regest.png Graphic file (type png)
 <use Bilder/1zu1-Beziehungen-nur-Regest.png>
 Package pdftex.def Info: Bilder/1zu1-Beziehungen-nur-Regest.png  used on input 
-line 537.
+line 501.
 (pdftex.def)             Requested size: 361.34912pt x 357.33412pt.
- [26] [27 <./Bilder/Chmelvisualisierung-v2.png>] [28 <./Bilder/1zu1-Beziehungen
--Register-Regest.png>] [29 <./Bilder/1zu1-Beziehungen-nur-Regest.png>]
-[30]
+ [24] [25 <./Bilder/Chmelvisualisierung-v2.png>] [26 <./Bilder/1zu1-Beziehungen
+-Register-Regest.png>] [27 <./Bilder/1zu1-Beziehungen-nur-Regest.png>]
+[28]
 chapter 4.
-<Bilder/RI2Graph/ReggH4-Regestentabelle.png, id=915, 883.3pt x 609.27625pt>
+<Bilder/RI2Graph/ReggH4-Regestentabelle.png, id=343, 883.3pt x 609.27625pt>
 File: Bilder/RI2Graph/ReggH4-Regestentabelle.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Regestentabelle.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Regestentabelle.png  used on in
-put line 556.
+put line 520.
 (pdftex.def)             Requested size: 418.251pt x 288.49814pt.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 563.
-[31
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 527.
+[29
 
-] [32 <./Bilder/RI2Graph/ReggH4-Regestentabelle.png>]
-<Bilder/RI2Graph/google-docs-freigeben.png, id=933, 749.80125pt x 645.91313pt>
+] [30 <./Bilder/RI2Graph/ReggH4-Regestentabelle.png>]
+<Bilder/RI2Graph/google-docs-freigeben.png, id=360, 749.80125pt x 645.91313pt>
 File: Bilder/RI2Graph/google-docs-freigeben.png Graphic file (type png)
 <use Bilder/RI2Graph/google-docs-freigeben.png>
 Package pdftex.def Info: Bilder/RI2Graph/google-docs-freigeben.png  used on inp
-ut line 574.
+ut line 538.
 (pdftex.def)             Requested size: 418.26122pt x 360.30936pt.
- [33 <./Bilder/RI2Graph/google-docs-freigeben.png>]
-<Bilder/RI2Graph/google-docs-herunterladen-csv.png, id=940, 536.75531pt x 651.9
+ [31 <./Bilder/RI2Graph/google-docs-freigeben.png>]
+<Bilder/RI2Graph/google-docs-herunterladen-csv.png, id=368, 536.75531pt x 651.9
 3562pt>
 File: Bilder/RI2Graph/google-docs-herunterladen-csv.png Graphic file (type png)
 
 <use Bilder/RI2Graph/google-docs-herunterladen-csv.png>
 Package pdftex.def Info: Bilder/RI2Graph/google-docs-herunterladen-csv.png  use
-d on input line 582.
+d on input line 546.
 (pdftex.def)             Requested size: 418.25793pt x 508.01035pt.
-<Bilder/RI2Graph/google-docs-link-kopieren.png, id=941, 651.18282pt x 344.03531
+<Bilder/RI2Graph/google-docs-link-kopieren.png, id=369, 651.18282pt x 344.03531
 pt>
 File: Bilder/RI2Graph/google-docs-link-kopieren.png Graphic file (type png)
 <use Bilder/RI2Graph/google-docs-link-kopieren.png>
 Package pdftex.def Info: Bilder/RI2Graph/google-docs-link-kopieren.png  used on
- input line 590.
+ input line 554.
 (pdftex.def)             Requested size: 418.26588pt x 220.97977pt.
 File: Bilder/RI2Graph/ReggH4-Nr-1487.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Nr-1487.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Nr-1487.png  used on input line
- 601.
+ 565.
 (pdftex.def)             Requested size: 418.25986pt x 336.74976pt.
-<Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png, id=942, 818.05624pt x 590.205pt>
+<Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png, id=370, 818.05624pt x 590.205pt>
 File: Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png  used on inp
-ut line 607.
+ut line 571.
 (pdftex.def)             Requested size: 418.26418pt x 301.76605pt.
- [34] [35 <./Bilder/RI2Graph/google-docs-herunterladen-csv.png>]
-Overfull \hbox (737.23988pt too wide) in paragraph at lines 659--659
+ [32] [33 <./Bilder/RI2Graph/google-docs-herunterladen-csv.png>]
+Overfull \hbox (737.23988pt too wide) in paragraph at lines 623--623
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE/export?format=csv&id=1GLQ
 IH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE&gid=2138530170" AS line[] 
  []
 
-[36 <./Bilder/RI2Graph/google-docs-link-kopieren.png>] [37] [38 <./Bilder/RI2Gr
-aph/ReggH4-Nr-1487imGraph.png>] [39] [40]
-Overfull \hbox (30.14566pt too wide) in paragraph at lines 758--758
+[34 <./Bilder/RI2Graph/google-docs-link-kopieren.png>] [35] [36 <./Bilder/RI2Gr
+aph/ReggH4-Nr-1487imGraph.png>] [37] [38]
+Overfull \hbox (30.14566pt too wide) in paragraph at lines 722--722
 []\T1/lmtt/m/n/10.95 // Regesten und Ausstellungsorte mit Koordinaten der Ausst
 ellungsorte versehen[] 
  []
 
-[41]
-Overfull \hbox (685.50128pt too wide) in paragraph at lines 791--791
+[39]
+Overfull \hbox (685.50128pt too wide) in paragraph at lines 755--755
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/1nlbZmQYcT1E3Z58yPmcnulcNQc1e3111Di-4huhV-FY/export?format=csv&id=1nlb
 ZmQYcT1E3Z58yPmcnulcNQc1e3111Di-4huhV-FY&gid=267441060"[] 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 791
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 755
 .
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<Bilder/RI2Graph/ReggH4-Action.png, id=992, 700.6175pt x 699.61375pt>
+<Bilder/RI2Graph/ReggH4-Action.png, id=420, 700.6175pt x 699.61375pt>
 File: Bilder/RI2Graph/ReggH4-Action.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Action.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Action.png  used on input line 
-797.
+761.
 (pdftex.def)             Requested size: 418.2677pt x 417.66847pt.
- [42] [43 <./Bilder/RI2Graph/ReggH4-Action.png>]
-<Bilder/RI2Graph/XML-Register.png, id=1009, 969.6225pt x 552.0625pt>
+ [40] [41 <./Bilder/RI2Graph/ReggH4-Action.png>]
+<Bilder/RI2Graph/XML-Register.png, id=436, 969.6225pt x 552.0625pt>
 File: Bilder/RI2Graph/XML-Register.png Graphic file (type png)
 <use Bilder/RI2Graph/XML-Register.png>
-Package pdftex.def Info: Bilder/RI2Graph/XML-Register.png  used on input line 8
-29.
+Package pdftex.def Info: Bilder/RI2Graph/XML-Register.png  used on input line 7
+93.
 (pdftex.def)             Requested size: 418.26112pt x 238.14038pt.
- [44 <./Bilder/RI2Graph/XML-Register.png>]
-<Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png, id=1018, 781.92125pt x 202.
-7575pt>
+ [42 <./Bilder/RI2Graph/XML-Register.png>]
+<Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png, id=445, 781.92125pt x 202.7
+575pt>
 File: Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png Graphic file (type png)
 
 <use Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png>
 Package pdftex.def Info: Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png  use
-d on input line 839.
+d on input line 803.
 (pdftex.def)             Requested size: 418.25812pt x 108.45717pt.
-<Bilder/RI2Graph/RegisterH4-GENANNT.png, id=1019, 921.4425pt x 378.41376pt>
+<Bilder/RI2Graph/RegisterH4-GENANNT.png, id=446, 921.4425pt x 378.41376pt>
 File: Bilder/RI2Graph/RegisterH4-GENANNT.png Graphic file (type png)
 <use Bilder/RI2Graph/RegisterH4-GENANNT.png>
 Package pdftex.def Info: Bilder/RI2Graph/RegisterH4-GENANNT.png  used on input 
-line 847.
+line 811.
 (pdftex.def)             Requested size: 418.24467pt x 171.76279pt.
- [45 <./Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png> <./Bilder/RI2Graph/R
+ [43 <./Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png> <./Bilder/RI2Graph/R
 egisterH4-GENANNT.png>]
-Overfull \hbox (691.25002pt too wide) in paragraph at lines 863--863
+Overfull \hbox (691.25002pt too wide) in paragraph at lines 827--827
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-
 RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=1167029283"[] 
  []
 
 
-Overfull \hbox (691.25002pt too wide) in paragraph at lines 872--872
+Overfull \hbox (691.25002pt too wide) in paragraph at lines 836--836
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-
 RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=2049106817"[] 
  []
 
 
-Overfull \hbox (691.25002pt too wide) in paragraph at lines 884--884
+Overfull \hbox (691.25002pt too wide) in paragraph at lines 848--848
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-
 RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=2147130316"[] 
  []
 
-[46]
-Overfull \hbox (691.25002pt too wide) in paragraph at lines 896--896
+[44]
+Overfull \hbox (691.25002pt too wide) in paragraph at lines 860--860
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-
 RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=2147130316"[] 
  []
 
-<Bilder/RI2Graph/ReggF3-Registerhierarchie.png, id=1034, 449.68pt x 520.94624pt
->
+<Bilder/RI2Graph/ReggF3-Registerhierarchie.png, id=462, 449.68pt x 520.94624pt>
+
 File: Bilder/RI2Graph/ReggF3-Registerhierarchie.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggF3-Registerhierarchie.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggF3-Registerhierarchie.png  used on
- input line 905.
+ input line 869.
 (pdftex.def)             Requested size: 418.27354pt x 484.56244pt.
-<Bilder/RI2Graph/RegisterF3-Hierarchie.png, id=1035, 950.55125pt x 570.13pt>
+<Bilder/RI2Graph/RegisterF3-Hierarchie.png, id=463, 950.55125pt x 570.13pt>
 File: Bilder/RI2Graph/RegisterF3-Hierarchie.png Graphic file (type png)
 <use Bilder/RI2Graph/RegisterF3-Hierarchie.png>
 Package pdftex.def Info: Bilder/RI2Graph/RegisterF3-Hierarchie.png  used on inp
-ut line 913.
+ut line 877.
 (pdftex.def)             Requested size: 418.25835pt x 250.86667pt.
-[47] [48 <./Bilder/RI2Graph/ReggF3-Registerhierarchie.png>] [49 <./Bilder/RI2Gr
+[45] [46 <./Bilder/RI2Graph/ReggF3-Registerhierarchie.png>] [47 <./Bilder/RI2Gr
 aph/RegisterF3-Hierarchie.png>]
-<Bilder/RI2Graph/RobertVonFlandernMitRegesten.png, id=1062, 728.7225pt x 717.68
-124pt>
+<Bilder/RI2Graph/RobertVonFlandernMitRegesten.png, id=489, 728.7225pt x 717.681
+24pt>
 File: Bilder/RI2Graph/RobertVonFlandernMitRegesten.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertVonFlandernMitRegesten.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertVonFlandernMitRegesten.png  used
- on input line 955.
+ on input line 919.
 (pdftex.def)             Requested size: 418.25606pt x 411.91884pt.
- [50 <./Bilder/RI2Graph/RobertVonFlandernMitRegesten.png>]
-<Bilder/RI2Graph/Robert-viel.png, id=1069, 1801.73125pt x 2038.61626pt>
+ [48 <./Bilder/RI2Graph/RobertVonFlandernMitRegesten.png>]
+<Bilder/RI2Graph/Robert-viel.png, id=496, 1801.73125pt x 2038.61626pt>
 File: Bilder/RI2Graph/Robert-viel.png Graphic file (type png)
 <use Bilder/RI2Graph/Robert-viel.png>
-Package pdftex.def Info: Bilder/RI2Graph/Robert-viel.png  used on input line 97
-5.
+Package pdftex.def Info: Bilder/RI2Graph/Robert-viel.png  used on input line 93
+9.
 (pdftex.def)             Requested size: 418.23837pt x 473.22682pt.
 
-Overfull \hbox (41.64313pt too wide) in paragraph at lines 992--992
+Overfull \hbox (41.64313pt too wide) in paragraph at lines 956--956
 []\T1/lmtt/m/n/10.95 // Robert II. von Flandern und Herzog Heinrich von Niederl
 othringen mit Netzwerk[] 
  []
 
-<Bilder/RI2Graph/RobertundHeinrich.png, id=1072, 420.57124pt x 88.33pt>
+<Bilder/RI2Graph/RobertundHeinrich.png, id=499, 420.57124pt x 88.33pt>
 File: Bilder/RI2Graph/RobertundHeinrich.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertundHeinrich.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertundHeinrich.png  used on input l
-ine 996.
+ine 960.
 (pdftex.def)             Requested size: 418.25995pt x 87.84456pt.
-<Bilder/RI2Graph/RobertundHeinrichMitBrokern.png, id=1075, 979.66pt x 547.04375
-pt>
+<Bilder/RI2Graph/RobertundHeinrichMitBrokern.png, id=502, 979.66pt x 547.04375p
+t>
 File: Bilder/RI2Graph/RobertundHeinrichMitBrokern.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertundHeinrichMitBrokern.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertundHeinrichMitBrokern.png  used 
-on input line 1023.
+on input line 987.
 (pdftex.def)             Requested size: 418.25592pt x 233.55478pt.
-[51] [52 <./Bilder/RI2Graph/Robert-viel.png>] [53 <./Bilder/RI2Graph/RobertundH
+[49] [50 <./Bilder/RI2Graph/Robert-viel.png>] [51 <./Bilder/RI2Graph/RobertundH
 einrich.png> <./Bilder/RI2Graph/RobertundHeinrichMitBrokern.png>]
-<Bilder/RI2Graph/RobertUndHeinrichApoc.png, id=1098, 1351.0475pt x 884.30376pt>
-
+<Bilder/RI2Graph/RobertUndHeinrichApoc.png, id=526, 1351.0475pt x 884.30376pt>
 File: Bilder/RI2Graph/RobertUndHeinrichApoc.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertUndHeinrichApoc.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertUndHeinrichApoc.png  used on inp
-ut line 1044.
+ut line 1008.
 (pdftex.def)             Requested size: 418.24318pt x 273.75351pt.
- [54 <./Bilder/RI2Graph/RobertUndHeinrichApoc.png>]
-<Bilder/RI2Graph/RobertHeinrichApocTabelle.png, id=1104, 1055.945pt x 452.69125
-pt>
+ [52 <./Bilder/RI2Graph/RobertUndHeinrichApoc.png>]
+<Bilder/RI2Graph/RobertHeinrichApocTabelle.png, id=532, 1055.945pt x 452.69125p
+t>
 File: Bilder/RI2Graph/RobertHeinrichApocTabelle.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertHeinrichApocTabelle.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertHeinrichApocTabelle.png  used on
- input line 1071.
+ input line 1035.
 (pdftex.def)             Requested size: 418.24574pt x 179.30496pt.
- [55 <./Bilder/RI2Graph/RobertHeinrichApocTabelle.png>]
-Overfull \hbox (70.3868pt too wide) in paragraph at lines 1116--1116
+ [53 <./Bilder/RI2Graph/RobertHeinrichApocTabelle.png>]
+Overfull \hbox (70.3868pt too wide) in paragraph at lines 1080--1080
 []\T1/lmtt/m/n/10.95 RETURN p.normalizedGerman, n.lemma, count(h) as ANZAHL ORD
 ER BY ANZAHL desc LIMIT 10;[] 
  []
 
-[56]
-Overfull \hbox (7.15073pt too wide) in paragraph at lines 1146--1146
+[54]
+Overfull \hbox (7.15073pt too wide) in paragraph at lines 1110--1110
 []\T1/lmtt/m/n/10.95 RETURN p.name1, l.lemma, count(l) AS Anzahl ORDER BY p.nam
 e1, Anzahl DESC;[] 
  []
 
-[57] [58] [59]
+[55] [56] [57]
 chapter 5.
-<./Bilder/kollatz-xml-Beispiel.png, id=1142, 379.4175pt x 321.2pt>
-File: ./Bilder/kollatz-xml-Beispiel.png Graphic file (type png)
-<use ./Bilder/kollatz-xml-Beispiel.png>
-Package pdftex.def Info: ./Bilder/kollatz-xml-Beispiel.png  used on input line 
-1329.
-(pdftex.def)             Requested size: 379.42235pt x 321.20412pt.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1338
-.
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [60
-
-] [61 <./Bilder/kollatz-xml-Beispiel.png>]
-<Bilder/Werk-Ort.png, id=1157, 482.80376pt x 196.735pt>
-File: Bilder/Werk-Ort.png Graphic file (type png)
-<use Bilder/Werk-Ort.png>
-Package pdftex.def Info: Bilder/Werk-Ort.png  used on input line 1371.
-(pdftex.def)             Requested size: 418.2678pt x 170.43758pt.
-<Bilder/Werk-Autor.png, id=1158, 418.56375pt x 289.08pt>
-File: Bilder/Werk-Autor.png Graphic file (type png)
-<use Bilder/Werk-Autor.png>
-Package pdftex.def Info: Bilder/Werk-Autor.png  used on input line 1379.
-(pdftex.def)             Requested size: 418.24976pt x 288.86314pt.
-<Bilder/Werk-Kommentator.png, id=1159, 438.63875pt x 155.58125pt>
-File: Bilder/Werk-Kommentator.png Graphic file (type png)
-<use Bilder/Werk-Kommentator.png>
-Package pdftex.def Info: Bilder/Werk-Kommentator.png  used on input line 1387.
-(pdftex.def)             Requested size: 418.26392pt x 148.35446pt.
-<Bilder/Werk-gesamt.png, id=1160, 590.205pt x 347.2975pt>
-File: Bilder/Werk-gesamt.png Graphic file (type png)
-<use Bilder/Werk-gesamt.png>
-Package pdftex.def Info: Bilder/Werk-gesamt.png  used on input line 1395.
-(pdftex.def)             Requested size: 418.26497pt x 246.1219pt.
- [62 <./Bilder/Werk-Ort.png>] [63 <./Bilder/Werk-Autor.png> <./Bilder/Werk-Komm
-entator.png>]
-Overfull \hbox (392.31587pt too wide) in paragraph at lines 1421--1421
-[]\T1/lmtt/m/n/10.95 CALL apoc.load.xmlSimple("https://raw.githubusercontent.co
-m/kuczera/Graphentechnologien/master/docs/data/kollatz.xml") yield value as xml
-File[] 
- []
-
-[64 <./Bilder/Werk-gesamt.png>]
-<Bilder/Kollatz-Druckernetzwerk.png, id=1184, 3173.8575pt x 3212.0pt>
-File: Bilder/Kollatz-Druckernetzwerk.png Graphic file (type png)
-<use Bilder/Kollatz-Druckernetzwerk.png>
-Package pdftex.def Info: Bilder/Kollatz-Druckernetzwerk.png  used on input line
- 1429.
-(pdftex.def)             Requested size: 418.23373pt x 423.25995pt.
-
-Overfull \hbox (846.46582pt too wide) in paragraph at lines 1455--1455
-[]\T1/lmtt/m/n/10.95 apoc.load.xml("https://raw.githubusercontent.com/kuczera/G
-raphentechnologien/master/docs/data/kollatz.xml", "/collection/*")  YIELD value
- AS work // this uses an xpath expression to get all child nodes of "<collectio
-n>""[] 
- []
-
-
-Overfull \hbox (24.39693pt too wide) in paragraph at lines 1455--1455
-[]\T1/lmtt/m/n/10.95 [x in work._children where x._type="kommentator" | x._text
-] as kommentatoren,[] 
- []
-
-[65] [66 <./Bilder/Kollatz-Druckernetzwerk.png>] [67]
-chapter 6.
-<Bilder/NeG/020-Verwandschaften.jpg, id=1209, 245.2362pt x 146.2263pt>
+<Bilder/NeG/020-Verwandschaften.jpg, id=575, 245.2362pt x 146.2263pt>
 File: Bilder/NeG/020-Verwandschaften.jpg Graphic file (type jpg)
 <use Bilder/NeG/020-Verwandschaften.jpg>
 Package pdftex.def Info: Bilder/NeG/020-Verwandschaften.jpg  used on input line
- 1479.
+ 1298.
 (pdftex.def)             Requested size: 245.2356pt x 146.22594pt.
-[68
+[58
 
 ]
-<Bilder/NeG/030-Urenkel-Pippins.jpg, id=1220, 404.2302pt x 215.8464pt>
+<Bilder/NeG/030-Urenkel-Pippins.jpg, id=586, 404.2302pt x 215.8464pt>
 File: Bilder/NeG/030-Urenkel-Pippins.jpg Graphic file (type jpg)
 <use Bilder/NeG/030-Urenkel-Pippins.jpg>
 Package pdftex.def Info: Bilder/NeG/030-Urenkel-Pippins.jpg  used on input line
- 1487.
+ 1306.
 (pdftex.def)             Requested size: 404.2292pt x 215.84587pt.
- [69 <./Bilder/NeG/020-Verwandschaften.jpg> <./Bilder/NeG/030-Urenkel-Pippins.j
+ [59 <./Bilder/NeG/020-Verwandschaften.jpg> <./Bilder/NeG/030-Urenkel-Pippins.j
 pg>]
-<Bilder/NeG/040-Berchar-DB-Eintrag.jpg, id=1228, 269.3262pt x 168.63pt>
+<Bilder/NeG/040-Berchar-DB-Eintrag.jpg, id=594, 269.3262pt x 168.63pt>
 File: Bilder/NeG/040-Berchar-DB-Eintrag.jpg Graphic file (type jpg)
 <use Bilder/NeG/040-Berchar-DB-Eintrag.jpg>
 Package pdftex.def Info: Bilder/NeG/040-Berchar-DB-Eintrag.jpg  used on input l
-ine 1498.
+ine 1317.
 (pdftex.def)             Requested size: 269.32965pt x 168.63214pt.
-<Bilder/NeG/050-Berchar-Karl-shortestpath.jpg, id=1229, 236.3229pt x 167.6664pt
->
+<Bilder/NeG/050-Berchar-Karl-shortestpath.jpg, id=595, 236.3229pt x 167.6664pt>
+
 File: Bilder/NeG/050-Berchar-Karl-shortestpath.jpg Graphic file (type jpg)
 <use Bilder/NeG/050-Berchar-Karl-shortestpath.jpg>
 Package pdftex.def Info: Bilder/NeG/050-Berchar-Karl-shortestpath.jpg  used on 
-input line 1516.
+input line 1335.
 (pdftex.def)             Requested size: 236.32951pt x 167.67108pt.
- [70 <./Bilder/NeG/040-Berchar-DB-Eintrag.jpg>] [71 <./Bilder/NeG/050-Berchar-K
+ [60 <./Bilder/NeG/040-Berchar-DB-Eintrag.jpg>] [61 <./Bilder/NeG/050-Berchar-K
 arl-shortestpath.jpg>]
-chapter 7.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1556.
-[72
+chapter 6.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1351.
+[62
 
 ]
-<Bilder/Faust-S11-Faks.png, id=1255, 930.47626pt x 543.02875pt>
-File: Bilder/Faust-S11-Faks.png Graphic file (type png)
-<use Bilder/Faust-S11-Faks.png>
-Package pdftex.def Info: Bilder/Faust-S11-Faks.png  used on input line 1576.
-(pdftex.def)             Requested size: 418.25612pt x 244.09552pt.
- [73 <./Bilder/Faust-S11-Faks.png>]
-Overfull \hbox (145.12033pt too wide) in paragraph at lines 1622--1622
-[]\T1/lmtt/m/n/10.95 call apoc.load.xml(\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95
- http://deutschestextarchiv.de/book/download_fulltcf/16181\TS1/lmtt/m/n/10.95 '
-\T1/lmtt/m/n/10.95 ) yield value as doc[] 
- []
-
-
-Overfull \hbox (179.61273pt too wide) in paragraph at lines 1643--1643
-[]\T1/lmtt/m/n/10.95 call apoc.load.xmlSimple("http://deutschestextarchiv.de/bo
-ok/download_fulltcf/16181") yield value as doc[] 
- []
-
-[74]
-Overfull \hbox (179.61273pt too wide) in paragraph at lines 1656--1656
-[]\T1/lmtt/m/n/10.95 call apoc.load.xmlSimple(\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n
-/10.95 http://deutschestextarchiv.de/book/download_fulltcf/16181\TS1/lmtt/m/n/1
-0.95 '\T1/lmtt/m/n/10.95 ) yield value as doc[] 
- []
-
-
-Overfull \hbox (179.61273pt too wide) in paragraph at lines 1664--1664
-[]\T1/lmtt/m/n/10.95 call apoc.load.xmlSimple(\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n
-/10.95 http://deutschestextarchiv.de/book/download_fulltcf/16181\TS1/lmtt/m/n/1
-0.95 '\T1/lmtt/m/n/10.95 ) yield value as doc[] 
- []
-
-<Bilder/TEI2Graph/BilderFroherTage.png, id=1274, 733.74126pt x 223.83624pt>
-File: Bilder/TEI2Graph/BilderFroherTage.png Graphic file (type png)
-<use Bilder/TEI2Graph/BilderFroherTage.png>
-Package pdftex.def Info: Bilder/TEI2Graph/BilderFroherTage.png  used on input l
-ine 1685.
-(pdftex.def)             Requested size: 418.25926pt x 127.5948pt.
-[75]
-Overfull \hbox (242.8488pt too wide) in paragraph at lines 1700--1700
-[]\T1/lmtt/m/n/10.95 apoc.xml.import("http://deutschestextarchiv.de/book/downlo
-ad_xml/goethe_faust01_1808",{createNextWordRelationships:[] 
- []
-
-<Bilder/TEI2Graph/BilderFroherTageP5.png, id=1282, 853.1875pt x 345.29pt>
-File: Bilder/TEI2Graph/BilderFroherTageP5.png Graphic file (type png)
-<use Bilder/TEI2Graph/BilderFroherTageP5.png>
-Package pdftex.def Info: Bilder/TEI2Graph/BilderFroherTageP5.png  used on input
- line 1716.
-(pdftex.def)             Requested size: 418.26082pt x 169.2726pt.
-[76 <./Bilder/TEI2Graph/BilderFroherTage.png> <./Bilder/TEI2Graph/BilderFroherT
-ageP5.png>] [77]
-chapter 8.
-[78
-
-]
-<Bilder/Granularitaet-im-Graphen.png, id=1314, 1243.64626pt x 627.34375pt>
-File: Bilder/Granularitaet-im-Graphen.png Graphic file (type png)
-<use Bilder/Granularitaet-im-Graphen.png>
-Package pdftex.def Info: Bilder/Granularitaet-im-Graphen.png  used on input lin
-e 1747.
-(pdftex.def)             Requested size: 418.2608pt x 210.98708pt.
- [79 <./Bilder/Granularitaet-im-Graphen.png>]
-Overfull \hbox (173.864pt too wide) in paragraph at lines 1765--1765
-[]\T1/lmtt/m/n/10.95 CALL apoc.xml.import(\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.
-95 http://www.deutschestextarchiv.de/book/download_xml/patzig_msgermfol841842_1
-828\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 ,[] 
- []
-
-
-Overfull \hbox (300.33614pt too wide) in paragraph at lines 1786--1786
-[]\T1/lmtt/m/n/10.95 WHERE NOT (end)-[:NEXT]->() AND start.url = \TS1/lmtt/m/n/
-10.95 '\T1/lmtt/m/n/10.95 http://www.deutschestextarchiv.de/book/download_xml/p
-atzig_msgermfol841842_1828\TS1/lmtt/m/n/10.95 '[] 
- []
-
-[80]
-Overfull \hbox (6.78656pt too wide) in paragraph at lines 1864--1865
-[]\T1/lmr/m/n/10.95 (-20) :FIRT_CHILD_OF|  
- []
-
-
-Overfull \hbox (9.63658pt too wide) in paragraph at lines 1869--1870
-[]\T1/lmr/m/n/10.95 (-20) :LAST_CHILD_OF|  
- []
-
-<Bilder/TEI2Graph/subst-xml-Beispiel.png, id=1337, 593.21625pt x 160.6pt>
-File: Bilder/TEI2Graph/subst-xml-Beispiel.png Graphic file (type png)
-<use Bilder/TEI2Graph/subst-xml-Beispiel.png>
-Package pdftex.def Info: Bilder/TEI2Graph/subst-xml-Beispiel.png  used on input
- line 1880.
-(pdftex.def)             Requested size: 418.27182pt x 113.2377pt.
-[81]
-<Bilder/TEI2Graph/xml-importer-datenmodell.png, id=1345, 668.4975pt x 336.25626
-pt>
-File: Bilder/TEI2Graph/xml-importer-datenmodell.png Graphic file (type png)
-<use Bilder/TEI2Graph/xml-importer-datenmodell.png>
-Package pdftex.def Info: Bilder/TEI2Graph/xml-importer-datenmodell.png  used on
- input line 1888.
-(pdftex.def)             Requested size: 418.26892pt x 210.39052pt.
- [82 <./Bilder/TEI2Graph/subst-xml-Beispiel.png> <./Bilder/TEI2Graph/xml-import
-er-datenmodell.png>]
-<Bilder/TEI2Graph/XML-Hierarchie.png, id=1353, 539.01375pt x 260.975pt>
-File: Bilder/TEI2Graph/XML-Hierarchie.png Graphic file (type png)
-<use Bilder/TEI2Graph/XML-Hierarchie.png>
-Package pdftex.def Info: Bilder/TEI2Graph/XML-Hierarchie.png  used on input lin
-e 1905.
-(pdftex.def)             Requested size: 418.2577pt x 202.50839pt.
- [83 <./Bilder/TEI2Graph/XML-Hierarchie.png>]
-Overfull \hbox (87.44157pt too wide) in paragraph at lines 1924--1924
-  [][][]\T1/lmr/m/n/9 (-20) URL des Bei-spiel-tex-tes: http://www.deutschestext
-archiv.de/book/view/patzig_msgermfol841842_1828/?hl=Himalaja&p=39
- []
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 1924--1925
-\T1/lmr/m/n/10.95 (+20) Nehmen wir als Bei-spiel Zei-len-wech-sel auf ei-ner Se
-i-te des Patzig-Manuskripts
- []
-
-
-Overfull \hbox (72.51932pt too wide) in paragraph at lines 1924--1925
-\T1/lmr/m/n/10.95 (-20) (http://www.deutschestextarchiv.de/book/view/patzig_msg
-ermfol841842_1828/?hl=Himalaja&p=39).[][][][][] 
- []
-
-<Bilder/TEI2Graph/lb-im-Graph2.png, id=1362, 1051.93pt x 745.78625pt>
-File: Bilder/TEI2Graph/lb-im-Graph2.png Graphic file (type png)
-<use Bilder/TEI2Graph/lb-im-Graph2.png>
-Package pdftex.def Info: Bilder/TEI2Graph/lb-im-Graph2.png  used on input line 
-1938.
-(pdftex.def)             Requested size: 418.26056pt x 296.53397pt.
-[84 <./Bilder/TEI2Graph/lb-im-Graph2.png>]
-Overfull \hbox (12.89946pt too wide) in paragraph at lines 1964--1964
-[]\T1/lmtt/m/n/10.95 MERGE (n3)<-[:LAST_CHILD_OF]-(l:line {name:\TS1/lmtt/m/n/1
-0.95 '\T1/lmtt/m/n/10.95 line\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 })-[:FIRST
-_CHILD_OF]->(n1)[] 
- []
-
-<Bilder/TEI2Graph/lb-to-line.png, id=1371, 889.3225pt x 284.06125pt>
-File: Bilder/TEI2Graph/lb-to-line.png Graphic file (type png)
-<use Bilder/TEI2Graph/lb-to-line.png>
-Package pdftex.def Info: Bilder/TEI2Graph/lb-to-line.png  used on input line 19
-70.
-(pdftex.def)             Requested size: 418.25302pt x 133.59547pt.
-[85 <./Bilder/TEI2Graph/lb-to-line.png>]
-<Bilder/TEI2Graph/lb mit Worttrennung im Graphen.png, id=1379, 720.6925pt x 764
-.8575pt>
-File: Bilder/TEI2Graph/lb mit Worttrennung im Graphen.png Graphic file (type pn
-g)
-<use Bilder/TEI2Graph/lb mit Worttrennung im Graphen.png>
-Package pdftex.def Info: Bilder/TEI2Graph/lb mit Worttrennung im Graphen.png  u
-sed on input line 1991.
-(pdftex.def)             Requested size: 418.25487pt x 443.88608pt.
-
-Overfull \hbox (12.89946pt too wide) in paragraph at lines 2022--2022
-[]\T1/lmtt/m/n/10.95 MERGE (n4)<-[:LAST_CHILD_OF]-(l:line {name:\TS1/lmtt/m/n/1
-0.95 '\T1/lmtt/m/n/10.95 line\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 })-[:FIRST
-_CHILD_OF]->(n2)[] 
- []
-
-<Bilder/TEI2Graph/lb-Trennung-rausgenommen2.png, id=1381, 939.51pt x 451.6875pt
->
-File: Bilder/TEI2Graph/lb-Trennung-rausgenommen2.png Graphic file (type png)
-<use Bilder/TEI2Graph/lb-Trennung-rausgenommen2.png>
-Package pdftex.def Info: Bilder/TEI2Graph/lb-Trennung-rausgenommen2.png  used o
-n input line 2028.
-(pdftex.def)             Requested size: 418.2455pt x 201.07956pt.
-
-Overfull \hbox (88.36009pt too wide) in paragraph at lines 2037--2037
-  [][][]\T1/lmr/m/n/9 (-20) Vgl. die Do-ku-men-ta-ti-on des DTA-Basisformats un
--ter http://www.deutschestextarchiv.de/doku/basisformat/seitenFacsNr.html
- []
-
-[86] [87 <./Bilder/TEI2Graph/lb mit Worttrennung im Graphen.png>]
-Overfull \hbox (61.22366pt too wide) in paragraph at lines 2054--2054
-  [][][]\T1/lmr/m/n/9 (-20) Die Bei-spiel-sei-te fin-det sich un-ter http://www
-.deutschestextarchiv.de/book/view/patzig_msgermfol841842_1828/?p=5
- []
-
-
-Overfull \hbox (208.66922pt too wide) in paragraph at lines 2054--2055
-[]\T1/lmr/m/n/10.95 (-20) Das \T1/lmtt/m/n/10.95 <pb/>\T1/lmr/m/n/10.95 (-20) -
-Element auf den Sei-ten 5 und 6 aus Pat-zig (http://www.deutschestextarchiv.de/
-book/view/patzig_msgermfol841842_1828/
- []
-
-[88 <./Bilder/TEI2Graph/lb-Trennung-rausgenommen2.png>]
-<Bilder/TEI2Graph/pb6-Bestand.png, id=1402, 1096.095pt x 516.93124pt>
-File: Bilder/TEI2Graph/pb6-Bestand.png Graphic file (type png)
-<use Bilder/TEI2Graph/pb6-Bestand.png>
-Package pdftex.def Info: Bilder/TEI2Graph/pb6-Bestand.png  used on input line 2
-096.
-(pdftex.def)             Requested size: 418.25984pt x 197.25623pt.
- [89 <./Bilder/TEI2Graph/pb6-Bestand.png>]
-<Bilder/TEI2Graph/fw-catch-words.png, id=1408, 603.25375pt x 422.57875pt>
-File: Bilder/TEI2Graph/fw-catch-words.png Graphic file (type png)
-<use Bilder/TEI2Graph/fw-catch-words.png>
-Package pdftex.def Info: Bilder/TEI2Graph/fw-catch-words.png  used on input lin
-e 2129.
-(pdftex.def)             Requested size: 418.2522pt x 292.98532pt.
-<Bilder/TEI2Graph/pb-Element-Tabelle.png, id=1409, 637.38126pt x 390.45876pt>
-File: Bilder/TEI2Graph/pb-Element-Tabelle.png Graphic file (type png)
-<use Bilder/TEI2Graph/pb-Element-Tabelle.png>
-Package pdftex.def Info: Bilder/TEI2Graph/pb-Element-Tabelle.png  used on input
- line 2145.
-(pdftex.def)             Requested size: 418.25124pt x 256.22005pt.
-
-Overfull \hbox (24.39693pt too wide) in paragraph at lines 2160--2160
-[]\T1/lmtt/m/n/10.95 (pb1:XmlTag {DtaID:562, _name:\TS1/lmtt/m/n/10.95 '\T1/lmt
-t/m/n/10.95 pb\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 })-[n1:NEXT*..5]->(w1:Xml
-Word {DtaID:565}),[] 
- []
-
-
-Overfull \hbox (18.6482pt too wide) in paragraph at lines 2160--2160
-[]\T1/lmtt/m/n/10.95 (pb2:XmlTag {DtaID:874, _name:\TS1/lmtt/m/n/10.95 '\T1/lmt
-t/m/n/10.95 pb\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 })<-[n2:NEXT*..5]-(w2:Xml
-Word {DtaID:872})[] 
- []
-
-
-Overfull \hbox (35.8944pt too wide) in paragraph at lines 2160--2160
-[]\T1/lmtt/m/n/10.95 (w1)<-[:FIRST_CHILD_OF]-(page:page {facs:\TS1/lmtt/m/n/10.
-95 '\T1/lmtt/m/n/10.95 #f0005\TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 , n:1})-[:
-LAST_CHILD_OF]->(w2)[] 
- []
-
-[90] [91 <./Bilder/TEI2Graph/fw-catch-words.png>]
-<Bilder/TEI2Graph/page-f0005.png, id=1421, 917.4275pt x 384.43625pt>
-File: Bilder/TEI2Graph/page-f0005.png Graphic file (type png)
-<use Bilder/TEI2Graph/page-f0005.png>
-Package pdftex.def Info: Bilder/TEI2Graph/page-f0005.png  used on input line 21
-66.
-(pdftex.def)             Requested size: 418.2561pt x 175.26485pt.
-<Bilder/TEI2Graph/p-xml-Beispiel.png, id=1423, 913.4125pt x 116.435pt>
-File: Bilder/TEI2Graph/p-xml-Beispiel.png Graphic file (type png)
-<use Bilder/TEI2Graph/p-xml-Beispiel.png>
-Package pdftex.def Info: Bilder/TEI2Graph/p-xml-Beispiel.png  used on input lin
-e 2177.
-(pdftex.def)             Requested size: 418.25148pt x 53.31557pt.
-<Bilder/TEI2Graph/p-graph-Beispiel.png, id=1424, 894.34125pt x 567.11874pt>
-File: Bilder/TEI2Graph/p-graph-Beispiel.png Graphic file (type png)
-<use Bilder/TEI2Graph/p-graph-Beispiel.png>
-Package pdftex.def Info: Bilder/TEI2Graph/p-graph-Beispiel.png  used on input l
-ine 2185.
-(pdftex.def)             Requested size: 418.26617pt x 265.2305pt.
- [92 <./Bilder/TEI2Graph/pb-Element-Tabelle.png>] [93 <./Bilder/TEI2Graph/page-
-f0005.png> <./Bilder/TEI2Graph/p-xml-Beispiel.png> <./Bilder/TEI2Graph/p-graph-
-Beispiel.png>]
-<Bilder/TEI2Graph/div-Struktur-XmlWord.png, id=1442, 2138.99126pt x 2199.21625p
-t>
-File: Bilder/TEI2Graph/div-Struktur-XmlWord.png Graphic file (type png)
-<use Bilder/TEI2Graph/div-Struktur-XmlWord.png>
-Package pdftex.def Info: Bilder/TEI2Graph/div-Struktur-XmlWord.png  used on inp
-ut line 2228.
-(pdftex.def)             Requested size: 418.22765pt x 430.00317pt.
-
-Underfull \hbox (badness 1062) in paragraph at lines 2232--2233
-[]\T1/lmr/m/n/10.95 (+20) Mit dem fol-gen-den cypher-Query wird das ers-te Wort
- des Ka-pi-tels über ei-ne
- []
-
-[94] [95 <./Bilder/TEI2Graph/div-Struktur-XmlWord.png>] [96]
-File: Bilder/TEI2Graph/subst-xml-Beispiel.png Graphic file (type png)
-<use Bilder/TEI2Graph/subst-xml-Beispiel.png>
-Package pdftex.def Info: Bilder/TEI2Graph/subst-xml-Beispiel.png  used on input
- line 2337.
-(pdftex.def)             Requested size: 418.27182pt x 113.2377pt.
- [97]
-<Bilder/TEI2Graph/subst-graph-1.png, id=1480, 981.6675pt x 620.3175pt>
-File: Bilder/TEI2Graph/subst-graph-1.png Graphic file (type png)
-<use Bilder/TEI2Graph/subst-graph-1.png>
-Package pdftex.def Info: Bilder/TEI2Graph/subst-graph-1.png  used on input line
- 2360.
-(pdftex.def)             Requested size: 418.25919pt x 264.29875pt.
- [98]
-<Bilder/TEI2Graph/subst-add-del-bearbeitet.png, id=1486, 897.3525pt x 561.09625
-pt>
-File: Bilder/TEI2Graph/subst-add-del-bearbeitet.png Graphic file (type png)
-<use Bilder/TEI2Graph/subst-add-del-bearbeitet.png>
-Package pdftex.def Info: Bilder/TEI2Graph/subst-add-del-bearbeitet.png  used on
- input line 2401.
-(pdftex.def)             Requested size: 418.25046pt x 261.5235pt.
- [99 <./Bilder/TEI2Graph/subst-graph-1.png>] [100 <./Bilder/TEI2Graph/subst-add
--del-bearbeitet.png>]
-chapter 9.
-[101
-
-]
-<Bilder/Germania-Sacra-Personenknoten-mit-Properties.png, id=1512, 1496.59125pt
- x 399.4925pt>
-File: Bilder/Germania-Sacra-Personenknoten-mit-Properties.png Graphic file (typ
-e png)
-<use Bilder/Germania-Sacra-Personenknoten-mit-Properties.png>
-Package pdftex.def Info: Bilder/Germania-Sacra-Personenknoten-mit-Properties.pn
-g  used on input line 2469.
-(pdftex.def)             Requested size: 418.24344pt x 111.64378pt.
- [102 <./Bilder/Germania-Sacra-Personenknoten-mit-Properties.png>]
-<Bilder/Germania-Sacra-Klosterknoten.png, id=1519, 1157.32375pt x 335.2525pt>
-File: Bilder/Germania-Sacra-Klosterknoten.png Graphic file (type png)
-<use Bilder/Germania-Sacra-Klosterknoten.png>
-Package pdftex.def Info: Bilder/Germania-Sacra-Klosterknoten.png  used on input
- line 2530.
-(pdftex.def)             Requested size: 418.24323pt x 121.15631pt.
-
-[103]
-Overfull \hbox (12.89946pt too wide) in paragraph at lines 2566--2566
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("https://seafile.rlp.net/f/456adda2cff
-c475ab755/?dl=1")[] 
- []
-
-[104 <./Bilder/Germania-Sacra-Klosterknoten.png>]
-Overfull \hbox (12.89946pt too wide) in paragraph at lines 2580--2580
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("https://seafile.rlp.net/f/91c3600003d
-54cc9ac83/?dl=1")[] 
- []
-
-
-Overfull \hbox (1.402pt too wide) in paragraph at lines 2580--2580
-[]\T1/lmtt/m/n/10.95 wikipedia:k.Wikipedia, datumBis:k.Datum_bis, kid:k.kloster
-id, gnd:k.GND})[] 
- []
-
-<Bilder/GS-Schema1.png, id=1530, 347.2975pt x 230.8625pt>
-File: Bilder/GS-Schema1.png Graphic file (type png)
-<use Bilder/GS-Schema1.png>
-Package pdftex.def Info: Bilder/GS-Schema1.png  used on input line 2609.
-(pdftex.def)             Requested size: 347.29665pt x 230.86192pt.
-[105] [106 <./Bilder/GS-Schema1.png>]
-chapter 10.
-<Bilder/krackhardtKite.png, id=1549, 967.615pt x 620.3175pt>
-File: Bilder/krackhardtKite.png Graphic file (type png)
-<use Bilder/krackhardtKite.png>
-Package pdftex.def Info: Bilder/krackhardtKite.png  used on input line 2666.
-(pdftex.def)             Requested size: 418.25151pt x 268.13219pt.
-[107
-
-] [108 <./Bilder/krackhardtKite.png>] [109] [110]
-Overfull \hbox (47.39186pt too wide) in paragraph at lines 2773--2773
-[]\T1/lmtt/m/n/10.95 "APPEARS_WITH", {direction: "OUTGOING", iterations: 10}) Y
-IELD nodeId, centrality[] 
- []
-
-[111] [112] [113]
-chapter 11.
-[114
-
-]
-chapter 12.
-[115
-
-] [116]
-Overfull \hbox (30.14566pt too wide) in paragraph at lines 3025--3025
-[]\T1/lmtt/m/n/10.95 kurztitelsuche_r.php?kurztitel=pertz,_hermann_von_reichena
-u>SS 5, 129</link>);[] 
- []
-
-
-Overfull \hbox (1.402pt too wide) in paragraph at lines 3025--3025
-[]\T1/lmtt/m/n/10.95 kurztitel=watterich,_pontificum_romanorum_vitae>Watterich 
-1, 159</link>).[] 
- []
-
-[117]
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3035--3035
-[]\T1/lmtt/m/n/10.95 UNWIND apoc.text.regexGroups(reg.archivalHistory, "<link (
-\\S+)>(\\S+)</link>") as link[] 
- []
-
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 3072.
-[118]
-Overfull \hbox (35.8944pt too wide) in paragraph at lines 3083--3083
-[]\T1/lmtt/m/n/10.95 CREATE (p:Person {pid:line.ID_Person, name:line.Name, herk
-unft:line.Herkunft});[] 
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 3098--3098
-  [][][]\T1/lmr/m/n/9 (+20) Hierzu vgl. htt-ps://de.wikipedia.org/wiki/Deklarat
-ive_Programmierung zu-letzt ab-ge-ru-fen am
- []
-
-
-Overfull \hbox (30.14566pt too wide) in paragraph at lines 3107--3107
-[]\T1/lmtt/m/n/10.95 CREATE (p:Person {pid:line.ID_Person, name:line.Name, herk
-unft:line.Herkunft})[] 
- []
-
-[119]
-Overfull \hbox (18.6482pt too wide) in paragraph at lines 3133--3133
-[]\T1/lmtt/m/n/10.95 WITH n1.text as text1, n2.text as text2, n3.text as text3,
- count(*) as count[] 
- []
-
-[120]
-<Bilder/cypherFortgeschrittene/neo4j-Desktop-install-apoc.png, id=1672, 1012.78
-375pt x 820.06375pt>
-File: Bilder/cypherFortgeschrittene/neo4j-Desktop-install-apoc.png Graphic file
- (type png)
-<use Bilder/cypherFortgeschrittene/neo4j-Desktop-install-apoc.png>
-Package pdftex.def Info: Bilder/cypherFortgeschrittene/neo4j-Desktop-install-ap
-oc.png  used on input line 3167.
-(pdftex.def)             Requested size: 418.24207pt x 338.65587pt.
- [121] [122 <./Bilder/cypherFortgeschrittene/neo4j-Desktop-install-apoc.png>]
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (70.3868pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.merge.relationship(start, toUpper(rel.rel), {}, 
-{}, end) yield rel as dummy[] 
- []
-
-[123]
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (70.3868pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.merge.relationship(start, toUpper(rel.rel), {}, 
-{}, end) yield rel as dummy[] 
- []
-
-
-Overfull \hbox (81.88426pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.load.json("file:///var/lib/neo4j/import/cagb-gra
-ph-test-v1.json") yield value[] 
- []
-
-
-Overfull \hbox (70.3868pt too wide) in paragraph at lines 3277--3277
-[]\T1/lmtt/m/n/10.95 call apoc.merge.relationship(start, toUpper(rel.rel), {}, 
-{}, end) yield rel as dummy[] 
- []
-
-[124]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3327.
- [125]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3327.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
  (Graphentechnologien.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3327.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1351.
+
+Package rerunfilecheck Info: File `Graphentechnologien.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Warning: File `Graphentechnologien.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Graphentechnologien.out':
-(rerunfilecheck)             Before: 5A3CC380CE34BD864C62743C61C36D58;27814
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 17856 strings out of 492895
- 284388 string characters out of 3133476
- 518468 words of memory out of 3000000
- 20784 multiletter control sequences out of 15000+200000
- 91093 words of font info for 167 fonts, out of 3000000 for 9000
+ 16651 strings out of 492895
+ 262110 string characters out of 3133476
+ 510115 words of memory out of 3000000
+ 19905 multiletter control sequences out of 15000+200000
+ 85511 words of font info for 151 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,66p,9120b,546s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{ux5cux23Auswertungsperspektiven} has been referen
 ced but does not exist, replaced by a fixed one
 
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files
-/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
-y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmtti10.pfb>
-Output written on Graphentechnologien.pdf (125 pages, 15107388 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb>
+Output written on Graphentechnologien.pdf (62 pages, 9902496 bytes).
 PDF statistics:
- 2282 PDF objects out of 2487 (max. 8388607)
- 532 named destinations out of 1000 (max. 500000)
- 18889 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 867 PDF objects out of 1000 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 17014 words of extra memory for PDF output out of 17280 (max. 10000000)
 

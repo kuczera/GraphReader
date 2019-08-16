@@ -154,17 +154,6 @@ Gesetzt mit \Pandoc und \LaTeX
 \hypertarget{einleitung}{%
 \chapter{Einleitung}\label{einleitung}}
 
-\hypertarget{inhalt}{%
-\chapter{Inhalt}\label{inhalt}}
-
-\{:.no\_toc\}
-
-\begin{itemize}
-\tightlist
-\item
-  Will be replaced with the ToC, excluding the ``Contents'' header \{:toc\}
-\end{itemize}
-
 \hypertarget{warum-ein-buch-uxfcber-graphentechnologien-in-den-digitalen-geisteswissenschaften}{%
 \section{Warum ein Buch über Graphentechnologien in den digitalen Geisteswissenschaften?}\label{warum-ein-buch-uxfcber-graphentechnologien-in-den-digitalen-geisteswissenschaften}}
 
@@ -200,10 +189,6 @@ Gießen, im August 2018
 
 Andreas Kuczera
 
-\hypertarget{inhalt-1}{%
-\chapter{Inhalt}\label{inhalt-1}}
-
-\{:.no\_toc\} * Will be replaced with the ToC, excluding the ``Contents'' header \{:toc\}
 
 \hypertarget{einfuxfchrung-und-theoretische-grundlagen}{%
 \chapter{Einführung und theoretische Grundlagen}\label{einfuxfchrung-und-theoretische-grundlagen}}
@@ -213,12 +198,13 @@ Andreas Kuczera
 
 Dieser Abschnitt gibt eine kurze Einführung in Graphen.\footnote{Dieser Abschnitt beruht in Teilen auf den Kapiteln ``Introduction'' und ``Graph Theory and Concepts'' des Buches Graph Algorithms: Practical Examples in Apache Spark and Neo4j von Mark Needham und Amy E. Hodler, O'Reilly Media 2019 (https://www.oreilly.com/library/view/graph-algorithms/9781492047674/), S. xiii-xv und S. 1-26.} Gegenüber relationalen Datenbanken, in denen die Daten in Tabellen abgelegt und verknüpft sind, werden in Graphen Knoten für die Speicherung der Daten verwendet und diese dann mit Kanten in Relation gesetzt. Aber auch in relationalen Datenbanken kann man natürlich Daten verknüpfen. Wo liegt also der eigentliche Vorteil ?
 
-Der folgende kleine Beispielgraph modelliert einen Zusammenhang aus dem Frühmittelalter und erklärt kurz die Grundprinzipien in der geisteswissenschaftlichen Domäne.
+Der folgende kleine Beispielgraph in Abb. \ref{fig:2-1} modelliert einen Zusammenhang aus dem Frühmittelalter und erklärt kurz die Grundprinzipien in der geisteswissenschaftlichen Domäne.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Beispielgraph.png}
 \caption{Beispielgraph (Quelle: Kuczera)}
+\label{fig:2-1}
 \end{figure}
 
 Der Beispielgraph zeigt oben einen Knoten (engl. Node) vom Typ (engl. Label) Person mit der Eigenschaft (engl. Property) Name. Diese hat den Wert ``Karl der Große''. Links unten ist ein weiter Knoten vom Typ Person mit dem Namen ``Einhard''. Rechts unten ist ein Knoten vom Typ Buch und dem Titel ``Vita Karoli Magni'' abgebildet. Die Kanten (engl. Edges) geben an, dass Karl der Große Einhard kannte, Einhard ca. 828-830 das Buch ``Vita Karoli Magni'' schrieb und Karl der Große in dem Buch vorkommt.
@@ -426,17 +412,6 @@ In diesem Kapitel wurde kurz auf die Ursprünge von Graphen eingegangen und vers
 \hypertarget{das-projekt-regesta-imperii-oder-wie-suchen-onlinenutzer-regesten}{%
 \chapter{Das Projekt Regesta Imperii oder ``Wie suchen Onlinenutzer Regesten''}\label{das-projekt-regesta-imperii-oder-wie-suchen-onlinenutzer-regesten}}
 
-\hypertarget{inhalt-2}{%
-\chapter{Inhalt}\label{inhalt-2}}
-
-\{:.no\_toc\}
-
-\begin{itemize}
-\tightlist
-\item
-  Will be replaced with the ToC, excluding the ``Contents'' header \{:toc\}
-\end{itemize}
-
 \hypertarget{das-projekt-regesta-imperii}{%
 \section{Das Projekt Regesta Imperii}\label{das-projekt-regesta-imperii}}
 
@@ -531,17 +506,6 @@ Schließlich ergaben Nachfragen bei neo4j, dass bei Problemen mit dem Datenmodel
 \section{Zusammenfassung}\label{zusammenfassung-1}}
 
 In diesem Kapitel wurde zunächst das Akademieprojekt Regesta Imperii vorgestellt. Seit Anfang der 2000er Jahre erfolgten Digitalisierung stehen die Regesten unter \url{www.regesta-imperii.de} unter Creative-Commons-Lizenz frei im Internet zur Nutzung zur Verfügung. Für die Auswertung gibt es eine einfache Suchmaske und eine erweiterte Suche. Für die Jahre 2012 und 2013 wurden die Suchstrategien der Nutzer in der Online-Regestensuche untersucht und es zeigte sich, dass sich zwei Nutzungsszenarien unterscheiden lassen, von denen aber nur eines von den aktuellen Suchmasken der Regesta Imperii Online optimal bedient wird. Im zweiten Teil des Kapitels wurden die Visualisierung von Registernetzwerken und die anschließende Modellierung in Graphdatenbanken dargestellt und Nutzungs- und Auswertungsszenarien diskutiert. Im folgenden Kapitel wird die Modellierung von Regesten im Graphen detailliert erklärt.
-
-\hypertarget{inhalt-3}{%
-\chapter{Inhalt}\label{inhalt-3}}
-
-\{:.no\_toc\}
-
-\begin{itemize}
-\tightlist
-\item
-  Will be replaced with the ToC, excluding the ``Contents'' header \{:toc\}
-\end{itemize}
 
 \hypertarget{regestenmodellierung-im-graphen}{%
 \chapter{Regestenmodellierung im Graphen}\label{regestenmodellierung-im-graphen}}
@@ -1313,17 +1277,6 @@ Den komplette \href{cypher/20_cypher-Datenbankerstellung.txt}{cypher-Code} für 
 \section{Zusammenfassung}\label{zusammenfassung-2}}
 
 In diesem Kapitel wurden die Schritte zum Import der Regesten Kaiser Heinrichs IV. in die Graphdatenbank neo4j erläutert sowie verschiedene Auswertungsbeispiele vorgestellt.
-
-\hypertarget{inhalt-4}{%
-\chapter{Inhalt}\label{inhalt-4}}
-
-\{:.no\_toc\}
-
-\begin{itemize}
-\tightlist
-\item
-  Will be replaced with the ToC, excluding the ``Contents'' header \{:toc\}
-\end{itemize}
 
 \hypertarget{verwandtschaft-im-graphen}{%
 \chapter{Verwandtschaft im Graphen}\label{verwandtschaft-im-graphen}}
