@@ -186,12 +186,13 @@ Andreas Kuczera
 
 Dieser Abschnitt gibt eine kurze Einführung in Graphen.\footnote{Dieser Abschnitt beruht in Teilen auf den Kapiteln ``Introduction'' und ``Graph Theory and Concepts'' des Buches Graph Algorithms: Practical Examples in Apache Spark and Neo4j von Mark Needham und Amy E. Hodler, O'Reilly Media 2019 (https://www.oreilly.com/library/view/graph-algorithms/9781492047674/), S. xiii-xv und S. 1-26.} Gegenüber relationalen Datenbanken, in denen die Daten in Tabellen abgelegt und verknüpft sind, werden in Graphen Knoten für die Speicherung der Daten verwendet und diese dann mit Kanten in Relation gesetzt. Aber auch in relationalen Datenbanken kann man natürlich Daten verknüpfen. Wo liegt also der eigentliche Vorteil?
 
-Der folgende kleine Beispielgraph modelliert einen Zusammenhang aus dem Frühmittelalter und erklärt kurz die Grundprinzipien in der geisteswissenschaftlichen Domäne.
+Der Beispielgraph in Abb. \ref{beispielgraph} modelliert einen Zusammenhang aus dem Frühmittelalter und erklärt kurz die Grundprinzipien in der geisteswissenschaftlichen Domäne.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Beispielgraph.png}
 \caption{Beispielgraph (Quelle: Kuczera)}
+\label{beispielgraph}
 \end{figure}
 
 Der Beispielgraph zeigt oben einen Knoten (engl. Node) vom Typ (engl. Label) Person mit der Eigenschaft (engl. Property) Name. Diese hat den Wert ``Karl der Große''. Links unten ist ein weiter Knoten vom Typ Person mit dem Namen ``Einhard''. Rechts unten ist ein Knoten vom Typ Buch und dem Titel ``Vita Karoli Magni'' abgebildet. Die Kanten (engl. Edges) geben an, dass Karl der Große Einhard kannte, Einhard ca. 828-830 das Buch ``Vita Karoli Magni'' schrieb und Karl der Große in dem Buch vorkommt.
@@ -203,12 +204,13 @@ Der wirkliche Mehrwert bei Graphdatenbanken ergibt sich aus gerichteten (also Ve
 \hypertarget{herkunft-und-idee}{%
 \section{Herkunft und Idee}\label{herkunft-und-idee}}
 
-Graphen gehen zurück auf die erste Hälfte des 18 Jahrhunderts. 1736 löste Leonhard Euler das ``Königsberger Brückenproblem'', das fragte ob es möglich sei, die 4 durch den Fluss getrennten Stadtbereiche, die über 7 Brücken verbunden waren jeweils einmal zu besuchen, ohne eine der Brücken zweimal zu nutzen.\footnote{Vgl. https://de.wikipedia.org/wiki/K\%C3\%B6nigsberger\_Br\%C3\%BCckenproblem.}
+Graphen gehen zurück auf die erste Hälfte des 18 Jahrhunderts. 1736 löste Leonhard Euler das ``Königsberger Brückenproblem'', das fragte ob es möglich sei, die 4 durch den Fluss getrennten Stadtbereiche, die über 7 Brücken verbunden waren jeweils einmal zu besuchen, ohne eine der Brücken zweimal zu nutzen (Abb. \ref{euler}).\footnote{Vgl. https://de.wikipedia.org/wiki/K\%C3\%B6nigsberger\_Br\%C3\%BCckenproblem.}
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Eulersche-Bruecken.png}
 \caption{Das Eulersche Brückenproblem (Needham/Hodler 2019, S. 2, Bild 1-1)}
+\label{euler}
 \end{figure}
 
 Euler kam zu der Einsicht, dass nur die Verbindungen zwischen den 4 Bereichen der Stadt relevant sind und legte damit den Grundstein für die Graphtheorie und ihre Mathematik. Er zeigte, dass das Brückenproblem nicht lösbar war, da zu jedem Stadtbereich eine ungerade Anzahl von Brücken führte, es dürfe aber nur zwei Ufer mit einer ungeraden Anzahl geben.\footnote{Vgl. https://de.wikipedia.org/wiki/K\%C3\%B6nigsberger\_Br\%C3\%BCckenproblem.}
@@ -225,9 +227,10 @@ Auch wenn Graphen ihren Ursprung in der Mathematik haben so sind sie doch ein pr
 \centering
 \includegraphics{Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png}
 \caption{Graphen und nicht Graphen (Needham/Hodler 2019, S. 3, Bild 1-2)}
+\label{graphnichtgraph}
 \end{figure}
 
-In diesem Buch geht es nicht um Graphen im Sinne von Lösung von Gleichungen wie im Bild rechts. Es geht um Informationen, die durch Knoten und Kanten dargestellt werden, wie links im Bild.
+In diesem Buch geht es nicht um Graphen im Sinne von Lösung von Gleichungen wie in Abb. \ref{graphnichtgraph} rechts. Es geht um Informationen, die durch Knoten und Kanten dargestellt werden, wie links im Bild.
 
 \hypertarget{labeled-property-graph}{%
 \subsection{Labeled Property Graph}\label{labeled-property-graph}}
@@ -238,28 +241,30 @@ Einen Graphen, in dem die Knoten und Kanten Typen (Labels) und Eigenschaften (Pr
 \centering
 \includegraphics{Bilder/Graph-Algorithms/16-2-1-LabeledPropertyGraph.png}
 \caption{Beispiel für einen Labeled-Property-Graphen (Needham/Hodler 2019, S. 16, Bild 2-1)}
+\label{lpg}
 \end{figure}
 
-Der abgebildete Graph sagt beispielsweise aus, dass der Knoten links oben das Label ``männliche Person'' mit den zugehörigen Properties (name:`Dan', born etc.) trägt. Rechts daneben ist eine weibliche Person mit ihren Properties (name:`Ann', born: Dec 5, 1975) abgebildet. Die Kanten sagen aus, dass Ann am 1. Januar 2013 mit Dan zusammenlebte und seit Juli 2009 mit ihm verheiratet ist . Ann gehört gleichzeitig ein Auto (mit der Property Marke: `Volvo'), das von Dan gefahren wird. Hier werden in einfachen Schritten Informationen aus der ``realen Welt'' abgebildet. In den nächsten Abschnitten geht es nun um die Konzepte dahinter.
+Der Graph in Abb. \ref{lpg} sagt beispielsweise aus, dass der Knoten links oben das Label ``männliche Person'' mit den zugehörigen Properties (name:`Dan', born etc.) trägt. Rechts daneben ist eine weibliche Person mit ihren Properties (name:`Ann', born: Dec 5, 1975) abgebildet. Die Kanten sagen aus, dass Ann am 1. Januar 2013 mit Dan zusammenlebte und seit Juli 2009 mit ihm verheiratet ist . Ann gehört gleichzeitig ein Auto (mit der Property Marke: `Volvo'), das von Dan gefahren wird. Hier werden in einfachen Schritten Informationen aus der ``realen Welt'' abgebildet. In den nächsten Abschnitten geht es nun um die Konzepte dahinter.
 
 \hypertarget{einfache-graphtypen}{%
 \subsection{Einfache Graphtypen}\label{einfache-graphtypen}}
 
-In der folgenden Abbildung sind verschiedene Graphtypen abgebildet. Im Beispiel links ist ein einfacher Graph dargestellt, in dem jedes Knotenpaar nur eine Verbindung haben kann.
+In Abb. \ref{einfachegraphtypen} sind verschiedene Graphtypen abgebildet. Im Beispiel links ist ein einfacher Graph dargestellt, in dem jedes Knotenpaar nur eine Verbindung haben kann.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Graph-Algorithms/17-2-2-TypesOfGraphs.png}
 \caption{Einfache Graphtypen (Needham/Hodler 2019, S. 17, Bild 2-2)}
+\label{einfachegraphtypen}
 \end{figure}
 
 Im mittleren Beispiel sind mehrere Verbindungen zwischen Knotenpaaren möglich. Das rechte Beispiel ergänzt sich noch um die Möglichkeit, Verbindungen von Knoten wieder zu ihnen selbst zurück zu ermöglichen.
 
-Die folgende Abbildung zeigt links ein Beispiel für einen zufälligen Graphen, aus dem sich keine hierarichischen oder strukturellen Informationen ablesen lassen. \includegraphics{Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png}
+Die untere Bildhälfte zeigt links ein Beispiel für einen zufälligen Graphen, aus dem sich keine hierarchischen oder strukturellen Informationen ablesen lassen. \includegraphics{Bilder/Graph-Algorithms/17-2-3-RandomSmallWorldScaleFree.png}
 
-In der mittleren Abbildung ein Small-World-Graph abgebildet, der lokal stark geclustert ist und eine geringe durchschnittliche Pfadlänge hat. Die rechte Abbildung zeigt ein skalenfreies Netzwerk, wie beispielsweise das Word-Wide-Web.
+In der Mitte ist ein Small-World-Graph abgebildet, der lokal stark geclustert ist und eine geringe durchschnittliche Pfadlänge hat. Die rechte Abbildung zeigt ein skalenfreies Netzwerk, wie beispielsweise das World-Wide-Web.
 
-In der folgenden Tabelle werden charakteristische Möglichkeiten zur Typisierung von Graphen gegenübergestellt.
+In Tab. \ref{tab:charaktertyp} werden charakteristische Möglichkeiten zur Typisierung von Graphen gegenübergestellt.
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
@@ -315,6 +320,7 @@ Gibt es einen, zwei oder mehrere Knotentypen\strut
 Mehr Knotentypen erleichtern in den Geisteswissenschaften die Modellierung, Graphalgorithmen arbeiten oft aber nur mit einem Knotentyp\strut
 \end{minipage}\tabularnewline
 \bottomrule
+\label{tab:charaktertyp}
 \end{longtable}
 
 Quelle: \href{Needham/Hodler\%202019}{https://www.oreilly.com/library/view/graph-algorithms/9781492047674/}, S. 18-19.
@@ -328,19 +334,20 @@ Sind in einem Graphen mehrere Gruppen von verbundenen Knoten vorhanden und es gi
 \centering
 \includegraphics{Bilder/disconnectedGraph.png}
 \caption{Nichtverbundener Graph (Quelle: Kuczera)}
+\label{nichtverbundener}
 \end{figure}
 
-Das Beispiel zeigt einen Graphen mit Personen und ihren Verwandtschaftsbeziehungen. Es gibt mehrere Stammbäume, die nicht miteinander verbunden sind.
+Das Beispiel in Abb. \ref{nichtverbundener} zeigt einen Graphen mit Personen und ihren Verwandtschaftsbeziehungen. Es gibt mehrere Stammbäume, die nicht miteinander verbunden sind.
 
-Das folgende Bild zeigt einen verbundenen Graphen, bei dem alle Knoten mindestens eine Kante haben und jeder Knoten jeden anderen über einen Pfad erreichen kann.
+Abb. \ref{verbundener} zeigt einen verbundenen Graphen, bei dem alle Knoten mindestens eine Kante haben und jeder Knoten jeden anderen über einen Pfad erreichen kann. Hier wird ein Ausschnitt aus einer Graphdatenbank gezeigt, in die eine XML-Text-Datei als XML-Baum importiert wurde. Da es sich bei jeder XML-Datei um einen Baum handelt und jeder XML-Knoten Teil dieses Baumes ist, gibt es keine nichtverbundenen Teile.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/connectedGraph.png}
 \caption{Verbundener Graph (Quelle: Kuczera)}
+\label{verbundener}
 \end{figure}
 
-Hier wird ein Ausschnitt aus einer Graphdatenbank gezeigt, in die eine XML-Text-Datei als XML-Baum importiert wurde. Da es sich bei jeder XML-Datei um einen Baum handelt und jeder XML-Knoten Teil dieses Baumes ist, gibt es keine nichtverbundenen Teile.
 
 \hypertarget{gewichtete-und-ungewichtete-graphen}{%
 \subsection{Gewichtete und ungewichtete Graphen}\label{gewichtete-und-ungewichtete-graphen}}
@@ -350,15 +357,17 @@ In ungewichteten Graphen besitzen die Kanten keinen Wert zu Gewichtung.
 \begin{figure}
 \centering
 \includegraphics{Bilder/unWeightedGraph.png}
-\caption{Ungewichteter Graph (Quelle: Kuczera)}
+\caption{Ungewichteter Graph (Quelle: Kuczera)} 
+\label{ungewichteter}
 \end{figure}
 
-Im Graphen werden Beziehungen zwischen Personen abgebildet. Über die Intensität der Beziehungen wird nichts gesagt. In der folgenden Abbildung wurde den Beziehungen zwischen jeweils ein Wert zwischen 0 und 100 zugeordnet.
+Im Graphen in Abb. \ref{ungewichteter} werden Beziehungen zwischen Personen abgebildet. Über die Intensität der Beziehungen wird nichts gesagt. In  Abb. \ref{gewichteter} wurde den Beziehungen zwischen jeweils ein Wert zwischen 0 und 100 zugeordnet.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/weightedGraph.png}
 \caption{Gewichteter Graph (Quelle: Kuczera)}
+\label{gewichteter}
 \end{figure}
 
 Werden solche Angaben ergänzt, werden die Informationen im Graph wertvoller. Werte für Wichtungen können beispielsweise Entfernungen, Kosten, Kapazitäten oder auch domänenspezifische Priorisierungen sein.
@@ -366,12 +375,13 @@ Werden solche Angaben ergänzt, werden die Informationen im Graph wertvoller. We
 \hypertarget{gerichtete-und-ungerichtete-graphen}{%
 \subsection{Gerichtete und ungerichtete Graphen}\label{gerichtete-und-ungerichtete-graphen}}
 
-In einem ungerichteten Graphen geht eine Beziehungen immer in beide Richtungen (beispielsweise EHEPARTNER\_VON). In einem gerichteten Graphen haben Beziehungen eine Richtung. Betrachtet man einen Knoten, gibt es eingehende Kanten, die auf den Knoten zeigen und ausgehende Kanten, die von dem Knoten ausgehen. Mit der Angabe von Richtung wird eine zusätzliche Informationsdimension hinzugefügt. Angenommen im linken Beispiel der folgenden Abbildung würden die Knoten Personen und die ungerichtete Kante ihre gegenseitige Freundschaft darstellen. Daraus ergibt sich, dass Person A mit Person B befreundet ist.
+In einem ungerichteten Graphen geht eine Beziehungen immer in beide Richtungen (beispielsweise EHEPARTNER\_VON). In einem gerichteten Graphen haben Beziehungen eine Richtung. Betrachtet man einen Knoten, gibt es eingehende Kanten, die auf den Knoten zeigen und ausgehende Kanten, die von dem Knoten ausgehen. Mit der Angabe von Richtung wird eine zusätzliche Informationsdimension hinzugefügt. Angenommen im linken Beispiel der Abb. \ref{gerichteteundungerichtete} würden die Knoten Personen und die ungerichtete Kante ihre gegenseitige Freundschaft darstellen. Daraus ergibt sich, dass Person A mit Person B befreundet ist.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Graph-Algorithms/21-2-7-UnDirected.png}
 \caption{Gerichtete und ungerichtete Graphen (Needham/Hodler 2019, S. 21, Bild 2-7)}
+\label{gerichteteundungerichtete}
 \end{figure}
 
 Erweitern wir das Beispiel für die rechte Abbildung, so dass die Freundschafts-Kanten gerichtet sind, so wird es möglich, zu zeigen, dass Person D für Person A freundschaftliche Gefühle hegt, die A aber nicht erwidert. Nehmen wir noch eine Wichtung der Freundschafskanten hinzu, könnte man modellieren, dass die freundschaftlichen Gefühle von Person C gegenüber A mit 0,8 gewichtet sind, umgekehrt die Zuneigung von Person A zu Person C aber nur mit 0,3.
@@ -382,9 +392,10 @@ Auch bei der Modellierung von Verwandtschaft kommen gerichtete und ungerichtete 
 \centering
 \includegraphics{Bilder/NomenEtGensBeispiel1.png}
 \caption{Verwandtschaft im Graphen mit gerichteten und ungerichteten Kanten (Quelle: Kuczera)}
+\label{nomenetgensbeispiel}
 \end{figure}
 
-In der Graphdatenbank neo4j müssen Kanten eine Richtung haben. Ungerichtete Beziehungen kann man mit zwei Kanten vom gleichen Typ aber unterschiedlicher Richtung zwischen einem Knotenpaar modellieren. Im Verwandtschaftsbeispiel sind die zwei Personenknoten der Eltern mit zwei EHEPARTNER-Kanten unterschiedlicher Richtung verbunden. Es handelt sich um eine ungerichtete Beziehung, da es rechtlich nicht möglich ist, dass eine Person mit einer anderen Person verheiratet ist, umgekehrt aber nicht. Für die Eltern-Kind-Beziehung reicht eine Kante, da diese Beziehung hierarchisch ist.
+In der Graphdatenbank neo4j müssen Kanten eine Richtung haben. Ungerichtete Beziehungen kann man mit zwei Kanten vom gleichen Typ aber unterschiedlicher Richtung zwischen einem Knotenpaar modellieren. Im Verwandtschaftsbeispiel Abb. \ref{nomenetgensbeispiel} sind die zwei Personenknoten der Eltern mit zwei EHEPARTNER-Kanten unterschiedlicher Richtung verbunden. Es handelt sich um eine ungerichtete Beziehung, da es rechtlich nicht möglich ist, dass eine Person mit einer anderen Person verheiratet ist, umgekehrt aber nicht. Für die Eltern-Kind-Beziehung reicht eine Kante, da diese Beziehung hierarchisch ist.
 
 \hypertarget{installation-und-start}{%
 \section{Installation und Start}\label{installation-und-start}}
@@ -408,6 +419,7 @@ Das Projekt Regesta Imperii wurde von Johann-Friedrich Böhmer im Jahr 1829 bego
 \centering
 \includegraphics{Bilder/Beispielurkunde.jpg}
 \caption{Urkunde zum Regest RI I n. 336, in: Regesta Imperii Online. URL: http://www.mgh.de/bibliothek/virtueller-lesesaal/ddkar/01/?p=XXXI}
+\label{urkunde}
 \end{figure}
 
 Ursprünglich von der DFG gefördert, sind die Regesta Imperii heute Teil des Bund-Ländergeförderten Akademienprogramms und werden von der Akademie der Wissenschaften und der Literatur, Mainz, der Berlin-Brandenburgischen Akademie der Wissenschaften und der Akademie der Wissenschaften, Wien betreut.
@@ -418,9 +430,10 @@ Die Regesta Imperii arbeiten vor allem herrscherzentriert, d.h. in den Regesten 
 \centering
 \includegraphics{Bilder/RI2Graph/ReggH4-Nr-1487.png}
 \caption{RI III,2,3 n. 1487, in: Regesta Imperii Online, URI: http://www.regesta-imperii.de/id/cf75356b-bd0d-4a67-8aeb-3ae27d1dcefa.}
+\label{regest}
 \end{figure}
 
-In der Kopfzeile des Regests werden der Herrscher sowie Abteilung, Band und Regestennummer genannt. Die darunterliegende Datierungszeile nennt das Ausstellungsdatum der Urkunden und den Handlungs- bzw. Ausstellungsort. Es folgt der Regestentext mit der Zusammenfassung der Urkunde, Hinweise zur Originaldatierung, die Kanzleivermerke und schließlich Angaben zur Überlieferungssituation (Gibt es eine Originalurkunden, wo liegt sie, gibt es ggf. Abschriften etc.).
+In der Kopfzeile des Regests in Abb. \ref{regest} werden der Herrscher sowie Abteilung, Band und Regestennummer genannt. Die darunterliegende Datierungszeile nennt das Ausstellungsdatum der Urkunden und den Handlungs- bzw. Ausstellungsort. Es folgt der Regestentext mit der Zusammenfassung der Urkunde, Hinweise zur Originaldatierung, die Kanzleivermerke und schließlich Angaben zur Überlieferungssituation (Gibt es eine Originalurkunden, wo liegt sie, gibt es ggf. Abschriften etc.).
 
 \hypertarget{die-digitalisierung-der-regesta-imperii}{%
 \section{Die Digitalisierung der Regesta Imperii}\label{die-digitalisierung-der-regesta-imperii}}
@@ -436,9 +449,10 @@ Ende 2013 wurde das Suchverhalten der Nutzer der Online-Regestensuche im Rahmen 
 \centering
 \includegraphics{Bilder/2012-Nutzungsformen_der_RI.png}
 \caption{Treffermengen pro Suchanfragen im Jahr 2013.}
+\label{treffermengen}
 \end{figure}
 
-Im Tortendiagramm ist die Treffermenge in Zehnerschritten angegeben. Die hellgraue Gruppe oben rechts hat keine Treffer, die dunkelgraue Gruppe einen bis zehn Treffer, die gelbe Gruppe 11 bis 20 usw. Die lila Gruppe hat mehr als hundert Treffer. Überraschend war die große Gruppe mit über 100 Treffern. Hinzu kam, dass über 68\% der Nutzer nur ein Suchwort in die Suchmaske eingegeben haben, wobei das beliebteste Suchwort \emph{Heinrich} Ende 2013 zu über 18.000 Treffern führte. Auf der Ergebnisseite hieß es dann: ``Sie suchten nach \emph{Heinrich}. Ihre Suche erzielte 18884 Treffer {[}\ldots{}{]} Sie sehen die Treffer 1 bis 20.''
+In Abb. \ref{treffermengen} ist die Treffermenge in Zehnerschritten angegeben. Die hellgraue Gruppe oben rechts hat keine Treffer, die dunkelgraue Gruppe einen bis zehn Treffer, die gelbe Gruppe 11 bis 20 usw. Die lila Gruppe hat mehr als hundert Treffer. Überraschend war die große Gruppe mit über 100 Treffern. Hinzu kam, dass über 68\% der Nutzer nur ein Suchwort in die Suchmaske eingegeben haben, wobei das beliebteste Suchwort \emph{Heinrich} Ende 2013 zu über 18.000 Treffern führte. Auf der Ergebnisseite hieß es dann: ``Sie suchten nach \emph{Heinrich}. Ihre Suche erzielte 18884 Treffer {[}\ldots{}{]} Sie sehen die Treffer 1 bis 20.''
 
 Zusammenfassend könnte man feststellen, dass die Gruppe mit 1 bis 10 Treffern mit ihrem Ergebnis zufrieden war. 10 Regesten lassen sich gut ausdrucken und können anschließend gelesen, ausgewertet und in die eigene Forschungsarbeit einfließen. Die Gruppe mit keinem Treffer hatte möglicherweise die Suche zu sehr eingeschränkt oder einen Tippfehler beim Suchbegriff und wäre lieber in der Gruppe mit einem bis 10 Treffern. Selbstverständlich lassen sich auch 20 und mehr Treffer gut verarbeiten aber bei größeren Treffermengen steigt natürlich auch der Aufwand stark an, so dass davon auszugehen ist, dass die Nutzer kleinere, präzisere Ergebnisse bevorzugen.
 
@@ -453,40 +467,45 @@ Im Bereich der historischen Netzwerkanalyse gab es in den letzten Jahren sehr in
 \centering
 \includegraphics{Bilder/Register-und-Regest-19-189.png}
 \caption{Registereinträge im Regest als Grundlage für ein Personennetzwerk.}
+\label{registereintraege}
 \end{figure}
 
-Allein die Einträge in den Registern der Regesten Kaiser Friedrichs III. sind über 143.000 mal in Regesten genannt. Daraus ergeben sich dann über 460.000 1zu1-Beziehungen.\footnote{Der Cypher-Befehl zur Erstellung der 1zu1-Beziehungen lautet: \emph{MATCH (n1:Registereintrag)-{[}:APPEARS\_IN{]}-\textgreater{}(r:Regest)\textless{}-{[}:APPEARS\_IN{]}-(n2:Registereintrag) MERGE (n1)-{[}:KNOWS{]}-\textgreater{}(n2);} Dabei werden die gerichteten \texttt{KNOWS}-Kanten jeweils in beide Richtungen erstellt. Mit folgendem Befehl lassen sich die \texttt{KNOWS}-Kanten zählen: \emph{MATCH p=()-{[}r:KNOWS{]}-\textgreater{}() RETURN count(p);} Für die Bestimmung der 1zu1-Beziehungen muss der Wert noch durch 2 geteilt werden.}
+Allein die Einträge in den Registern der Regesten Kaiser Friedrichs III. sind über 143.000 mal in Regesten genannt. Daraus ergeben sich dann über 460.000 1zu1-Beziehungen, vgl. Abb. \ref{1zu1gephi}.\footnote{Der Cypher-Befehl zur Erstellung der 1zu1-Beziehungen lautet: \emph{MATCH (n1:Registereintrag)-{[}:APPEARS\_IN{]}-\textgreater{}(r:Regest)\textless{}-{[}:APPEARS\_IN{]}-(n2:Registereintrag) MERGE (n1)-{[}:KNOWS{]}-\textgreater{}(n2);} Dabei werden die gerichteten \texttt{KNOWS}-Kanten jeweils in beide Richtungen erstellt. Mit folgendem Befehl lassen sich die \texttt{KNOWS}-Kanten zählen: \emph{MATCH p=()-{[}r:KNOWS{]}-\textgreater{}() RETURN count(p);} Für die Bestimmung der 1zu1-Beziehungen muss der Wert noch durch 2 geteilt werden.}
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Gephi-Register.png}
 \caption{Ausschnitt der 1zu1-Beziehungen in Gephi.}
+\label{1zu1gephi}
 \end{figure}
 
-In der folgenden Abbildung sind die in den Registern des Regestenbandes von Joseph Chmel gewonnenen 1zu1-Beziehungen mit Gephi visualisiert.\footnote{Regesta chronologico-diplomatica Friderici III. Romanorum imperatoris (regis IV.) : Auszug aus den im K.K. Geheimen Haus-, Hof- und Staats-Archive zu Wien sich befindenden Registraturbüchern vom Jahre 1440 - 1493 ; nebst Auszügen aus Original-Urkunden, Manuscripten und Büchern / von Joseph Chmel, Wien 1838 und 1840.}
+In Abb. \ref{chmelvisualisierung} sind die in den Registern des Regestenbandes von Joseph Chmel gewonnenen 1zu1-Beziehungen mit Gephi visualisiert.\footnote{Regesta chronologico-diplomatica Friderici III. Romanorum imperatoris (regis IV.) : Auszug aus den im K.K. Geheimen Haus-, Hof- und Staats-Archive zu Wien sich befindenden Registraturbüchern vom Jahre 1440 - 1493 ; nebst Auszügen aus Original-Urkunden, Manuscripten und Büchern / von Joseph Chmel, Wien 1838 und 1840.}
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/Chmelvisualisierung-v2.png}
 \caption{Personennetzwerk aus den Registern der Regesten Chmels, erstellt mit Gephi (Quelle: Kuczera).}
+\label{chmelvisualisierung}
 \end{figure}
 
 Bei der Analyse ergaben sich aber verschiedene Probleme. Zum einen werden in den Registern auch Kanzleibeamte genannt, die mit der eigentlichen Urkundenhandlung gar nichts zu tun hatten sondern später lediglich ihr Kürzel auf der Urkunde hinterließen. Dies mag archivgeschichtlich interessant sein, für die Urkundenhandlung ist es aber irrelevant. Ein zweites Problem ist der Aufbau des Registers, in dem Orte und Personen in einem Register zusammengefasst werden. Zum einen handelt es sich hierdurch nicht mehr um ein reines Personennetzwerk sondern um ein gemischtes Personen- und Ortsnetzwerk. Zum anderen überragen die über sehr lange Zeit bestehenden Orte, die in ihrer Lebensdauer begrenzten natürlichen Personen in den Netzwerkstrukturen. Schließlich zeigte sich, dass die Algorithmen zur Netzwerkanalyse mit zeitbehaftenen Daten (wie Regesten mit ihrem Ausstellungsdatum) nur schlecht umgehen konnten.
 
-Aus Historikersicht war der Ansatz also weniger zielführend. Jedoch ergaben sich aus Modellierungssicht interessante Einblicke. Um die Netzwerke näher analysieren zu können, wurden kurze Zeitschnitte der Regesten untersucht. Hierfür musste das in Java geschriebene Programm zur Erstellung der Netzwerkdaten jedesmal umgeschrieben werden. Mein Kollege Ulli Meybohm, der das Programm damals betreute, wies mich nach dem wiederholten Umschreiben des Programms darauf hin, dass ich für meine Daten besser eine Graphdatenbank verwenden solle, beispielsweise neo4j. Erste Versuche des Imports der Registerdaten in neo4j erwiesen sich aber als sehr komplex, obwohl das Datenmodell \emph{Person kennt Person} eigentlich relativ einfach ist.
+Aus Historikersicht war der Ansatz also weniger zielführend. Jedoch ergaben sich aus Modellierungssicht interessante Einblicke. Um die Netzwerke näher analysieren zu können, wurden kurze Zeitschnitte der Regesten untersucht. Hierfür musste das in Java geschriebene Programm zur Erstellung der Netzwerkdaten jedesmal umgeschrieben werden. Mein Kollege Ulli Meybohm, der das Programm damals betreute, wies mich nach dem wiederholten Umschreiben des Programms darauf hin, dass ich für meine Daten besser eine Graphdatenbank verwenden solle, beispielsweise neo4j. Erste Versuche des Imports der Registerdaten in neo4j erwiesen sich aber als sehr komplex, vgl. Abb. \ref{regestregister}, obwohl das Datenmodell \emph{Person kennt Person} eigentlich relativ einfach ist.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/1zu1-Beziehungen-Register-Regest.png}
 \caption{Regest und Registereinträge mit \texttt{GENANNT\_IN}-Kanten und den \texttt{KNOWS}-Kanten.}
+\label{regestregister}
 \end{figure}
 
-Schließlich ergaben Nachfragen bei neo4j, dass bei Problemen mit dem Datenmodell oft einfach ein Typ von Knoten vergessen worden sein könnte. Und tatsächlich wurden in den ersten Modellen die Regestenknoten nicht berücksichtigt. Mit den Regestenknoten im Modell war der Import schließlich mit weniger rechnerischem Aufwand möglich.
+Schließlich ergaben Nachfragen bei neo4j, dass bei Problemen mit dem Datenmodell oft einfach ein Typ von Knoten vergessen worden sein könnte. Und tatsächlich wurden in den ersten Modellen die Regestenknoten nicht berücksichtigt. Mit den Regestenknoten im Modell war der Import schließlich mit weniger rechnerischem Aufwand möglich, vgl. Abb. \ref{graphmodellohne}.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/1zu1-Beziehungen-nur-Regest.png}
 \caption{Graphmodell ohne \texttt{KNOWS}-Kanten. Diese können bei Bedarf einfach errechnet werden.}
+\label{graphmodellohne}
 \end{figure}
 
 \hypertarget{zusammenfassung-1}{%
@@ -506,9 +525,10 @@ In diesem Abschnitt wird beispielhaft anhand der Regesten Kaiser Heinrichs IV. d
 \centering
 \includegraphics{Bilder/RI2Graph/ReggH4-Regestentabelle.png}
 \caption{Regesten als CSV-Datei}
+\label{regestenalscsv}
 \end{figure}
 
-In der CSV-Datei finden sich die oben erläuterten einzelnen Elemente der Regesten in jeweils eigenen Spalten. Die Spaltenüberschrift gibt Auskunft zum Inhalt der jeweiligen Spalte.
+In der in Abb. \ref{regestenalscsv} dargestellten CSV-Datei finden sich die oben erläuterten einzelnen Elemente der Regesten in jeweils eigenen Spalten. Die Spaltenüberschrift gibt Auskunft zum Inhalt der jeweiligen Spalte.
 
 \hypertarget{import-mit-dem-load-csv-befehl}{%
 \subsection{\texorpdfstring{Import mit dem \texttt{LOAD\ CSV}-Befehl}{Import mit dem LOAD CSV-Befehl}}\label{import-mit-dem-load-csv-befehl}}
@@ -524,42 +544,47 @@ Es ist aber auch möglich, CSV-Daten in Google-spreadsheets zu speichern und dor
 \centering
 \includegraphics{Bilder/RI2Graph/google-docs-freigeben.png}
 \caption{Freigabe der Datei zum Ansehen für Dritte!}
+\label{freigeben}
 \end{figure}
 
-Wichtig ist nun, die Datei zur Ansicht freizugeben (Klick auf \texttt{Freigeben} oben rechts im Fenster, dann \texttt{Link\ zum\ Freigeben} abrufen und anschließend \texttt{Fertig} bestätigen). Jetzt ist die CSV-Datei in Google-Docs gespeichert und kann auch von anderen Personen über den Freigabelink angesehen werden. Für den Import in die Graphdatenbank benötigen wir aber einen Download im CSV-Format. Diesen findet man unter \texttt{Datei/Herunterladen\ als/Kommagetrennte\ Werte.csv\ aktuelles\ Tabellenblatt}.
+Wichtig ist nun, die Datei wie in Abb. \ref{freigeben} zur Ansicht freizugeben (Klick auf \texttt{Freigeben} oben rechts im Fenster, dann \texttt{Link\ zum\ Freigeben} abrufen und anschließend \texttt{Fertig} bestätigen). Jetzt ist die CSV-Datei in Google-Docs gespeichert und kann auch von anderen Personen über den Freigabelink angesehen werden. Für den Import in die Graphdatenbank benötigen wir aber einen Download im CSV-Format. Diesen findet man unter \texttt{Datei/Herunterladen\ als/Kommagetrennte\ Werte.csv\ aktuelles\ Tabellenblatt}.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/google-docs-herunterladen-csv.png}
-\caption{Herunterladen als CSV-DAtei}
+\caption{Herunterladen als CSV-Datei}
+\label{herunterladen}
 \end{figure}
 
-Damit erhält man das aktuelle Tabellenblatt als CSV-Download. Anschließend muss nun im Browser unter Downloads der Download-Link der Datei gesucht und kopiert werden.
+Damit erhält man das aktuelle Tabellenblatt als CSV-Download. Anschließend muss nun im Browser unter Downloads der Download-Link der Datei gesucht und kopiert werden, vgl. Abb. \ref{herunterladen} und \ref{downloadlink}.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/google-docs-link-kopieren.png}
-\caption{Download-Link der CSV-Datei}
+\caption{Download-Link der CSV-Datei} 
+\label{downloadlink}
 \end{figure}
 
 \hypertarget{regestenmodellierung-im-graphen-1}{%
 \subsection{Regestenmodellierung im Graphen}\label{regestenmodellierung-im-graphen-1}}
 
-Mit dem \texttt{LOAD\ CSV}-Befehl stehen die Informationen der Regestentabelle nun für die weitere Verarbeitung zur Verfügung. Nun muss festgelegt werden, wie diese Informationen im Graphen modelliert werden sollen. Daher wird im nächsten Schritt das Modell der Regesten im Graphen vorgestellt (siehe Abbildung).
+Mit dem \texttt{LOAD\ CSV}-Befehl stehen die Informationen der Regestentabelle nun für die weitere Verarbeitung zur Verfügung. Nun muss festgelegt werden, wie diese Informationen im Graphen modelliert werden sollen. Daher wird im nächsten Schritt das Modell der Regesten im Graphen vorgestellt (Abb. \ref{ri2graph}).
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/ReggH4-Nr-1487.png}
 \caption{RI III,2,3 n. 1487, in: Regesta Imperii Online, URI: http://www.regesta-imperii.de/id/cf75356b-bd0d-4a67-8aeb-3ae27d1dcefa.}
+\label{ri2graph}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png}
-\caption{Das Regest im Graphen.}
+\caption{Das Regest im Graphen.} 
+\label{ri2graph2}
 \end{figure}
 
-In den Abbildungen finden sich beispielhaft das Regest RI III,2,3 Nr. 1487, einmal in der Ansicht der Onlineregesten und in der zweiten Abbildung als Modell im Graphen (neben anderen Regesten).
+In den Abbildungen \ref{ri2graph} und \ref{ri2graph2} finden sich beispielhaft das Regest RI III,2,3 Nr. 1487, einmal in der Ansicht der Onlineregesten und in der zweiten Abbildung als Modell im Graphen (neben anderen Regesten).
 
 Die gelben Knoten sind die Regesten. Aus den Angaben des Regests werden mit dem o.a. Befehl noch ein Datumsknoten und ein Ortsknoten erstellt. Mit dem ersten \texttt{CREATE}-Befehl werden die Regesten erstellt. Die \texttt{MERGE}-Befehle erzeugen ergänzende Knoten für die Datumsangaben und die Ausstellungsorte. Nun ist es aber so, dass Ausstellungsort und Ausstellungsdatum mehrfach vorkommen können. Daher wird hier nicht der \texttt{CREATE}-Befehl sondern der \texttt{MERGE}-Befehl verwendet. Dieser funktioniert wie der \texttt{CREATE}-Befehl, prüft aber vorher, ob in der Datenbank ein solcher Knoten schon existiert. Falls es ihn noch nicht gibt, wird er erzeugt, wenn es ihn schon gibt, wird er der entsprechenden Variable zugeordnet. Anschließend werden die Kanten zwischen Regestenknoten und Ausstellungsortsknoten sowie Regestenknoten und Datumsknoten erstellt. In der folgenden Tabelle werden die einzelnen Befehle dargestellt und kommentiert.
 
@@ -741,12 +766,13 @@ MERGE (l:Lemma{lemma:line.Lemma})
 MERGE (r)-[:ACTION]->(l);
 \end{verbatim}
 
-Dabei wird zunächst mit dem \texttt{MATCH}-Befehl das jeweilige Regest gesucht, anschließend mit dem \texttt{MERGE}-Befehl der \texttt{Lemma}-Knoten für das Herrscherhandeln angelegt (falls noch nicht vorhanden) und schließlich der \texttt{Regesta}-Knoten mit dem \texttt{Lemma}-Knoten über eine \texttt{ACTION}-Kante verbunden. In der folgenden Abbildung ist ein Ausschnitt mit Regesten und den verknüpften Lemmaknoten dargestellt.
+Dabei wird zunächst mit dem \texttt{MATCH}-Befehl das jeweilige Regest gesucht, anschließend mit dem \texttt{MERGE}-Befehl der \texttt{Lemma}-Knoten für das Herrscherhandeln angelegt (falls noch nicht vorhanden) und schließlich der \texttt{Regesta}-Knoten mit dem \texttt{Lemma}-Knoten über eine \texttt{ACTION}-Kante verbunden. In Abb. \ref{herrscherhandeln} ist ein Ausschnitt mit Regesten und den verknüpften Lemmaknoten dargestellt.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/ReggH4-Action.png}
 \caption{Herrscherhandeln im Graphen.}
+\label{herrscherhandeln}
 \end{figure}
 
 \hypertarget{zitationsnetzwerke-in-den-regesta-imperii}{%
@@ -773,12 +799,13 @@ Da dies mit dem \texttt{MERGE}-Befehl geschieht, wird in der Graphdatenbank jede
 \hypertarget{vorbereitung-der-registerdaten}{%
 \subsection{Vorbereitung der Registerdaten}\label{vorbereitung-der-registerdaten}}
 
-Register spielen für die Erschließung von gedrucktem Wissen eine zentrale Rolle, da dort in alphabetischer Ordnung die im Werk vorkommenden Entitäten (z.B. Personen und Orte) hierarchisch gegliedert aufgeschlüsselt werden. Für die digitale Erschließung der Regesta Imperii sind Register von zentraler Bedeutung, da mit ihnen die in den Regesten vorkommenden Personen und Orte bereits identifiziert vorliegen. Für den Import in die Graphdatenbank wird allerdings eine digitalisierterte Fassung des Registers benötigt. Im Digitalisierungsprojekt Regesta Imperii Online wurden Anfang der 2000er Jahre auch die gedruckt vorliegenden Register digitalisiert. Sie dienen nun als Grundlage für die digitale Registererschließung der Regesta Imperii. Im hier gezeigten Beispiel werden die Regesten Kaiser Heinrichs IV. und das dazugehörige Register importiert. Da der letzte Regestenband der Regesten Kaiser Heinrichs IV. mit dem Gesamtregister erst vor kurzem gedruckt wurde, liegen hier aktuelle digitale Fassung von Registern und Regesten vor. Die für den Druck in Word erstellte Registerfassung wird hierfür zunächst in eine hierarchisch gegliederte XML-Fassung konvertiert, damit die Registerhierarchie auch maschinenlesbar abgelegt ist.
+Register spielen für die Erschließung von gedrucktem Wissen eine zentrale Rolle, da dort in alphabetischer Ordnung die im Werk vorkommenden Entitäten (z.B. Personen und Orte) hierarchisch gegliedert aufgeschlüsselt werden. Für die digitale Erschließung der Regesta Imperii sind Register von zentraler Bedeutung, da mit ihnen die in den Regesten vorkommenden Personen und Orte bereits identifiziert vorliegen. Für den Import in die Graphdatenbank wird allerdings eine digitalisierterte Fassung des Registers benötigt. Im Digitalisierungsprojekt Regesta Imperii Online wurden Anfang der 2000er Jahre auch die gedruckt vorliegenden Register digitalisiert. Sie dienen nun als Grundlage für die digitale Registererschließung der Regesta Imperii. Im hier gezeigten Beispiel werden die Regesten Kaiser Heinrichs IV. und das dazugehörige Register importiert. Da der letzte Regestenband der Regesten Kaiser Heinrichs IV. mit dem Gesamtregister erst vor kurzem gedruckt wurde, liegen hier aktuelle digitale Fassung von Registern und Regesten vor. Die für den Druck in Word erstellte Registerfassung wird hierfür zunächst in eine hierarchisch gegliederte XML-Fassung konvertiert (vgl. Abb. \ref{ausschnittxml}), damit die Registerhierarchie auch maschinenlesbar abgelegt ist.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/XML-Register.png}
 \caption{Ausschnitt aus dem XML-Register der Regesten Heinrichs IV.}
+\label{ausschnittxml}
 \end{figure}
 
 In der XML-Fassung sind die inhaltlichen Bereiche und die Abschnitte für die Regestennummern jeweils extra in die Tags \texttt{\textless{}Inhalt\textgreater{}} und \texttt{\textless{}Regestennummer\textgreater{}} eingefasst. Innerhalb des Elements \texttt{\textless{}Regestennummer\textgreater{}} ist dann nochmal jede einzelne Regestennummer in \texttt{\textless{}r\textgreater{}}-Tags eingefasst. Die aus dem gedruckten Register übernommenen Verweise sind durch ein leeres \texttt{\textless{}vw/\textgreater{}}-Element gekennzeichnet.
@@ -789,17 +816,19 @@ Die in XML vorliegenden Registerdaten werden anschließend mit Hilfe von TuStep 
 \centering
 \includegraphics{Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png}
 \caption{Ausschnitt der Entitätentabelle des Registers der Regesten Heinrichs IV.}
+\label{entitaeten}
 \end{figure}
 
-In einer Tabelle werden alle Entitäten aufgelistet und jeweils mit einer ID versehen.
+In einer Tabelle werden alle Entitäten aufgelistet und jeweils mit einer ID versehen (Abb. \ref{entitaeten}).
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/RegisterH4-GENANNT.png}
-\caption{Ausschnitt der Verknüpfungstabelle des Registers der Regesten Heinrichs IV.}
+\caption{Ausschnitt der Verknüpfungstabelle des Registers der Regesten Heinrichs IV.} 
+\label{verknuepfung}
 \end{figure}
 
-In der anderen Tabelle werden die Verknüpfungen zwischen Registereinträgen und den Regesten aufgelistet. Der Registereintrag Adalbero kommt in mehreren Regesten vor. Da das Register der Regesten Heinrichs IV. nur zwei Hierarchiestufen enthält, in denen beispielsweise verschiedene Amtsphasen ein und derselben Person unterschieden werden, wurden diese beim Import zusammengefasst.\footnote{Vgl. die Vorbemerkung zum Register in Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 5. Lief.: Die Regesten Rudolfs von Rheinfelden, Hermanns von Salm und Konrads (III.). Verzeichnisse, Register, Addenda und Corrigenda, bearbeitet von Lubich, Gerhard unter Mitwirkung von Junker, Cathrin; Klocke, Lisa und Keller, Markus - Köln (u.a.) (2018), S. 291.} Damit gibt es pro Person jeweils nur einen Knoten.
+In der anderen Tabelle werden die Verknüpfungen zwischen Registereinträgen und den Regesten aufgelistet (Abb. \ref{verknuepfung}). Der Registereintrag Adalbero kommt in mehreren Regesten vor. Da das Register der Regesten Heinrichs IV. nur zwei Hierarchiestufen enthält, in denen beispielsweise verschiedene Amtsphasen ein und derselben Person unterschieden werden, wurden diese beim Import zusammengefasst.\footnote{Vgl. die Vorbemerkung zum Register in Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 5. Lief.: Die Regesten Rudolfs von Rheinfelden, Hermanns von Salm und Konrads (III.). Verzeichnisse, Register, Addenda und Corrigenda, bearbeitet von Lubich, Gerhard unter Mitwirkung von Junker, Cathrin; Klocke, Lisa und Keller, Markus - Köln (u.a.) (2018), S. 291.} Damit gibt es pro Person jeweils nur einen Knoten.
 
 \hypertarget{import-der-registerdaten-in-die-graphdatenbank-1}{%
 \subsection{Import der Registerdaten in die Graphdatenbank}\label{import-der-registerdaten-in-die-graphdatenbank-1}}
@@ -849,12 +878,13 @@ CREATE (from)-[:PERSON_IN {regnum:line.regnum, name1:line.name1,
 \hypertarget{exkurs-2-die-hierarchie-des-registers-der-regesten-kaiser-friedrichs-iii.}{%
 \section{Exkurs 2: Die Hierarchie des Registers der Regesten Kaiser Friedrichs III.}\label{exkurs-2-die-hierarchie-des-registers-der-regesten-kaiser-friedrichs-iii.}}
 
-In anderen Registern der Regesta Imperii, wie beispielsweise den Regesten Kaiser Friedrichs III., sind teilweise fünf oder mehr Hierarchiestufen vorhanden, die jeweils auch Entitäten repräsentieren.
+In anderen Registern der Regesta Imperii, wie beispielsweise den Regesten Kaiser Friedrichs III., sind teilweise fünf oder mehr Hierarchiestufen vorhanden, die jeweils auch Entitäten repräsentieren (vgl. Abb. \ref{registerbamberg}).
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/ReggF3-Registerhierarchie.png}
 \caption{Ausschnitt aus dem Register des Heftes 19 der Regesten Kaiser Friedrichs III.}
+\label{registerbamberg}
 \end{figure}
 
 In diesen Fällen müssen die Hierarchien auch in der Graphdatenbank abgebildet werden, was durch zusätzliche Verweise auf die ggf. vorhandenen übergeordneten Registereinträge möglich wird.
@@ -863,9 +893,10 @@ In diesen Fällen müssen die Hierarchien auch in der Graphdatenbank abgebildet 
 \centering
 \includegraphics{Bilder/RI2Graph/RegisterF3-Hierarchie.png}
 \caption{Ausschnitt der Entitätentabelle des Registers der Regesten Friedrichs III.}
+\label{entitaetenaachen}
 \end{figure}
 
-Im Tabellenausschnitt wird jedem Registereintrag in der ersten Spalte eine \texttt{nodeID} als eindeutige Kennung zugewiesen. Bei Registereinträgen, die kein Hauptlemma sind, enthält die dritte Spalte \texttt{topnodeID} den Verweis auf die eindeutige Kennung \texttt{nodeID} des übergeordneten Eintrages. Beim Import in die Graphdatenbank wird diese Hierarchie über \texttt{CHILD\_OF}-Kanten abgebildet, die vom untergeordneten Eintrag auf das übergeordnete Lemma verweisen. Damit ist die komplette Registerhierarchie im Graphen abgebildet. In der Spalte \texttt{name1} ist das Lemma angegeben. In der Spalte \texttt{name3} ist zusätzlich zum Lemma noch der gesamte Pfad vom Hauptlemma bis zum Registereintrag, jeweils mit Doppelslashes (\texttt{//}) getrennt. Bei tiefer gestaffelten Registern ist teilweise ohne Kenntnis der übergeordneten Einträge eine eindeutige Identifizierung eines Eintrages nicht möglich. So wird in Zeile 17 der o.a. Abbildung allein mit der Angabe aus der Spalte \texttt{name1} nicht klar, um welche \texttt{Meierei} es sich handelt. Mit dem kompletten Pfad des Registereintrages in der Spalte \texttt{name3} wird dagegen deutlich, dass die Aachener \texttt{Meierei} gemeint ist.
+Im Tabellenausschnitt (Abb. \ref{entitaetenaachen})wird jedem Registereintrag in der ersten Spalte eine \texttt{nodeID} als eindeutige Kennung zugewiesen. Bei Registereinträgen, die kein Hauptlemma sind, enthält die dritte Spalte \texttt{topnodeID} den Verweis auf die eindeutige Kennung \texttt{nodeID} des übergeordneten Eintrages. Beim Import in die Graphdatenbank wird diese Hierarchie über \texttt{CHILD\_OF}-Kanten abgebildet, die vom untergeordneten Eintrag auf das übergeordnete Lemma verweisen. Damit ist die komplette Registerhierarchie im Graphen abgebildet. In der Spalte \texttt{name1} ist das Lemma angegeben. In der Spalte \texttt{name3} ist zusätzlich zum Lemma noch der gesamte Pfad vom Hauptlemma bis zum Registereintrag, jeweils mit Doppelslashes (\texttt{//}) getrennt. Bei tiefer gestaffelten Registern ist teilweise ohne Kenntnis der übergeordneten Einträge eine eindeutige Identifizierung eines Eintrages nicht möglich. So wird in Zeile 17 der o.a. Abbildung allein mit der Angabe aus der Spalte \texttt{name1} nicht klar, um welche \texttt{Meierei} es sich handelt. Mit dem kompletten Pfad des Registereintrages in der Spalte \texttt{name3} wird dagegen deutlich, dass die Aachener \texttt{Meierei} gemeint ist.
 
 \hypertarget{auswertungsperspektiven}{%
 \section{Auswertungsperspektiven}\label{auswertungsperspektiven}}
@@ -899,17 +930,18 @@ WHERE n.registerId = 'H4P01822'
 RETURN *;
 \end{verbatim}
 
-In der folgenden Abb. wird das Ergebnis dargestellt.
+In  Abb. \ref{robertundpersonen} wird das Ergebnis dargestellt.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/RobertVonFlandernMitRegesten.png}
 \caption{Robert mit den Personen, mit denen er gemeinsam in Regesten genannt wird.}
+\label{robertundpersonen}
 \end{figure}
 
 Hier wird der \texttt{MATCH}-Befehl um einen Pfad über \texttt{PERSON\_IN}-Kanten zu \texttt{Regesta}-Knoten ergänzt, von denen jeweils eine \texttt{PERSON\_IN}-Kante zu den anderen, in den Regesten genannten \texttt{IndexPerson}-Knoten führt.
 
-Nimmt man noch eine weitere Ebene hinzu, wächst die Ergebnismenge stark an. Der folgende Query kann daher je nach Rechnerleistung etwas länger dauern.
+Nimmt man noch eine weitere Ebene hinzu, wächst die Ergebnismenge stark an (Abb. \ref{robertundmehrpersonen}). Der folgende Query kann daher je nach Rechnerleistung etwas länger dauern.
 
 \begin{verbatim}
 // Robert II. von Flandern mit Netzwerk und Herrscherhandeln (viel)
@@ -925,6 +957,7 @@ RETURN *;
 \centering
 \includegraphics{Bilder/RI2Graph/Robert-viel.png}
 \caption{Robert mit Personen, die wiederum mit Personen gemeinsam in Regesten genannt sind.}
+\label{robertundmehrpersonen}
 \end{figure}
 
 \hypertarget{graf-robert-ii.-von-flandern-und-herzog-heinrich-von-niederlothringen}{%
@@ -946,9 +979,10 @@ RETURN *;
 \centering
 \includegraphics{Bilder/RI2Graph/RobertundHeinrich.png}
 \caption{Robert und Heinrich sind in einem Regest gemeinsam genannt.}
+\label{robertundheinrich}
 \end{figure}
 
-Es zeigt sich, dass Robert und Heinrich in einem Regest gemeinsam genannt sind.
+Es zeigt sich, dass Robert und Heinrich in einem Regest gemeinsam genannt sind (Abb. \ref{robertundheinrich}).
 
 Und dieses \href{http://www.regesta-imperii.de/id/cf75356b-bd0d-4a67-8aeb-3ae27d1dcefa}{Regest} berichtet von der Unterwerfung Roberts unter Heinrich IV.\footnote{Vgl. RI III,2,3 n. 1487.}
 
@@ -956,7 +990,7 @@ Und dieses \href{http://www.regesta-imperii.de/id/cf75356b-bd0d-4a67-8aeb-3ae27d
 Heinrich feiert das Fest der Apostel, wobei sich Graf Robert von Flandern im Beisein mehrerer Fürsten unterwirft, namentlich der Erzbischöfe Friedrich von Köln und Bruno von Trier, der Bischöfe Otbert von Lüttich, Burchard von Münster, Burchard von Utrecht, Herzog Heinrich von Niederlothringen sowie mehrerer Grafen.
 \end{quote}
 
-Möglicherweise haben beide aber gemeinsame Bekannte, also Personen mit denen sowohl Heinrich als auch Robert in unterschiedlichen Regesten gemeinsam genannt sind. Hierfür wird der Cypher-Query um eine Ebende erweitert.
+Möglicherweise haben beide aber gemeinsame Bekannte, also Personen mit denen sowohl Heinrich als auch Robert in unterschiedlichen Regesten gemeinsam genannt sind. Hierfür wird der Cypher-Query um eine Ebene erweitert.
 
 \begin{verbatim}
 // Robert und Heinrich mit allen gemeinsamen Personen und Regesten
@@ -973,9 +1007,10 @@ RETURN *;
 \centering
 \includegraphics{Bilder/RI2Graph/RobertundHeinrichMitBrokern.png}
 \caption{Robert und Heinrich mit den gemeinsamen Bekanntschaften.}
+\label{robertundheinrichundmehr}
 \end{figure}
 
-Ein erster Blick auf das Ergebnis zeigt, dass Heinrich allgemein besser vernetzt ist. Für die weitere Analyse ihres Verhältnisses ist nun die Lektüre der angegebenen Regesten notwendig. Hierfür lässt sich das Ergebnis noch etwas weiter aufbereiten, indem die zwischen den Personen liegenden Regesten in \texttt{KNOWS}-Kanten umgewandelt werden, die als zusätzliche Information die Angaben zu den Regesten enthalten.
+Ein erster Blick auf das Ergebnis (Abb. \ref{robertundheinrichundmehr}) zeigt, dass Heinrich allgemein besser vernetzt ist. Für die weitere Analyse ihres Verhältnisses ist nun die Lektüre der angegebenen Regesten notwendig. Hierfür lässt sich das Ergebnis noch etwas weiter aufbereiten, indem die zwischen den Personen liegenden Regesten in \texttt{KNOWS}-Kanten umgewandelt werden, die als zusätzliche Information die Angaben zu den Regesten enthalten.
 
 \begin{verbatim}
 // Rausrechnen der dazwischenliegenden Knoten
@@ -994,9 +1029,10 @@ RETURN startPerson, endPerson, rel;
 \centering
 \includegraphics{Bilder/RI2Graph/RobertUndHeinrichApoc.png}
 \caption{Robert und Heinrich mit den gemeinsamen Bekanntschaften.}
+\label{robertundheinrichapoc}
 \end{figure}
 
-In der Abbildung sind die zwei Ego-Netzwerke von Heinrich (links) und Robert (rechts) mit den dazwischen liegenden gemeinsamen Bekanntschaften dargestellt. Es zeigt sich, dass Heinrich stärker sowohl mit Geistlichen als auch Weltlichen vernetzt war, während Robert insgesamt weniger Kontakte aber mit einem Schwerpunkt in der Geistlichkeit hatte.
+In Abb. \ref{robertundheinrichapoc} sind die zwei Ego-Netzwerke von Heinrich (links) und Robert (rechts) mit den dazwischen liegenden gemeinsamen Bekanntschaften dargestellt. Es zeigt sich, dass Heinrich stärker sowohl mit Geistlichen als auch Weltlichen vernetzt war, während Robert insgesamt weniger Kontakte aber mit einem Schwerpunkt in der Geistlichkeit hatte.
 
 Für den Historiker ist aber vor allem interessant, was in den Regesten steht, die Robert und Heinrich über die Mittelsmänner verbinden. Hierfür wird der Cypher-Query angepasst und sowohl Personen als auch die Regestentexte ausgegeben.
 
@@ -1015,12 +1051,13 @@ middlePerson.name1, regest2.ident,
 regest2.text, endPerson.name1;
 \end{verbatim}
 
-In der folgenden Abbildung wird ein Ausschnitt der Ergebnistabelle gezeigt. In der ersten Spalte der Tabelle finden sich Robert, anschließend die Angaben zum Regest, mit dem er mit der mitteleren Person (middlePerson.name1) verknüpft ist. Dem folgen schließlich die Angaben zum Regest, mit den die mittlere Person mit Robert in der letzten Spalte verbunden ist. Die Tabelle bietet einen Überblick zur Überlieferungssituation aus der Perspektive der Regesta Imperii.
+In der folgenden Abbildung wird ein Ausschnitt der Ergebnistabelle gezeigt. In der ersten Spalte der Tabelle finden sich Robert, anschließend die Angaben zum Regest, mit dem er mit der mitteleren Person (middlePerson.name1) verknüpft ist. Dem folgen schließlich die Angaben zum Regest, mit den die mittlere Person mit Robert in der letzten Spalte verbunden ist. Die Tabelle in Abb. \ref{robertheinrichtabelle} bietet einen Überblick zur Überlieferungssituation aus der Perspektive der Regesta Imperii.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/RI2Graph/RobertHeinrichApocTabelle.png}
 \caption{Robert und Heinrich mit den gemeinsamen Bekanntschaften.}
+\label{robertheinrichtabelle}
 \end{figure}
 
 \hypertarget{herrscherhandeln-ausgezuxe4hlt}{%
@@ -1284,25 +1321,28 @@ Vor diesem Hintergrund bot es sich an, die Personen und die zugehörigen Verwand
 \centering
 \includegraphics{Bilder/NeG/020-Verwandschaften.jpg}
 \caption{Erste Importergebnisse}
+\label{importergebnisse}
 \end{figure}
 
-Die Abbildung zeigt die ersten Ergebnisse des Datenbankimports. Aus der Visualisierung werden die zahlreichen redundanten Beziehungen deutlich, die in der Folge zu neuen Modellierungsansätzen für die Verwandtschaftsbeziehungen führten. Ergebnis der Überlegungen war die Reduzierung der möglichen Verwandtschaftsbeziehungen auf die zwei Kantentypen \texttt{KIND} und \texttt{VERHEIRATET\_MIT}. Dabei wird eine Kante vom Typ \texttt{KIND} für eine Elternteil-Kind-Beziehung nur einmal vergeben, während eine Kante vom Typ \texttt{VERHEIRATET\_MIT} immer zweifach in jeweils umgekehrter Richtung angelegt wird. Dies ergibt sich aus der Überlegung, dass eine Elternteil-Kind-Beziehung gerichtet ist und zwar in unserem Fall vom Elternteil zum Kind hin, während eine \texttt{VERHEIRATET\_MIT}-Beziehung ungerichtet ist: Wenn eine Person mit einer anderen Person verheiratet ist, ist die andere Personen automatisch auch mit der ersten verheiratet. Da im Property-Graph-Modell von neo4j jede Kante genau eine Richtung haben muss, wird die \texttt{VERHEIRATET\_MIT}-Kante zweimal in jeweils unterschiedliche Richtung angelegt, während bei der hierarchischen Elternteil-Kind-Beziehung eine Kante ausreicht.
+Abb. \ref{importergebnisse} zeigt die ersten Ergebnisse des Datenbankimports. Aus der Visualisierung werden die zahlreichen redundanten Beziehungen deutlich, die in der Folge zu neuen Modellierungsansätzen für die Verwandtschaftsbeziehungen führten. Ergebnis der Überlegungen war die Reduzierung der möglichen Verwandtschaftsbeziehungen auf die zwei Kantentypen \texttt{KIND} und \texttt{VERHEIRATET\_MIT}. Dabei wird eine Kante vom Typ \texttt{KIND} für eine Elternteil-Kind-Beziehung nur einmal vergeben, während eine Kante vom Typ \texttt{VERHEIRATET\_MIT} immer zweifach in jeweils umgekehrter Richtung angelegt wird. Dies ergibt sich aus der Überlegung, dass eine Elternteil-Kind-Beziehung gerichtet ist und zwar in unserem Fall vom Elternteil zum Kind hin, während eine \texttt{VERHEIRATET\_MIT}-Beziehung ungerichtet ist: Wenn eine Person mit einer anderen Person verheiratet ist, ist die andere Personen automatisch auch mit der ersten verheiratet. Da im Property-Graph-Modell von neo4j jede Kante genau eine Richtung haben muss, wird die \texttt{VERHEIRATET\_MIT}-Kante zweimal in jeweils unterschiedliche Richtung angelegt, während bei der hierarchischen Elternteil-Kind-Beziehung eine Kante ausreicht (vgl. Abb \ref{urenkel}).
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/NeG/030-Urenkel-Pippins.jpg}
 \caption{Die Urenkel Pippins}
+\label{urenkel}
 \end{figure}
 
 \hypertarget{sind-berchar-und-karl-der-grouxdfe-verwandt}{%
 \section{Sind Berchar und Karl der Große verwandt ?}\label{sind-berchar-und-karl-der-grouxdfe-verwandt}}
 
-Im folgenden Beispiel soll das Potential der Graphmodellierung von Verwandtschaftsbeziehungen demonstriert werden. In der Datenbank gibt es die Person Berchar. Berchar war ein Hausmeier König Theuderichs III. Die Frage ist nun, ob dieser Berchar mit Karl dem Großen verwandt ist. In der NeG-Datenbank ist ein Verwandtschaftsverhältnis von Berchar zu Karl dem Großen nicht direkt ableitbar.
+Im folgenden Beispiel soll das Potential der Graphmodellierung von Verwandtschaftsbeziehungen demonstriert werden. In der Datenbank gibt es die Person Berchar (Abb. \ref{berchar}). Berchar war ein Hausmeier König Theuderichs III. Die Frage ist nun, ob dieser Berchar mit Karl dem Großen verwandt ist. In der NeG-Datenbank ist ein Verwandtschaftsverhältnis von Berchar zu Karl dem Großen nicht direkt ableitbar.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/NeG/040-Berchar-DB-Eintrag.jpg}
 \caption{Berchar in der Nomen-et-Gens-Datenbank}
+\label{berchar}
 \end{figure}
 
 In der Graphdatenbank neo4j wird für eine solche Fragestellung eine Shortest\_Path-Abfrage verwendet, die den kürzesten möglichen Weg zwischen zwei Knoten zurück liefert, sofern es einen gibt. Der folgende Cypher-Befehl liefert den Pfad zwischen dem Personenknoten Karls des Großen mit der NeG-ID \texttt{7404} und dem Personenknoten von Berchar mit der NeG-ID \texttt{7119}. Dabei wird die Länge des abzufragenden Pfades auf 15 Kanten begrenzt.
@@ -1315,12 +1355,13 @@ p = shortestPath((KdG)-[*..15]-(Berchar))
 RETURN p;
 \end{verbatim}
 
-Das Ergebnis zeigt, dass Berchar tatsächlich mit Karl dem Großen verwandt ist. Er ist nämlich der Schwiegervater von Drogo (Herzog in Burgund und der Champagne, gest. 708), der wiederum der Bruder des Großvaters Karls des Großen ist.
+Das Ergebnis (Abb. \ref{shortestpath}) zeigt, dass Berchar tatsächlich mit Karl dem Großen verwandt ist. Er ist nämlich der Schwiegervater von Drogo (Herzog in Burgund und der Champagne, gest. 708), der wiederum der Bruder des Großvaters Karls des Großen ist.
 
 \begin{figure}
 \centering
 \includegraphics{Bilder/NeG/050-Berchar-Karl-shortestpath.jpg}
 \caption{Der kürzeste Pfad (shortestPath) von Karl zu Berchar.}
+\label{shortestpath}
 \end{figure}
 
 \hypertarget{zusammenfassung-3}{%
