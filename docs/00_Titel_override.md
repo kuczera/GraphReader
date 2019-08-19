@@ -1,5 +1,5 @@
 ---
-title: Graphentechnologien in den Digitalen Geisteswissenschaften
+title: Reader zu Graphen in den Digitalen Geisteswissenschaften
 subtitle: Modellierung – Import – Analyse
 author:
 - Andreas Kuczera
