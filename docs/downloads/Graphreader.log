@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.27)  20 AUG 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.27)  20 AUG 2019 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,35 +1090,46 @@ ine 468.
 File: Bilder/Gephi-Register.png Graphic file (type png)
 <use Bilder/Gephi-Register.png>
 Package pdftex.def Info: Bilder/Gephi-Register.png  used on input line 477.
-(pdftex.def)             Requested size: 418.2517pt x 430.09761pt.
- [22 <./Bilder/Register-und-Regest-19-189.png>] [23 <./Bilder/Gephi-Register.pn
-g>]
-<Bilder/Chmelvisualisierung-v2.png, id=322, 596.9502pt x 844.8363pt>
+(pdftex.def)             Requested size: 334.60135pt x 344.07808pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./Bilder/Register-und-Regest-19-189.png>]
+<Bilder/Chmelvisualisierung-v2.png, id=317, 596.9502pt x 844.8363pt>
 File: Bilder/Chmelvisualisierung-v2.png Graphic file (type png)
 <use Bilder/Chmelvisualisierung-v2.png>
 Package pdftex.def Info: Bilder/Chmelvisualisierung-v2.png  used on input line 
 486.
-(pdftex.def)             Requested size: 418.26308pt x 591.9486pt.
+(pdftex.def)             Requested size: 334.60864pt x 473.55629pt.
 
 
-LaTeX Warning: Float too large for page by 34.34833pt on input line 489.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/1zu1-Beziehungen-Register-Regest.png, id=324, 700.6175pt x 582.175pt>
+[23 <./Bilder/Gephi-Register.png>]
+<Bilder/1zu1-Beziehungen-Register-Regest.png, id=326, 700.6175pt x 582.175pt>
 File: Bilder/1zu1-Beziehungen-Register-Regest.png Graphic file (type png)
 <use Bilder/1zu1-Beziehungen-Register-Regest.png>
 Package pdftex.def Info: Bilder/1zu1-Beziehungen-Register-Regest.png  used on i
 nput line 497.
-(pdftex.def)             Requested size: 418.2677pt x 347.5577pt.
-<Bilder/1zu1-Beziehungen-nur-Regest.png, id=326, 361.35pt x 357.335pt>
+(pdftex.def)             Requested size: 292.78204pt x 243.28593pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/1zu1-Beziehungen-nur-Regest.png, id=328, 361.35pt x 357.335pt>
 File: Bilder/1zu1-Beziehungen-nur-Regest.png Graphic file (type png)
 <use Bilder/1zu1-Beziehungen-nur-Regest.png>
 Package pdftex.def Info: Bilder/1zu1-Beziehungen-nur-Regest.png  used on input 
 line 506.
-(pdftex.def)             Requested size: 361.34912pt x 357.33412pt.
+(pdftex.def)             Requested size: 250.95833pt x 248.16989pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [24] [25 <./Bilder/Chmelvisualisierung-v2.png>] [26 <./Bilder/1zu1-Beziehungen-
-Register-Regest.png>] [27 <./Bilder/1zu1-Beziehungen-nur-Regest.png>] [28]
+Register-Regest.png> <./Bilder/1zu1-Beziehungen-nur-Regest.png>]
 chapter 4.
-<Bilder/RI2Graph/ReggH4-Regestentabelle.png, id=362, 883.3pt x 609.27625pt>
+<Bilder/RI2Graph/ReggH4-Regestentabelle.png, id=354, 883.3pt x 609.27625pt>
 File: Bilder/RI2Graph/ReggH4-Regestentabelle.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Regestentabelle.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Regestentabelle.png  used on in
@@ -1126,16 +1137,16 @@ put line 526.
 (pdftex.def)             Requested size: 418.251pt x 288.49814pt.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 534.
-[29
+[27
 
-] [30 <./Bilder/RI2Graph/ReggH4-Regestentabelle.png>]
-<Bilder/RI2Graph/google-docs-freigeben.png, id=380, 749.80125pt x 645.91313pt>
+] [28 <./Bilder/RI2Graph/ReggH4-Regestentabelle.png>]
+<Bilder/RI2Graph/google-docs-freigeben.png, id=372, 749.80125pt x 645.91313pt>
 File: Bilder/RI2Graph/google-docs-freigeben.png Graphic file (type png)
 <use Bilder/RI2Graph/google-docs-freigeben.png>
 Package pdftex.def Info: Bilder/RI2Graph/google-docs-freigeben.png  used on inp
 ut line 545.
 (pdftex.def)             Requested size: 418.26122pt x 360.30936pt.
-<Bilder/RI2Graph/google-docs-herunterladen-csv.png, id=382, 536.75531pt x 651.9
+<Bilder/RI2Graph/google-docs-herunterladen-csv.png, id=374, 536.75531pt x 651.9
 3562pt>
 File: Bilder/RI2Graph/google-docs-herunterladen-csv.png Graphic file (type png)
 
@@ -1143,7 +1154,7 @@ File: Bilder/RI2Graph/google-docs-herunterladen-csv.png Graphic file (type png)
 Package pdftex.def Info: Bilder/RI2Graph/google-docs-herunterladen-csv.png  use
 d on input line 554.
 (pdftex.def)             Requested size: 418.25793pt x 508.01035pt.
-<Bilder/RI2Graph/google-docs-link-kopieren.png, id=385, 651.18282pt x 344.03531
+<Bilder/RI2Graph/google-docs-link-kopieren.png, id=377, 651.18282pt x 344.03531
 pt>
 File: Bilder/RI2Graph/google-docs-link-kopieren.png Graphic file (type png)
 <use Bilder/RI2Graph/google-docs-link-kopieren.png>
@@ -1155,35 +1166,35 @@ File: Bilder/RI2Graph/ReggH4-Nr-1487.png Graphic file (type png)
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Nr-1487.png  used on input line
  575.
 (pdftex.def)             Requested size: 418.25986pt x 336.74976pt.
-<Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png, id=387, 818.05624pt x 590.205pt>
+<Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png, id=379, 818.05624pt x 590.205pt>
 File: Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png  used on inp
 ut line 582.
 (pdftex.def)             Requested size: 418.26418pt x 301.76605pt.
- [31] [32 <./Bilder/RI2Graph/google-docs-freigeben.png>] [33 <./Bilder/RI2Graph
-/google-docs-herunterladen-csv.png>] [34 <./Bilder/RI2Graph/google-docs-link-ko
-pieren.png>] [35]
-[36 <./Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png>]
+ [29] [30 <./Bilder/RI2Graph/google-docs-freigeben.png>] [31 <./Bilder/RI2Graph
+/google-docs-herunterladen-csv.png>] [32 <./Bilder/RI2Graph/google-docs-link-ko
+pieren.png>] [33]
+[34 <./Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png>]
 Overfull \hbox (737.23988pt too wide) in paragraph at lines 635--635
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://docs.google.com/spread
 sheets/d/1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE/export?format=csv&id=1GLQ
 IH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE&gid=2138530170" AS line[] 
  []
 
-[37]
+[35]
 Overfull \hbox (156.6178pt too wide) in paragraph at lines 712--712
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/Gra
 phReader/raw/master/data/RI_Ortsdaten.csv"[] 
  []
 
-[38]
+[36]
 Overfull \hbox (30.14566pt too wide) in paragraph at lines 731--731
 []\T1/lmtt/m/n/10.95 // Regesten und Ausstellungsorte mit Koordinaten der Ausst
 ellungsorte versehen[] 
  []
 
-[39]
+[37]
 Overfull \hbox (162.36653pt too wide) in paragraph at lines 764--764
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/Gra
 phReader/raw/master/data/ReggH4-Verben.csv"[] 
@@ -1194,20 +1205,20 @@ LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 764
 (/usr/local/texlive/2019basic/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<Bilder/RI2Graph/ReggH4-Action.png, id=450, 700.6175pt x 699.61375pt>
+<Bilder/RI2Graph/ReggH4-Action.png, id=442, 700.6175pt x 699.61375pt>
 File: Bilder/RI2Graph/ReggH4-Action.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggH4-Action.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggH4-Action.png  used on input line 
 770.
 (pdftex.def)             Requested size: 418.2677pt x 417.66847pt.
- [40] [41 <./Bilder/RI2Graph/ReggH4-Action.png>]
-<Bilder/RI2Graph/XML-Register.png, id=469, 969.6225pt x 552.0625pt>
+ [38] [39 <./Bilder/RI2Graph/ReggH4-Action.png>]
+<Bilder/RI2Graph/XML-Register.png, id=461, 969.6225pt x 552.0625pt>
 File: Bilder/RI2Graph/XML-Register.png Graphic file (type png)
 <use Bilder/RI2Graph/XML-Register.png>
 Package pdftex.def Info: Bilder/RI2Graph/XML-Register.png  used on input line 8
 03.
 (pdftex.def)             Requested size: 418.26112pt x 238.14038pt.
-<Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png, id=470, 781.92125pt x 202.7
+<Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png, id=462, 781.92125pt x 202.7
 575pt>
 File: Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png Graphic file (type png)
 
@@ -1215,15 +1226,15 @@ File: Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png Graphic file (type png)
 Package pdftex.def Info: Bilder/RI2Graph/RegisterH4-Tabelle-Entitaeten.png  use
 d on input line 814.
 (pdftex.def)             Requested size: 418.25812pt x 108.45717pt.
- [42] [43 <./Bilder/RI2Graph/XML-Register.png> <./Bilder/RI2Graph/RegisterH4-Ta
+ [40] [41 <./Bilder/RI2Graph/XML-Register.png> <./Bilder/RI2Graph/RegisterH4-Ta
 belle-Entitaeten.png>]
-<Bilder/RI2Graph/RegisterH4-GENANNT.png, id=487, 921.4425pt x 378.41376pt>
+<Bilder/RI2Graph/RegisterH4-GENANNT.png, id=478, 921.4425pt x 378.41376pt>
 File: Bilder/RI2Graph/RegisterH4-GENANNT.png Graphic file (type png)
 <use Bilder/RI2Graph/RegisterH4-GENANNT.png>
 Package pdftex.def Info: Bilder/RI2Graph/RegisterH4-GENANNT.png  used on input 
 line 823.
 (pdftex.def)             Requested size: 418.24467pt x 171.76279pt.
- [44 <./Bilder/RI2Graph/RegisterH4-GENANNT.png>]
+ [42 <./Bilder/RI2Graph/RegisterH4-GENANNT.png>]
 Overfull \hbox (214.10513pt too wide) in paragraph at lines 840--840
 []\T1/lmtt/m/n/10.95 LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/Gra
 phReader/raw/master/data/RegisterH4-IndexPerson.csv"[] 
@@ -1235,64 +1246,64 @@ Overfull \hbox (208.3564pt too wide) in paragraph at lines 849--849
 phReader/raw/master/data/RegisterH4-IndexPlace.csv"[] 
  []
 
-<Bilder/RI2Graph/ReggF3-Registerhierarchie.png, id=501, 449.68pt x 520.94624pt>
+<Bilder/RI2Graph/ReggF3-Registerhierarchie.png, id=492, 449.68pt x 520.94624pt>
 
 File: Bilder/RI2Graph/ReggF3-Registerhierarchie.png Graphic file (type png)
 <use Bilder/RI2Graph/ReggF3-Registerhierarchie.png>
 Package pdftex.def Info: Bilder/RI2Graph/ReggF3-Registerhierarchie.png  used on
  input line 882.
 (pdftex.def)             Requested size: 418.27354pt x 484.56244pt.
-[45]
-<Bilder/RI2Graph/RegisterF3-Hierarchie.png, id=507, 950.55125pt x 570.13pt>
+[43]
+<Bilder/RI2Graph/RegisterF3-Hierarchie.png, id=499, 950.55125pt x 570.13pt>
 File: Bilder/RI2Graph/RegisterF3-Hierarchie.png Graphic file (type png)
 <use Bilder/RI2Graph/RegisterF3-Hierarchie.png>
 Package pdftex.def Info: Bilder/RI2Graph/RegisterF3-Hierarchie.png  used on inp
 ut line 891.
 (pdftex.def)             Requested size: 418.25835pt x 250.86667pt.
- [46] [47 <./Bilder/RI2Graph/ReggF3-Registerhierarchie.png>]
-<Bilder/RI2Graph/RobertVonFlandernMitRegesten.png, id=530, 728.7225pt x 717.681
+ [44] [45 <./Bilder/RI2Graph/ReggF3-Registerhierarchie.png>]
+<Bilder/RI2Graph/RobertVonFlandernMitRegesten.png, id=522, 728.7225pt x 717.681
 24pt>
 File: Bilder/RI2Graph/RobertVonFlandernMitRegesten.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertVonFlandernMitRegesten.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertVonFlandernMitRegesten.png  used
  on input line 934.
 (pdftex.def)             Requested size: 418.25606pt x 411.91884pt.
-<Bilder/RI2Graph/Robert-viel.png, id=532, 1801.73125pt x 2038.61626pt>
+<Bilder/RI2Graph/Robert-viel.png, id=524, 1801.73125pt x 2038.61626pt>
 File: Bilder/RI2Graph/Robert-viel.png Graphic file (type png)
 <use Bilder/RI2Graph/Robert-viel.png>
 Package pdftex.def Info: Bilder/RI2Graph/Robert-viel.png  used on input line 95
 5.
 (pdftex.def)             Requested size: 418.23837pt x 473.22682pt.
- [48 <./Bilder/RI2Graph/RegisterF3-Hierarchie.png>] [49 <./Bilder/RI2Graph/Robe
-rtVonFlandernMitRegesten.png>] [50 <./Bilder/RI2Graph/Robert-viel.png>]
+ [46 <./Bilder/RI2Graph/RegisterF3-Hierarchie.png>] [47 <./Bilder/RI2Graph/Robe
+rtVonFlandernMitRegesten.png>] [48 <./Bilder/RI2Graph/Robert-viel.png>]
 Overfull \hbox (41.64313pt too wide) in paragraph at lines 973--973
 []\T1/lmtt/m/n/10.95 // Robert II. von Flandern und Herzog Heinrich von Niederl
 othringen mit Netzwerk[] 
  []
 
-<Bilder/RI2Graph/RobertundHeinrich.png, id=554, 420.57124pt x 88.33pt>
+<Bilder/RI2Graph/RobertundHeinrich.png, id=545, 420.57124pt x 88.33pt>
 File: Bilder/RI2Graph/RobertundHeinrich.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertundHeinrich.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertundHeinrich.png  used on input l
 ine 977.
 (pdftex.def)             Requested size: 418.25995pt x 87.84456pt.
-[51 <./Bilder/RI2Graph/RobertundHeinrich.png>]
-<Bilder/RI2Graph/RobertundHeinrichMitBrokern.png, id=567, 979.66pt x 547.04375p
+[49 <./Bilder/RI2Graph/RobertundHeinrich.png>]
+<Bilder/RI2Graph/RobertundHeinrichMitBrokern.png, id=559, 979.66pt x 547.04375p
 t>
 File: Bilder/RI2Graph/RobertundHeinrichMitBrokern.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertundHeinrichMitBrokern.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertundHeinrichMitBrokern.png  used 
 on input line 1005.
 (pdftex.def)             Requested size: 418.25592pt x 233.55478pt.
-<Bilder/RI2Graph/RobertUndHeinrichApoc.png, id=569, 1351.0475pt x 884.30376pt>
+<Bilder/RI2Graph/RobertUndHeinrichApoc.png, id=561, 1351.0475pt x 884.30376pt>
 File: Bilder/RI2Graph/RobertUndHeinrichApoc.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertUndHeinrichApoc.png>
 Package pdftex.def Info: Bilder/RI2Graph/RobertUndHeinrichApoc.png  used on inp
 ut line 1027.
 (pdftex.def)             Requested size: 418.24318pt x 273.75351pt.
- [52 <./Bilder/RI2Graph/RobertundHeinrichMitBrokern.png>] [53 <./Bilder/RI2Grap
+ [50 <./Bilder/RI2Graph/RobertundHeinrichMitBrokern.png>] [51 <./Bilder/RI2Grap
 h/RobertUndHeinrichApoc.png>]
-<Bilder/RI2Graph/RobertHeinrichApocTabelle.png, id=583, 1055.945pt x 452.69125p
+<Bilder/RI2Graph/RobertHeinrichApocTabelle.png, id=575, 1055.945pt x 452.69125p
 t>
 File: Bilder/RI2Graph/RobertHeinrichApocTabelle.png Graphic file (type png)
 <use Bilder/RI2Graph/RobertHeinrichApocTabelle.png>
@@ -1300,55 +1311,55 @@ Package pdftex.def Info: Bilder/RI2Graph/RobertHeinrichApocTabelle.png  used on
  input line 1055.
 (pdftex.def)             Requested size: 418.24574pt x 179.30496pt.
 
-[54 <./Bilder/RI2Graph/RobertHeinrichApocTabelle.png>]
+[52 <./Bilder/RI2Graph/RobertHeinrichApocTabelle.png>]
 Overfull \hbox (70.3868pt too wide) in paragraph at lines 1101--1101
 []\T1/lmtt/m/n/10.95 RETURN p.normalizedGerman, n.lemma, count(h) as ANZAHL ORD
 ER BY ANZAHL desc LIMIT 10;[] 
  []
 
-[55]
+[53]
 Overfull \hbox (7.15073pt too wide) in paragraph at lines 1131--1131
 []\T1/lmtt/m/n/10.95 RETURN p.name1, l.lemma, count(l) AS Anzahl ORDER BY p.nam
 e1, Anzahl DESC;[] 
  []
 
-[56] [57] [58]
+[54] [55] [56]
 chapter 5.
-<Bilder/NeG/020-Verwandschaften.jpg, id=626, 245.2362pt x 146.2263pt>
+<Bilder/NeG/020-Verwandschaften.jpg, id=618, 245.2362pt x 146.2263pt>
 File: Bilder/NeG/020-Verwandschaften.jpg Graphic file (type jpg)
 <use Bilder/NeG/020-Verwandschaften.jpg>
 Package pdftex.def Info: Bilder/NeG/020-Verwandschaften.jpg  used on input line
  1319.
 (pdftex.def)             Requested size: 245.2356pt x 146.22594pt.
-[59
+[57
 
 ]
-<Bilder/NeG/030-Urenkel-Pippins.jpg, id=641, 404.2302pt x 215.8464pt>
+<Bilder/NeG/030-Urenkel-Pippins.jpg, id=633, 404.2302pt x 215.8464pt>
 File: Bilder/NeG/030-Urenkel-Pippins.jpg Graphic file (type jpg)
 <use Bilder/NeG/030-Urenkel-Pippins.jpg>
 Package pdftex.def Info: Bilder/NeG/030-Urenkel-Pippins.jpg  used on input line
  1328.
 (pdftex.def)             Requested size: 404.2292pt x 215.84587pt.
- [60 <./Bilder/NeG/020-Verwandschaften.jpg> <./Bilder/NeG/030-Urenkel-Pippins.j
+ [58 <./Bilder/NeG/020-Verwandschaften.jpg> <./Bilder/NeG/030-Urenkel-Pippins.j
 pg>]
-<Bilder/NeG/040-Berchar-DB-Eintrag.jpg, id=649, 269.3262pt x 168.63pt>
+<Bilder/NeG/040-Berchar-DB-Eintrag.jpg, id=641, 269.3262pt x 168.63pt>
 File: Bilder/NeG/040-Berchar-DB-Eintrag.jpg Graphic file (type jpg)
 <use Bilder/NeG/040-Berchar-DB-Eintrag.jpg>
 Package pdftex.def Info: Bilder/NeG/040-Berchar-DB-Eintrag.jpg  used on input l
 ine 1340.
 (pdftex.def)             Requested size: 269.32965pt x 168.63214pt.
-<Bilder/NeG/050-Berchar-Karl-shortestpath.jpg, id=651, 236.3229pt x 167.6664pt>
+<Bilder/NeG/050-Berchar-Karl-shortestpath.jpg, id=643, 236.3229pt x 167.6664pt>
 
 File: Bilder/NeG/050-Berchar-Karl-shortestpath.jpg Graphic file (type jpg)
 <use Bilder/NeG/050-Berchar-Karl-shortestpath.jpg>
 Package pdftex.def Info: Bilder/NeG/050-Berchar-Karl-shortestpath.jpg  used on 
 input line 1359.
 (pdftex.def)             Requested size: 236.32951pt x 167.67108pt.
- [61 <./Bilder/NeG/040-Berchar-DB-Eintrag.jpg>] [62 <./Bilder/NeG/050-Berchar-K
+ [59 <./Bilder/NeG/040-Berchar-DB-Eintrag.jpg>] [60 <./Bilder/NeG/050-Berchar-K
 arl-shortestpath.jpg>]
 chapter 6.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1376.
-[63
+[61
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1376.
@@ -1364,8 +1375,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 16653 strings out of 494060
- 263134 string characters out of 6163035
+ 16651 strings out of 494060
+ 263120 string characters out of 6163035
  504396 words of memory out of 5000000
  19701 multiletter control sequences out of 15000+600000
  85381 words of font info for 150 fonts, out of 8000000 for 9000
@@ -1387,10 +1398,10 @@ lm/lmri9.pfb></usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/lm/lms
 sbx10.pfb></usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/lm/lmtk10
 .pfb></usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
 </usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on Graphreader.pdf (63 pages, 9816767 bytes).
+Output written on Graphreader.pdf (61 pages, 9816058 bytes).
 PDF statistics:
- 924 PDF objects out of 1000 (max. 8388607)
- 781 compressed objects within 8 object streams
- 237 named destinations out of 1000 (max. 500000)
+ 916 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 235 named destinations out of 1000 (max. 500000)
  17006 words of extra memory for PDF output out of 17280 (max. 10000000)
 
