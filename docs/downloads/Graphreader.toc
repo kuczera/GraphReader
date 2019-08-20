@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {3.5}Zusammenfassung}{24}{section.3.5}% 
 \contentsline {chapter}{\numberline {4}Regestenmodellierung im Graphen}{29}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Wie kommen die Regesten in den Graphen}{29}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Import mit dem \texttt {LOAD\ CSV}-Befehl}{29}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Import mit dem \texttt {LOAD\ CSV}-Befehl}{31}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Google-Docs f\IeC {\"u}r den CSV-Download}{31}{subsection.4.1.2}% 
 \contentsline {subsection}{\numberline {4.1.3}Regestenmodellierung im Graphen}{31}{subsection.4.1.3}% 
 \contentsline {subsection}{\numberline {4.1.4}Indexe Erstellen}{34}{subsection.4.1.4}% 

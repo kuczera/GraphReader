@@ -1,3 +1,6 @@
+// Datenbank leeren
+MATCH (n) DETACH DELETE n;
+
 // vorab Index erzeugen -> Import wird schneller
 CREATE INDEX ON :Regesta(ident);
 CREATE INDEX ON :Regesta(regnum);
