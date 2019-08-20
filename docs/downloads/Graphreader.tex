@@ -523,7 +523,7 @@ In diesem Abschnitt wird beispielhaft anhand der Regesten Kaiser Heinrichs IV. d
 
 \begin{figure}
 \centering
-\includegraphics{Bilder/RI2Graph/ReggH4-Regestentabelle.png}
+\includegraphics[width=0.6\textwidth]{Bilder/RI2Graph/ReggH4-Regestentabelle.png}
 \caption{Regesten als CSV-Datei}
 \label{regestenalscsv}
 \end{figure}
@@ -535,36 +535,6 @@ In der in Abb. \ref{regestenalscsv} dargestellten CSV-Datei finden sich die oben
 
 Mit dem Befehl \texttt{LOAD\ CSV} können die CSV-Dateien mit den Regesten in die Graphdatenbank neo4j importiert werden.\footnote{Zu Installation und ersten Schritten von neo4j vgl. in der Einleitung den Abschnitt zu Installation und Start.} Hierfür muss die Datenbank aber Zugriff auf die CSV-Daten haben. Dies ist einerseits über den im Datenbankverzeichnis vorhandene Ordner \texttt{import} oder über eine URL, unter der die CSV-Datei abrufbar ist, möglich. Da sich die einzelnen Zugriffswege auf den \texttt{import}-Ordner von Betriebssystem zu Betriebssystem unterscheiden, wird hier beispielhaft der Import über eine URL vorgestellt. Hierfür wird ein Webserver benötigt, auf den man die CSV-Datei hochlädt und sich anschließend die Webadresse für den Download der Datei notiert. Für die hier vorgestellten Beispiele werden die Daten über github bereitgestellt:  \url{https://github.com/kuczera/GraphReader/raw/master/data/RegH4.csv}.
 
-\hypertarget{google-docs-fuxfcr-den-csv-download}{%
-\subsection{Google-Docs für den CSV-Download}\label{google-docs-fuxfcr-den-csv-download}}
-
-Es ist aber auch möglich, CSV-Daten in Google-spreadsheets zu speichern und dort eine URL für den Download der Daten zu erstellen. Zunächst benötigt man hierfür einen Google-Account. Anschließend öffnet man Google-Drive und erstellt dort eine leere Google-Tabellen-Datei (Google-Spreadsheet) in die man dann die CSV-Datei kopieren kann.
-
-\begin{figure}
-\centering
-\includegraphics{Bilder/RI2Graph/google-docs-freigeben.png}
-\caption{Freigabe der Datei zum Ansehen für Dritte!}
-\label{freigeben}
-\end{figure}
-
-Wichtig ist nun, die Datei wie in Abb. \ref{freigeben} zur Ansicht freizugeben (Klick auf \texttt{Freigeben} oben rechts im Fenster, dann \texttt{Link\ zum\ Freigeben} abrufen und anschließend \texttt{Fertig} bestätigen). Jetzt ist die CSV-Datei in Google-Docs gespeichert und kann auch von anderen Personen über den Freigabelink angesehen werden. Für den Import in die Graphdatenbank benötigen wir aber einen Download im CSV-Format. Diesen findet man unter \texttt{Datei/Herunterladen\ als/Kommagetrennte\ Werte.csv\ aktuelles\ Tabellenblatt}.
-
-\begin{figure}
-\centering
-\includegraphics{Bilder/RI2Graph/google-docs-herunterladen-csv.png}
-\caption{Herunterladen als CSV-Datei}
-\label{herunterladen}
-\end{figure}
-
-Damit erhält man das aktuelle Tabellenblatt als CSV-Download. Anschließend muss nun im Browser unter Downloads der Download-Link der Datei gesucht und kopiert werden, vgl. Abb. \ref{herunterladen} und \ref{downloadlink}.
-
-\begin{figure}
-\centering
-\includegraphics{Bilder/RI2Graph/google-docs-link-kopieren.png}
-\caption{Download-Link der CSV-Datei} 
-\label{downloadlink}
-\end{figure}
-
 \hypertarget{regestenmodellierung-im-graphen-1}{%
 \subsection{Regestenmodellierung im Graphen}\label{regestenmodellierung-im-graphen-1}}
 
@@ -572,14 +542,14 @@ Mit dem \texttt{LOAD\ CSV}-Befehl stehen die Informationen der Regestentabelle n
 
 \begin{figure}
 \centering
-\includegraphics{Bilder/RI2Graph/ReggH4-Nr-1487.png}
+\includegraphics[width=0.6\textwidth]{Bilder/RI2Graph/ReggH4-Nr-1487.png}
 \caption{RI III,2,3 n. 1487, in: Regesta Imperii Online, URI: http://www.regesta-imperii.de/id/cf75356b-bd0d-4a67-8aeb-3ae27d1dcefa.}
 \label{ri2graph}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics{Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png}
+\includegraphics[width=0.6\textwidth]{Bilder/RI2Graph/ReggH4-Nr-1487imGraph.png}
 \caption{Das Regest im Graphen.} 
 \label{ri2graph2}
 \end{figure}
@@ -623,7 +593,7 @@ Mit dem folgenden Cypher-Query werden die Regestenknoten in der Graphdatenbank e
 
 \begin{verbatim}
 // Regestenknoten erstellen
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE/export?format=csv&id=1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE&gid=2138530170" AS line
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RegH4.csv" AS line
 CREATE (r:Regesta {regid:line.persistentIdentifier, text:line.summary,
   archivalHistory:line.archival_history, date:line.date_string,  
   ident:line.identifier,  regnum:line.regnum,
@@ -752,7 +722,7 @@ Zunächst werden mit dem \texttt{MATCH}-Befehl alle Regestenknoten aufgerufen. A
 \hypertarget{exkurs-1-herrscherhandeln-in-den-regesta-imperii}{%
 \section{Exkurs 1: Herrscherhandeln in den Regesta Imperii}\label{exkurs-1-herrscherhandeln-in-den-regesta-imperii}}
 
-Bisher wurden beim Import der Regesten in den Graphen nur die in den Online-Regesten bereits angelegten Angaben importiert. Im folgenden Schritt werden nun in einem kleinen Exkurs die Regestentexte selbst analysiert und anschließend die Graphdatenbank um eine weitere Informationsebene ergänzt. Regesten sind in ihrer Struktur stark formalisiert. Meist wird mit dem ersten Verb im Regest das Herrscherhandeln beschrieben. Um dies auch digital auswerten zu können, haben wir in einem kleinen Testprojekt mit Hilfe des \href{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}{Stuttgart-München Treetaggers}\footnote{Zum Treetagger vgl. http://www.cis.uni-muenchen.de/\textasciitilde{}schmid/tools/TreeTagger/.} aus jedem Regest das erste Verb extrahiert und normalisiert. Die Ergebnisse sind in folgender \href{https://docs.google.com/spreadsheets/d/1nlbZmQYcT1E3Z58yPmcnulcNQc1e3111Di-4huhV-FY/edit?usp=sharing}{Tabelle} einsehbar. Diese Tabelle wird mit dem folgenden Cypher-Query in die Graphdatenbank eingelesen.
+Bisher wurden beim Import der Regesten in den Graphen nur die in den Online-Regesten bereits angelegten Angaben importiert. Im folgenden Schritt werden nun in einem kleinen Exkurs die Regestentexte selbst analysiert und anschließend die Graphdatenbank um eine weitere Informationsebene ergänzt. Regesten sind in ihrer Struktur stark formalisiert. Meist wird mit dem ersten Verb im Regest das Herrscherhandeln beschrieben. Um dies auch digital auswerten zu können, haben wir in einem kleinen Testprojekt mit Hilfe des \href{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}{Stuttgart-München Treetaggers}\footnote{Zum Treetagger vgl. http://www.cis.uni-muenchen.de/\textasciitilde{}schmid/tools/TreeTagger/.} aus jedem Regest das erste Verb extrahiert und normalisiert. Die Ergebnisse sind einsehbar unter https://github.com/kuczera/GraphReader/raw/master/data/ReggH4-Verben.csv. Diese Tabelle wird mit dem folgenden Cypher-Query in die Graphdatenbank eingelesen.
 
 \begin{verbatim}
 // ReggH4-Herrscherhandeln
@@ -767,7 +737,7 @@ Dabei wird zunächst mit dem \texttt{MATCH}-Befehl das jeweilige Regest gesucht,
 
 \begin{figure}
 \centering
-\includegraphics{Bilder/RI2Graph/ReggH4-Action.png}
+\includegraphics[width=0.6\textwidth]{Bilder/RI2Graph/ReggH4-Action.png}
 \caption{Herrscherhandeln im Graphen.}
 \label{herrscherhandeln}
 \end{figure}
@@ -848,7 +818,7 @@ AS line
 CREATE (:IndexPlace {registerId:line.ID, name1:line.name1});
 \end{verbatim}
 
-Die beiden Befehle greifen also auf verschiedene Tabellenblätter des gleichen Google-Tabellendokuments zu, laden es als CSV-Daten und übergeben die Daten zeilenweise an die weiteren Befehle (Hier an den \texttt{MATCH}- und den \texttt{CREATE}-Befehl). Im nächsten Schritt werden nun mit den Daten der \texttt{APPEARS\_IN}-Tabelle die Verknüpfungen zwischen den Registereinträgen und den Regesten erstellt.
+Die beiden Befehle laden die CSV-Daten und übergeben die Daten zeilenweise an die weiteren Befehle (Hier an den \texttt{MATCH}- und den \texttt{CREATE}-Befehl). Im nächsten Schritt werden nun mit den Daten der \texttt{APPEARS\_IN}-Tabelle die Verknüpfungen zwischen den Registereinträgen und den Regesten erstellt.
 
 \begin{verbatim}
 // PLACE_IN-Kanten für Orte erstellen

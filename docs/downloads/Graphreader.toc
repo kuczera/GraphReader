@@ -22,34 +22,33 @@
 \contentsline {section}{\numberline {3.5}Zusammenfassung}{24}{section.3.5}% 
 \contentsline {chapter}{\numberline {4}Regestenmodellierung im Graphen}{27}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Wie kommen die Regesten in den Graphen}{27}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Import mit dem \texttt {LOAD\ CSV}-Befehl}{29}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Google-Docs f\IeC {\"u}r den CSV-Download}{29}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}Regestenmodellierung im Graphen}{29}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Indexe Erstellen}{32}{subsection.4.1.4}% 
-\contentsline {subsection}{\numberline {4.1.5}Erstellen der Regestenknoten}{35}{subsection.4.1.5}% 
-\contentsline {subsection}{\numberline {4.1.6}Erstellen der Ausstellungsorte}{36}{subsection.4.1.6}% 
-\contentsline {subsection}{\numberline {4.1.7}Koordinaten der Ausstellungsorte}{37}{subsection.4.1.7}% 
-\contentsline {subsection}{\numberline {4.1.8}Ausstellungsdatum}{37}{subsection.4.1.8}% 
-\contentsline {section}{\numberline {4.2}Exkurs 1: Herrscherhandeln in den Regesta Imperii}{38}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Zitationsnetzwerke in den Regesta Imperii}{39}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Import der Registerdaten in die Graphdatenbank}{40}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Vorbereitung der Registerdaten}{40}{subsection.4.4.1}% 
-\contentsline {subsection}{\numberline {4.4.2}Import der Registerdaten in die Graphdatenbank}{42}{subsection.4.4.2}% 
-\contentsline {section}{\numberline {4.5}Exkurs 2: Die Hierarchie des Registers der Regesten Kaiser Friedrichs III.}{43}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Auswertungsperspektiven}{44}{section.4.6}% 
-\contentsline {subsection}{\numberline {4.6.1}Personennetzwerke in den Registern}{44}{subsection.4.6.1}% 
-\contentsline {subsubsection}{\numberline {4.6.1.1}Graf Robert II. von Flandern in seinem Netzwerk}{44}{subsubsection.4.6.1.1}% 
-\contentsline {subsubsection}{\numberline {4.6.1.2}Graf Robert II. von Flandern und Herzog Heinrich von Niederlothringen}{49}{subsubsection.4.6.1.2}% 
-\contentsline {subsection}{\numberline {4.6.2}Herrscherhandeln ausgez\IeC {\"a}hlt}{52}{subsection.4.6.2}% 
-\contentsline {subsection}{\numberline {4.6.3}Herrscherhandeln pro Ausstellungsort ausgez\IeC {\"a}hlt}{53}{subsection.4.6.3}% 
-\contentsline {subsection}{\numberline {4.6.4}Herrscherhandeln und Anwesenheit}{54}{subsection.4.6.4}% 
-\contentsline {subsection}{\numberline {4.6.5}Regesten 200 km rund um Augsburg}{55}{subsection.4.6.5}% 
-\contentsline {subsection}{\numberline {4.6.6}Welche Literatur wird am meisten zitiert}{55}{subsection.4.6.6}% 
-\contentsline {subsection}{\numberline {4.6.7}Der Import zusammengefasst}{56}{subsection.4.6.7}% 
-\contentsline {section}{\numberline {4.7}Zusammenfassung}{56}{section.4.7}% 
-\contentsline {chapter}{\numberline {5}Verwandtschaft im Graphen}{57}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Das Projekt Nomen et Gens}{57}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Nomen et Gens im Graphen}{57}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Sind Berchar und Karl der Gro\IeC {\ss }e verwandt ?}{59}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Zusammenfassung}{59}{section.5.4}% 
-\contentsline {chapter}{\numberline {6}Zusammenfassung}{61}{chapter.6}% 
+\contentsline {subsection}{\numberline {4.1.1}Import mit dem \texttt {LOAD\ CSV}-Befehl}{28}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Regestenmodellierung im Graphen}{28}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Indexe Erstellen}{30}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Erstellen der Regestenknoten}{30}{subsection.4.1.4}% 
+\contentsline {subsection}{\numberline {4.1.5}Erstellen der Ausstellungsorte}{31}{subsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.1.6}Koordinaten der Ausstellungsorte}{33}{subsection.4.1.6}% 
+\contentsline {subsection}{\numberline {4.1.7}Ausstellungsdatum}{33}{subsection.4.1.7}% 
+\contentsline {section}{\numberline {4.2}Exkurs 1: Herrscherhandeln in den Regesta Imperii}{34}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Zitationsnetzwerke in den Regesta Imperii}{34}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Import der Registerdaten in die Graphdatenbank}{35}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Vorbereitung der Registerdaten}{35}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Import der Registerdaten in die Graphdatenbank}{37}{subsection.4.4.2}% 
+\contentsline {section}{\numberline {4.5}Exkurs 2: Die Hierarchie des Registers der Regesten Kaiser Friedrichs III.}{38}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}Auswertungsperspektiven}{41}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Personennetzwerke in den Registern}{41}{subsection.4.6.1}% 
+\contentsline {subsubsection}{\numberline {4.6.1.1}Graf Robert II. von Flandern in seinem Netzwerk}{41}{subsubsection.4.6.1.1}% 
+\contentsline {subsubsection}{\numberline {4.6.1.2}Graf Robert II. von Flandern und Herzog Heinrich von Niederlothringen}{43}{subsubsection.4.6.1.2}% 
+\contentsline {subsection}{\numberline {4.6.2}Herrscherhandeln ausgez\IeC {\"a}hlt}{47}{subsection.4.6.2}% 
+\contentsline {subsection}{\numberline {4.6.3}Herrscherhandeln pro Ausstellungsort ausgez\IeC {\"a}hlt}{48}{subsection.4.6.3}% 
+\contentsline {subsection}{\numberline {4.6.4}Herrscherhandeln und Anwesenheit}{49}{subsection.4.6.4}% 
+\contentsline {subsection}{\numberline {4.6.5}Regesten 200 km rund um Augsburg}{50}{subsection.4.6.5}% 
+\contentsline {subsection}{\numberline {4.6.6}Welche Literatur wird am meisten zitiert}{50}{subsection.4.6.6}% 
+\contentsline {subsection}{\numberline {4.6.7}Der Import zusammengefasst}{51}{subsection.4.6.7}% 
+\contentsline {section}{\numberline {4.7}Zusammenfassung}{51}{section.4.7}% 
+\contentsline {chapter}{\numberline {5}Verwandtschaft im Graphen}{52}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Das Projekt Nomen et Gens}{52}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Nomen et Gens im Graphen}{52}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Sind Berchar und Karl der Gro\IeC {\ss }e verwandt ?}{54}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Zusammenfassung}{54}{section.5.4}% 
+\contentsline {chapter}{\numberline {6}Zusammenfassung}{56}{chapter.6}% 
