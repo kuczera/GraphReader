@@ -3,6 +3,8 @@ Reader für das DH-Modul Graphentechnologien in den digitalen Geisteswissenschaf
 
 Die Github-Pages-Version findet sich unter https://kuczera.github.io/GraphReader/
 
+Die PDF-Version findet sich unter https://github.com/kuczera/GraphReader/raw/master/docs/downloads/Graphreader.pdf (sie weicht in einigen Punkten von der Github-Pages-Version ab).
+
 Datenbank zum testen der GraphGists:
 
 `http://134.176.70.65:11000/browser/`
