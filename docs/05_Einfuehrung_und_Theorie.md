@@ -44,7 +44,7 @@ Auch wenn Graphen ihren Ursprung in der Mathematik haben so sind sie doch ein pr
 
 ![Graphen und nicht Graphen (Needham/Hodler 2019, S. 3, Bild 1-2)](Bilder/Graph-Algorithms/02-1-2-GraphsNotGraphs.png "Graphen und nicht Graphen (Needham/Hodler 2019, S. 3, Bild 1-2)")
 
-In diesem Buch geht es nicht um Graphen im Sinne von Lösung von Gleichungen wie im Bild rechts. Es geht um Informationen, die durch Knoten und Kanten dargestellt werden, wie links im Bild.
+In diesem Reader geht es nicht um Graphen im Sinne von Lösung von Gleichungen wie im Bild rechts. Es geht um Informationen, die durch Knoten und Kanten dargestellt werden, wie links im Bild.
 
 ### Labeled Property Graph
 
@@ -71,7 +71,7 @@ In der folgenden Tabelle werden charakteristische Möglichkeiten zur Typisierung
 
 |Graphattribute|Unterschiede|Überlegungen zum Algorithms|
 |------------------|---------------------|------------------------------------|
-|Verbundene und nichtverbundene Graphen|Gibt es einen Pfad (Länge egal) zwischen zwei beliebigen Knoten eines Graphen|Knoteninseln können zu unvorhergesehenem Verhalten, wie Abbruch oder Auslassen von Knoteninseln|
+|Verbundene und nichtverbundene Graphen|Gibt es einen Pfad (Länge egal) zwischen zwei beliebigen Knoten eines Graphen|Knoteninseln können zu unvorhergesehenem Verhalten, wie Abbruch oder Auslassen von Knoteninseln führen|
 |Gewichtete und ungewichtete Graphen|Gibt es (domänen-spezifische) Werte für Wichtungen an Knoten und Kanten|Werte machen den Graphen reicher an Informationen; Viele Algoritmen benötigen gewichtende Werte|
 |Gerichtete und ungerichtete Graphen|Ist eine Verbindung hierarchisch oder gegenseitig|Die Richtung einer Kante sind für viele Auswertungen von Relevanz|
 |Zyklische und nicht zyklische Graphen|In zyklischen Graphen können Pfade können wieder zum Startknoten zurückkehren|Zyklische Graphen sind weit verbreitet. Bei der Auswertung mit Graphalgorithmen muss der Graph aber möglicherweise bearbeitet werden|
@@ -100,7 +100,7 @@ In ungewichteten Graphen besitzen die Kanten keinen Wert zu Gewichtung.
 
 ![Ungewichteter Graph (Quelle: Kuczera)](Bilder/unWeightedGraph.png)
 
-Im Graphen werden Beziehungen zwischen Personen abgebildet. Über die Intensität der Beziehungen wird nichts gesagt. In der folgenden Abbildung wurde den Beziehungen zwischen jeweils ein Wert zwischen 0 und 100 zugeordnet.
+Im Graphen werden Beziehungen zwischen Personen abgebildet. Über die Intensität der Beziehungen wird nichts gesagt. In der folgenden Abbildung wurde den Beziehungen jeweils ein Wert zwischen 0 und 100 zugeordnet.
 
 ![Gewichteter Graph (Quelle: Kuczera)](Bilder/weightedGraph.png)
 
