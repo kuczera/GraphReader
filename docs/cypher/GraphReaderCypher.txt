@@ -1,5 +1,26 @@
+// vorab Index erzeugen -> Import wird schneller
+CREATE INDEX ON :Regesta(ident);
+CREATE INDEX ON :Regesta(regnum);
+CREATE INDEX ON :Regesta(persistentIdentifier);
+CREATE INDEX ON :Regesta(registerId);
+CREATE INDEX ON :Regesta(heftId);
+CREATE INDEX ON :Regesta(placeOfIssue);
+CREATE INDEX ON :Regesta(origPlaceOfIssue);
+CREATE INDEX ON :Date(startDate);
+CREATE INDEX ON :Place(original);
+CREATE INDEX ON :Place(normalizedGerman);
+CREATE INDEX ON :Lemma(lemma);
+CREATE INDEX ON :Literature(literatur);
+CREATE INDEX ON :Reference(reference);
+CREATE INDEX ON :IndexEntry(registerId);
+CREATE INDEX ON :IndexEntry(nodeId);
+CREATE INDEX ON :Regesta(latLong);
+CREATE INDEX ON :IndexPlace(registerId);
+CREATE INDEX ON :IndexEvent(registerId);
+CREATE INDEX ON :IndexPerson(registerId);
+
 // Regestenknoten erstellen
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE/export?format=csv&id=1GLQIH9LA5btZc-VCRd-8f9BjiylDvwu29FwMwksBbrE&gid=2138530170" AS line
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RegH4.csv" AS line
 CREATE (r:Regesta {regid:line.persistentIdentifier, text:line.summary,
   archivalHistory:line.archival_history, date:line.date_string,
   ident:line.identifier,  regnum:line.regnum,
@@ -8,3 +29,68 @@ CREATE (r:Regesta {regid:line.persistentIdentifier, text:line.summary,
 MERGE (d:Date {startDate:line.start_date, endate:line.end_date})
 MERGE (r)-[:DATE]->(d)
 RETURN count(r);
+
+// RI-Ausstellungsorte-geo erstellen
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RI_Ortsdaten.csv"
+AS line
+WITH line
+WHERE line.Lat IS NOT NULL
+AND line.normalisiertDeutsch IS NOT NULL
+MATCH (r:Regesta {origPlaceOfIssue:line.Original})
+MERGE (p:Place {normalizedGerman:line.normalisiertDeutsch,
+  longitude:line.Long, latitude:line.Lat})
+WITH r, p, line
+MERGE (r)-[rel:PLACE_OF_ISSUE]->(p)
+SET p.wikidataId = line.wikidataId
+SET p.name = line.name
+SET p.gettyId = line.GettyId
+SET p.geonamesId = line.GeonamesId
+SET rel.original = line.Original
+SET rel.alternativeName = line.Alternativname
+SET rel.commentary = line.Kommentar
+SET rel.allocation = line.Zuordnung
+SET rel.state = line.Lage
+SET rel.certainty = line.Sicherheit
+SET rel.institutionInCity = line.InstInDerStadt
+RETURN count(p);
+
+// Regesten und Ausstellungsorte mit Koordinaten der Ausstellungsorte versehen
+MATCH (r:Regesta)-[:PLACE_OF_ISSUE]->(o:Place)
+SET r.latLong = point({latitude: tofloat(o.latitude),
+  longitude: tofloat(o.longitude)})
+SET o.latLong = point({latitude: tofloat(o.latitude),
+  longitude: tofloat(o.longitude)})
+SET r.placeOfIssue = o.normalizedGerman
+SET r.latitude = o.latitude
+SET r.longitude = o.longitude;
+
+// Date in neo4j-Datumsformat umwandeln
+MATCH (n:Regesta)
+SET n.isoStartDate = date(n.startDate);
+MATCH (n:Regesta)
+SET n.isoEndDate = date(n.endDate);
+MATCH (d:Date)
+SET d.isoStartDate = date(d.startDate);
+MATCH (d:Date)
+SET d.isoEndDate = date(d.endDate);
+
+// ReggH4-Herrscherhandeln
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/ReggH4-Verben.csv"
+AS line FIELDTERMINATOR ','
+MATCH (r:Regesta{ident:line.regid})
+MERGE (l:Lemma{lemma:line.Lemma})
+MERGE (r)-[:ACTION]->(l);
+
+// ReggH4-Literaturnetzwerk erstellen
+MATCH (reg:Regesta)
+WHERE reg.archivalHistory CONTAINS "link"
+UNWIND apoc.text.regexGroups(reg.archivalHistory,
+"<link (\\S+)>(\\S+)</link>") as link
+MERGE (ref:Reference {url:link[1]})
+ON CREATE SET ref.title=link[2]
+MERGE (reg)-[:REFERENCES]->(ref);
+
+// Registereinträge Personen erstellen
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RegisterH4-IndexPerson.csv"
+AS line
+CREATE (:IndexPerson {registerId:line.ID, name1:line.name1});

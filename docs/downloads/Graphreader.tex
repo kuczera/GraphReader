@@ -519,7 +519,7 @@ In diesem Kapitel wurde zunächst das Akademieprojekt Regesta Imperii vorgestell
 \hypertarget{wie-kommen-die-regesten-in-den-graphen}{%
 \section{Wie kommen die Regesten in den Graphen}\label{wie-kommen-die-regesten-in-den-graphen}}
 
-In diesem Abschnitt wird beispielhaft anhand der Regesten Kaiser Heinrichs IV. der Import der Online-Regesten in die Graphdatenbank neo4j durchgespielt.\footnote{Die den Regesten Kaiser Heinrichs IV. umfassen folgende Bände: Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 1. Lief.: 1056 (1050) -- 1065, bearb. von Struve, Tilman - Köln (u.a.) (1984). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 2. Lief.: 1065--1075, bearb. von Struve, Tilman unter Mitwirkung von Lubich, Gerhard und Jäckel, Dirk - Köln (u.a.) (2010). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 3. Lief.: 1076--1085, bearb. von Lubich, Gerhard nach Vorarbeiten von Struve, Tilman unter Mitwirkung von Jäckel, Dirk - Köln (u.a.) (2016). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 4. Lief.: 1086--1105/06, bearb. von Lubich, Gerhard nach Vorarbeiten von Brauch, Daniel unter Mitwirkung von Weber, Matthias - Köln (u.a.) (2016). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 5. Lief.: Die Regesten Rudolfs von Rheinfelden, Hermanns von Salm und Konrads (III.). Verzeichnisse, Register, Addenda und Corrigenda, bearbeitet von Lubich, Gerhard unter Mitwirkung von Junker, Cathrin; Klocke, Lisa und Keller, Markus - Köln (u.a.) (2018).} Die Webseite der Regesta Imperii Online basiert auf dem Content-Managment-System typo3, welches auf eine mysql-Datenbank aufbaut. In der Datenbank werden die Regesteninformationen in verschiedenen Tabellen vorgehalten. Die Webseite bietet zum einen die Möglichkeit, die Regesten über eine REST-Schnittstelle im CEI-XML-Format oder als CSV-Dateien herunterzuladen. Für den Import in die Graphdatenbank bietet sich das CSV-Format an.
+In diesem Abschnitt wird beispielhaft anhand der Regesten Kaiser Heinrichs IV. der Import der Online-Regesten in die Graphdatenbank neo4j durchgespielt.\footnote{Die den Regesten Kaiser Heinrichs IV. umfassen folgende Bände: Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 1. Lief.: 1056 (1050) -- 1065, bearb. von Struve, Tilman - Köln (u.a.) (1984). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 2. Lief.: 1065--1075, bearb. von Struve, Tilman unter Mitwirkung von Lubich, Gerhard und Jäckel, Dirk - Köln (u.a.) (2010). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 3. Lief.: 1076--1085, bearb. von Lubich, Gerhard nach Vorarbeiten von Struve, Tilman unter Mitwirkung von Jäckel, Dirk - Köln (u.a.) (2016). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 4. Lief.: 1086--1105/06, bearb. von Lubich, Gerhard nach Vorarbeiten von Brauch, Daniel unter Mitwirkung von Weber, Matthias - Köln (u.a.) (2016). Böhmer, J. F., Regesta Imperii III. Salisches Haus 1024-1125. Tl. 2: 1056-1125. 3. Abt.: Die Regesten des Kaiserreichs unter Heinrich IV. 1056 (1050) - 1106. 5. Lief.: Die Regesten Rudolfs von Rheinfelden, Hermanns von Salm und Konrads (III.). Verzeichnisse, Register, Addenda und Corrigenda, bearbeitet von Lubich, Gerhard unter Mitwirkung von Junker, Cathrin; Klocke, Lisa und Keller, Markus - Köln (u.a.) (2018).} Die Webseite der Regesta Imperii Online basiert auf dem Content-Managment-System typo3, welches auf eine mysql-Datenbank aufbaut. In der Datenbank werden die Regesteninformationen in verschiedenen Tabellen vorgehalten. Die Webseite bietet momentan nur die Möglichkeit, die Regesten über eine REST-Schnittstelle im CEI-XML-Format herunterzuladen. Die CSV-Version, die sich für den Import in die Graphdatenbank anbietet findet sich auf Github: \url{https://github.com/kuczera/GraphReader/raw/master/data/RegH4.csv}.
 
 \begin{figure}
 \centering
@@ -533,7 +533,7 @@ In der in Abb. \ref{regestenalscsv} dargestellten CSV-Datei finden sich die oben
 \hypertarget{import-mit-dem-load-csv-befehl}{%
 \subsection{\texorpdfstring{Import mit dem \texttt{LOAD\ CSV}-Befehl}{Import mit dem LOAD CSV-Befehl}}\label{import-mit-dem-load-csv-befehl}}
 
-Mit dem Befehl \texttt{LOAD\ CSV} können die CSV-Dateien mit den Regesten in die Graphdatenbank neo4j importiert werden.\footnote{Zu Installation und ersten Schritten von neo4j vgl. in der Einleitung den Abschnitt zu Installation und Start.} Hierfür muss die Datenbank aber Zugriff auf die CSV-Daten haben. Dies ist einerseits über den im Datenbankverzeichnis vorhandene Ordner \texttt{import} oder über eine URL, unter der die CSV-Datei abrufbar ist, möglich. Da sich die einzelnen Zugriffswege auf den \texttt{import}-Ordner von Betriebssystem zu Betriebssystem unterscheiden, wird hier beispielhaft der Import über eine URL vorgestellt. Hierfür wird ein Webserver benötigt, auf den man die CSV-Datei hochlädt und sich anschließend die Webadresse für den Download der Datei notiert.
+Mit dem Befehl \texttt{LOAD\ CSV} können die CSV-Dateien mit den Regesten in die Graphdatenbank neo4j importiert werden.\footnote{Zu Installation und ersten Schritten von neo4j vgl. in der Einleitung den Abschnitt zu Installation und Start.} Hierfür muss die Datenbank aber Zugriff auf die CSV-Daten haben. Dies ist einerseits über den im Datenbankverzeichnis vorhandene Ordner \texttt{import} oder über eine URL, unter der die CSV-Datei abrufbar ist, möglich. Da sich die einzelnen Zugriffswege auf den \texttt{import}-Ordner von Betriebssystem zu Betriebssystem unterscheiden, wird hier beispielhaft der Import über eine URL vorgestellt. Hierfür wird ein Webserver benötigt, auf den man die CSV-Datei hochlädt und sich anschließend die Webadresse für den Download der Datei notiert. Für die hier vorgestellten Beispiele werden die Daten über github bereitgestellt:  \url{https://github.com/kuczera/GraphReader/raw/master/data/RegH4.csv}.
 
 \hypertarget{google-docs-fuxfcr-den-csv-download}{%
 \subsection{Google-Docs für den CSV-Download}\label{google-docs-fuxfcr-den-csv-download}}
@@ -648,14 +648,14 @@ Bemerkungen\strut
 \midrule
 \endhead
 \begin{minipage}[t]{0.31\columnwidth}\raggedright
-\texttt{LOAD\ CSV\ WITH\ HEADERS\ FROM} ``https://docs.google.com/ \ldots{}'' AS line\strut
+\texttt{LOAD\ CSV\ WITH\ HEADERS\ FROM} ``https://github.com/kuczera/ GraphReader/raw/master/ data/RegH4.csv'' AS line\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 line\strut
 \end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
 Import der CSV-Dateien. Es wird jeweils eine Zeile an die Variable line weitergegeben\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.31\columnwidth}\raggedright
-\texttt{CREATE}(r:Regesta \{regid:line.persistentIdentifier, text:line.summary, archivalHistory:line.archival\_history, date:line.date\_string\strut
+\texttt{CREATE}(r:Regesta \{regid:line.persistentIdentifier, text:line.summary, archivalHistory:line.archival\_history, date:line.date\_string etc. \strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 line.persistent\_ identifier, line.summary etc.\strut
 \end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
@@ -681,16 +681,13 @@ Zwischen Regestenknoten und Datumsknoten wird eine \texttt{HAT\_DATUM}-Kante ers
 \hypertarget{erstellen-der-ausstellungsorte}{%
 \subsection{Erstellen der Ausstellungsorte}\label{erstellen-der-ausstellungsorte}}
 
-In den Kopfzeilen der Regesten ist, soweit bekannt, der Ausstellungsort der Urkunde vermerkt. Im Rahmen der Arbeiten an den Regesta Imperii Online wurden diese Angaben zusammengestellt und soweit möglich die Orte identifiziert, so dass diese Angabe nun beim Import der Regesten in den Graphen berücksichtigt werden kann. Insgesamt befinden sich in den Regesta Imperii über 12.000 verschiedene Angaben für Ausstellungsorte, wobei sie sich aber auch teilweise auf den gleichen Ort beziehen können (Wie z.B. Aachen, Aquisgrani, Aquisgradi, Aquisgranum, coram Aquisgrano etc.). Allein mit der Identifizierung der 1.000 häufigsten Ortsangaben konnte schon die überwiegende Mehrzahl der Ausstellungsorte georeferenziert werden. Die Daten zur Ortsidentifizierung liegen auch in einer Google-Tabelle vor.
+In den Kopfzeilen der Regesten ist, soweit bekannt, der Ausstellungsort der Urkunde vermerkt. Im Rahmen der Arbeiten an den Regesta Imperii Online wurden diese Angaben zusammengestellt und soweit möglich die Orte identifiziert, so dass diese Angabe nun beim Import der Regesten in den Graphen berücksichtigt werden kann. Insgesamt befinden sich in den Regesta Imperii über 12.000 verschiedene Angaben für Ausstellungsorte, wobei sie sich aber auch teilweise auf den gleichen Ort beziehen können (Wie z.B. Aachen, Aquisgrani, Aquisgradi, Aquisgranum, coram Aquisgrano etc.). Allein mit der Identifizierung der 1.000 häufigsten Ortsangaben konnte schon die überwiegende Mehrzahl der Ausstellungsorte georeferenziert werden. Die Daten zur Ortsidentifizierung liegen auch als CSV-Datei vor.
 
 Mit dem folgenden Cypher-Query werden die Ausstellungsorte in die Graphdatenbank importiert:
 
 \begin{verbatim}
 // RI-Ausstellungsorte-geo erstellen
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/
-13_f6Vja4HfOpju9RVDubHiMLzS6Uoa7MIOHFEg5V7lw/
-export?format=csv&id=13_f6Vja4HfOpju9RVDubHiMLzS6Uoa7MIOHFEg5V7lw
-&gid=420547059"
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RI_Ortsdaten.csv"
 AS line
 WITH line
 WHERE line.Lat IS NOT NULL
@@ -759,7 +756,7 @@ Bisher wurden beim Import der Regesten in den Graphen nur die in den Online-Rege
 
 \begin{verbatim}
 // ReggH4-Herrscherhandeln
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/1nlbZmQYcT1E3Z58yPmcnulcNQc1e3111Di-4huhV-FY/export?format=csv&id=1nlbZmQYcT1E3Z58yPmcnulcNQc1e3111Di-4huhV-FY&gid=267441060"
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/ReggH4-Verben.csv"
 AS line FIELDTERMINATOR ','
 MATCH (r:Regesta{ident:line.regid})
 MERGE (l:Lemma{lemma:line.Lemma})
@@ -833,11 +830,11 @@ In der anderen Tabelle werden die Verknüpfungen zwischen Registereinträgen und
 \hypertarget{import-der-registerdaten-in-die-graphdatenbank-1}{%
 \subsection{Import der Registerdaten in die Graphdatenbank}\label{import-der-registerdaten-in-die-graphdatenbank-1}}
 
-Im Gegensatz zu den Regesten Kaiser Friedrichs III., bei denen Orte und Personen in einem Register zusammengefasst sind, haben die Regesten Kaiser Heinrich IV. getrennte Orts- und Personenregister. Die digitalisierten Registerdaten können \href{https://docs.google.com/spreadsheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/edit?usp=sharing}{hier} eingesehen werden. In dem Tabellendokument befinden sich insgesamt drei Tabellen. In der Tabelle \texttt{Personen} sind die Einträge des Personenregisters aufgelistet und in der Tabelle \texttt{Orte} befindet sich die Liste aller Einträge des Ortsregisters. Schließlich enthält die Tabelle \texttt{APPEARS\_IN} Information dazu, welche Personen oder Orte in welchen Regesten genannt sind. Der folgende Cypher-Query importiert die Einträge der Personentabelle in die Graphdatenbank und erstellt für jeden Eintrag einen Knoten vom Typ \texttt{:IndexPerson}:
+Im Gegensatz zu den Regesten Kaiser Friedrichs III., bei denen Orte und Personen in einem Register zusammengefasst sind, haben die Regesten Kaiser Heinrich IV. getrennte Orts- und Personenregister. Die digitalisierten Registerdaten können als Excel- \url{https://github.com/kuczera/GraphReader/raw/master/data/RegisterH4.xlsx} oder als  Openofficedatei \url{https://github.com/kuczera/GraphReader/raw/master/data/RegisterH4.ods} heruntergeladen werden.  In dem Tabellendokument befinden sich insgesamt drei Tabellen. In der Tabelle \texttt{Personen} sind die Einträge des Personenregisters aufgelistet und in der Tabelle \texttt{Orte} befindet sich die Liste aller Einträge des Ortsregisters. Schließlich enthält die Tabelle \texttt{APPEARS\_IN} Information dazu, welche Personen oder Orte in welchen Regesten genannt sind. Der folgende Cypher-Query importiert die Einträge der Personentabelle in die Graphdatenbank und erstellt für jeden Eintrag einen Knoten vom Typ \texttt{:IndexPerson}:
 
 \begin{verbatim}
 // Registereinträge Personen erstellen
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=1167029283"
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RegisterH4-IndexPerson.csv"
 AS line
 CREATE (:IndexPerson {registerId:line.ID, name1:line.name1});
 \end{verbatim}
@@ -846,7 +843,7 @@ Mit dem folgenden Cypher-Query werden nach dem gleichen Muster aus der Tabelle \
 
 \begin{verbatim}
 // Registereinträge Orte erstellen
-LOAD CSV WITH HEADERS FROM "https://docs.google.com/spreadsheets/d/12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE/export?format=csv&id=12T-RD1Ct4aAUNNNxipjMmHe9F1NmryI1gf8_SJ4RCEE&gid=2049106817"
+LOAD CSV WITH HEADERS FROM "https://github.com/kuczera/GraphReader/raw/master/data/RegisterH4-IndexPlace.csv"
 AS line
 CREATE (:IndexPlace {registerId:line.ID, name1:line.name1});
 \end{verbatim}

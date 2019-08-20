@@ -36,10 +36,10 @@
 \contentsline {subsection}{\numberline {4.4.1}Vorbereitung der Registerdaten}{42}{subsection.4.4.1}% 
 \contentsline {subsection}{\numberline {4.4.2}Import der Registerdaten in die Graphdatenbank}{44}{subsection.4.4.2}% 
 \contentsline {section}{\numberline {4.5}Exkurs 2: Die Hierarchie des Registers der Regesten Kaiser Friedrichs III.}{45}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Auswertungsperspektiven}{45}{section.4.6}% 
-\contentsline {subsection}{\numberline {4.6.1}Personennetzwerke in den Registern}{45}{subsection.4.6.1}% 
-\contentsline {subsubsection}{\numberline {4.6.1.1}Graf Robert II. von Flandern in seinem Netzwerk}{45}{subsubsection.4.6.1.1}% 
-\contentsline {subsubsection}{\numberline {4.6.1.2}Graf Robert II. von Flandern und Herzog Heinrich von Niederlothringen}{49}{subsubsection.4.6.1.2}% 
+\contentsline {section}{\numberline {4.6}Auswertungsperspektiven}{47}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Personennetzwerke in den Registern}{47}{subsection.4.6.1}% 
+\contentsline {subsubsection}{\numberline {4.6.1.1}Graf Robert II. von Flandern in seinem Netzwerk}{47}{subsubsection.4.6.1.1}% 
+\contentsline {subsubsection}{\numberline {4.6.1.2}Graf Robert II. von Flandern und Herzog Heinrich von Niederlothringen}{48}{subsubsection.4.6.1.2}% 
 \contentsline {subsection}{\numberline {4.6.2}Herrscherhandeln ausgez\IeC {\"a}hlt}{54}{subsection.4.6.2}% 
 \contentsline {subsection}{\numberline {4.6.3}Herrscherhandeln pro Ausstellungsort ausgez\IeC {\"a}hlt}{54}{subsection.4.6.3}% 
 \contentsline {subsection}{\numberline {4.6.4}Herrscherhandeln und Anwesenheit}{55}{subsection.4.6.4}% 
